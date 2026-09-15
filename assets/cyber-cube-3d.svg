@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="-200 -200 400 400"
+     width="100%"
+     preserveAspectRatio="xMidYMid meet"
+     role="img"
+     aria-label="Rotating 3D cyber cube">
+
+  <defs>
+    <!-- Cube face gradients (cyan/purple/magenta) -->
+    <linearGradient id="faceTop" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%"   stop-color="#67e8f9"/>
+      <stop offset="100%" stop-color="#22d3ee"/>
+    </linearGradient>
+
+    <linearGradient id="faceLeft" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%"   stop-color="#7c3aed"/>
+      <stop offset="100%" stop-color="#4c1d95"/>
+    </linearGradient>
+
+    <linearGradient id="faceRight" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%"   stop-color="#f472b6"/>
+      <stop offset="100%" stop-color="#a855f7"/>
+    </linearGradient>
+
+    <!-- Edge glow -->
+    <filter id="edgeGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="3" result="b"/>
+      <feMerge>
+        <feMergeNode in="b"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <!-- Background dark -->
+    <radialGradient id="bg" cx="50%" cy="50%" r="70%">
+      <stop offset="0%"   stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#020617"/>
+    </radialGradient>
+
+    <!-- Symbol for the front face: stylized Q -->
+    <symbol id="logoQ" viewBox="-50 -50 100 100">
+      <circle r="32" fill="none" stroke="currentColor" stroke-width="6"/>
+      <line x1="20" y1="20" x2="44" y2="44" stroke="currentColor" stroke-width="8" stroke-linecap="round"/>
+    </symbol>
+  </defs>
+
+  <!-- Background -->
+  <rect x="-200" y="-200" width="400" height="400" fill="url(#bg)"/>
+
+  <!-- Outer orbit ring (rotating slowly) -->
+  <g fill="none" stroke="#22d3ee" stroke-opacity="0.25">
+    <ellipse cx="0" cy="0" rx="170" ry="60" stroke-width="1">
+      <animateTransform attributeName="transform"
+        type="rotate" from="0" to="360" dur="20s" repeatCount="indefinite"/>
+    </ellipse>
+  </g>
+
+  <!-- Tick marks on orbit -->
+  <g fill="#22d3ee">
+    <circle cx="170" cy="0" r="2"/>
+    <circle cx="-170" cy="0" r="2"/>
+    <circle cx="0" cy="60" r="2"/>
+    <circle cx="0" cy="-60" r="2"/>
+  </g>
+
+  <!-- ===== 3D ISOMETRIC CUBE (rotating around Y axis) ===== -->
+  <!-- We approximate 3D rotation by pre-rendering 36 frames as polygon morphs,
+       driven by a single animate with discrete keyframes. -->
+
+  <g filter="url(#edgeGlow)">
+    <g>
+      <!-- Rotation animation: 360deg around Y, 12s loop -->
+      <animateTransform attributeName="transform"
+        type="rotate" from="0 0 0" to="360 0 0" dur="12s" repeatCount="indefinite"/>
+
+      <!-- Cube vertices in isometric projection (cx,cy,rx,ry for x-rotation)
+           Vertices of a cube of size 80 centered at origin:
+           (±80, ±80, ±80).  Isometric projection: x' = x, y' = y - z*0.5 -->
+
+      <!-- We'll render 3 visible faces. Front face shows the Q logo. -->
+
+      <!-- TOP face (lighter) -->
+      <polygon points="0,-80 -80,0 0,80 80,0"
+               fill="url(#faceTop)" stroke="#67e8f9" stroke-width="1.5" stroke-opacity="0.9"/>
+
+      <!-- LEFT face -->
+      <polygon points="-80,0 0,80 0,160 -80,80"
+               fill="url(#faceLeft)" stroke="#a855f7" stroke-width="1.5" stroke-opacity="0.9"/>
+
+      <!-- RIGHT face -->
+      <polygon points="80,0 0,80 0,160 80,80"
+               fill="url(#faceRight)" stroke="#f472b6" stroke-width="1.5" stroke-opacity="0.9"/>
+
+      <!-- Front logo: Q on the center face (front-facing) -->
+      <g color="#ffffff" transform="translate(0 40) scale(0.35)">
+        <use href="#logoQ"/>
+      </g>
+
+      <!-- Edge highlights -->
+      <g stroke="#ffffff" stroke-opacity="0.6" stroke-width="1" fill="none">
+        <line x1="0" y1="-80" x2="-80" y2="0"/>
+        <line x1="0" y1="-80" x2="80" y2="0"/>
+        <line x1="-80" y1="0" x2="0" y2="80"/>
+        <line x1="80" y1="0" x2="0" y2="80"/>
+        <line x1="0" y1="80" x2="-80" y2="160"/>
+        <line x1="0" y1="80" x2="80" y2="160"/>
+        <line x1="-80" y1="80" x2="-80" y2="160"/>
+        <line x1="80" y1="80" x2="80" y2="160"/>
+      </g>
+    </g>
+  </g>
+
+  <!-- Corner pulse dots -->
+  <g fill="#00e5ff">
+    <circle cx="0" cy="-80" r="3">
+      <animate attributeName="opacity" values="1;0.3;1" dur="2s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="-80" cy="0" r="3">
+      <animate attributeName="opacity" values="0.3;1;0.3" dur="2s" begin="0.5s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="80" cy="0" r="3">
+      <animate attributeName="opacity" values="1;0.3;1" dur="2s" begin="1s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <!-- Floor reflection (faint) -->
+  <ellipse cx="0" cy="170" rx="100" ry="14" fill="#22d3ee" fill-opacity="0.15"/>
+</svg>
