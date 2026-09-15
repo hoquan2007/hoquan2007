@@ -4,8 +4,11 @@
 
 <div align="center">
 
-<img width="100%"
-     src="https://capsule-render.vercel.app/api?type=waving&height=260&color=0:020617,40:312e81,70:7c3aed,100:06b6d4&text=HỒ%20NGỌC%20QUÂN&fontSize=55&fontColor=ffffff&fontAlignY=38&desc=SOFTWARE%20ENGINEERING%20%E2%80%A2%20AI%20%E2%80%A2%20FUTURE%20TECHNOLOGY&descAlignY=58&descSize=17&animation=fadeIn"/>
+<img
+  width="100%"
+  src="./assets/cyber-terminal.svg"
+  alt="Hồ Ngọc Quân - Cyber Terminal Header"
+/>
 
 <img
   src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=25&duration=2500&pause=600&color=00E5FF&center=true&vCenter=true&width=900&lines=Software+Engineering+Student;AI+%26+Algorithms+Explorer;C+%7C+C%2B%2B+%7C+TypeScript+%7C+Full-Stack;Building+systems+for+the+future...;Learning.+Building.+Experimenting."
@@ -347,7 +350,9 @@ flowchart LR
 <div align="center">
 
 <img
-src="https://capsule-render.vercel.app/api?type=waving&height=150&section=footer&color=0:020617,50:7c3aed,100:06b6d4"
+  width="100%"
+  src="./assets/cyber-terminal-footer.svg"
+  alt="Footer wave"
 />
 
 </div>

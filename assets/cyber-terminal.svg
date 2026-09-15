@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 1200 480"
+     width="100%"
+     preserveAspectRatio="xMidYMid meet"
+     role="img"
+     aria-label="Ho Ngoc Quan cyber terminal header">
+
+  <!-- DEFS: gradients, filters, patterns -->
+  <defs>
+
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%"   stop-color="#020617"/>
+      <stop offset="40%"  stop-color="#1e1b4b"/>
+      <stop offset="70%"  stop-color="#4c1d95"/>
+      <stop offset="100%" stop-color="#083344"/>
+    </linearGradient>
+
+    <radialGradient id="vignette" cx="50%" cy="55%" r="75%">
+      <stop offset="0%"   stop-color="#000000" stop-opacity="0"/>
+      <stop offset="70%"  stop-color="#000000" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0.85"/>
+    </radialGradient>
+
+    <radialGradient id="horizonGlow" cx="50%" cy="100%" r="60%">
+      <stop offset="0%"   stop-color="#7c3aed" stop-opacity="0.55"/>
+      <stop offset="40%"  stop-color="#06b6d4" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#7c3aed" stop-opacity="0"/>
+    </radialGradient>
+
+    <radialGradient id="sunGrad" cx="50%" cy="50%" r="50%">
+      <stop offset="0%"   stop-color="#fde68a"/>
+      <stop offset="35%"  stop-color="#f472b6"/>
+      <stop offset="70%"  stop-color="#a855f7"/>
+      <stop offset="100%" stop-color="#7c3aed" stop-opacity="0"/>
+    </radialGradient>
+
+    <linearGradient id="gridFade" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%"   stop-color="#22d3ee" stop-opacity="0"/>
+      <stop offset="60%"  stop-color="#22d3ee" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#a855f7" stop-opacity="0.85"/>
+    </linearGradient>
+
+    <linearGradient id="titleGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%"   stop-color="#67e8f9"/>
+      <stop offset="50%"  stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#f0abfc"/>
+    </linearGradient>
+
+    <linearGradient id="subGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%"   stop-color="#22d3ee"/>
+      <stop offset="100%" stop-color="#a855f7"/>
+    </linearGradient>
+
+    <filter id="neon" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="2" result="b1"/>
+      <feGaussianBlur stdDeviation="6" in="SourceGraphic" result="b2"/>
+      <feMerge>
+        <feMergeNode in="b2"/>
+        <feMergeNode in="b1"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <filter id="softGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="1.5"/>
+      <feComponentTransfer>
+        <feFuncA type="linear" slope="1.6"/>
+      </feComponentTransfer>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <filter id="sunGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="14"/>
+    </filter>
+
+    <pattern id="scanlines" width="4" height="4" patternUnits="userSpaceOnUse">
+      <rect width="4" height="4" fill="transparent"/>
+      <rect width="4" height="1" fill="#00e5ff" fill-opacity="0.06"/>
+    </pattern>
+
+    <pattern id="noise" width="200" height="200" patternUnits="userSpaceOnUse">
+      <rect width="200" height="200" fill="transparent"/>
+      <g fill="#22d3ee" fill-opacity="0.04">
+        <circle cx="11"  cy="23"  r="0.5"/>
+        <circle cx="57"  cy="89"  r="0.5"/>
+        <circle cx="123" cy="34"  r="0.5"/>
+        <circle cx="167" cy="145" r="0.5"/>
+        <circle cx="34"  cy="167" r="0.5"/>
+        <circle cx="89"  cy="11"  r="0.5"/>
+        <circle cx="145" cy="78"  r="0.5"/>
+        <circle cx="78"  cy="123" r="0.5"/>
+        <circle cx="198" cy="56"  r="0.5"/>
+        <circle cx="12"  cy="198" r="0.5"/>
+      </g>
+    </pattern>
+
+    <mask id="sunUpperMask">
+      <rect x="-100" y="-100" width="200" height="100" fill="white"/>
+    </mask>
+
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="480" fill="url(#sky)"/>
+  <rect width="1200" height="480" fill="url(#noise)"/>
+  <rect x="0" y="280" width="1200" height="200" fill="url(#horizonGlow)"/>
+
+  <!-- Stars -->
+  <g fill="#ffffff">
+    <circle cx="80"  cy="60"  r="0.8">
+      <animate attributeName="opacity" values="0.2;1;0.2" dur="3.2s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="180" cy="110" r="0.6">
+      <animate attributeName="opacity" values="0.8;0.2;0.8" dur="2.6s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="280" cy="40"  r="1">
+      <animate attributeName="opacity" values="0.3;1;0.3" dur="3.8s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="420" cy="90"  r="0.7">
+      <animate attributeName="opacity" values="1;0.3;1" dur="2.2s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="540" cy="50"  r="0.9">
+      <animate attributeName="opacity" values="0.4;1;0.4" dur="3.0s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="700" cy="120" r="0.6">
+      <animate attributeName="opacity" values="0.2;0.9;0.2" dur="2.8s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="820" cy="60"  r="1">
+      <animate attributeName="opacity" values="0.7;0.2;0.7" dur="3.4s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="960" cy="100" r="0.7">
+      <animate attributeName="opacity" values="0.2;1;0.2" dur="2.4s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="1080" cy="70" r="0.8">
+      <animate attributeName="opacity" values="0.9;0.3;0.9" dur="3.6s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="1140" cy="140" r="0.6">
+      <animate attributeName="opacity" values="0.3;1;0.3" dur="2.0s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="140" cy="170" r="0.5">
+      <animate attributeName="opacity" values="1;0.2;1" dur="2.8s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="640" cy="180" r="0.7">
+      <animate attributeName="opacity" values="0.2;1;0.2" dur="3.2s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="1020" cy="200" r="0.5">
+      <animate attributeName="opacity" values="0.6;1;0.6" dur="2.6s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <!-- Retro sun -->
+  <g transform="translate(600 330)">
+    <circle r="120" fill="url(#sunGrad)" opacity="0.35" filter="url(#sunGlow)"/>
+    <circle r="80" fill="url(#sunGrad)"/>
+    <g fill="#020617">
+      <rect x="-90" y="-12" width="180" height="3"/>
+      <rect x="-90" y="2"   width="180" height="4"/>
+      <rect x="-90" y="14"  width="180" height="5"/>
+      <rect x="-90" y="28"  width="180" height="7"/>
+      <rect x="-90" y="46"  width="180" height="9"/>
+      <rect x="-90" y="68"  width="180" height="12"/>
+    </g>
+    <circle r="80" fill="url(#sunGrad)" mask="url(#sunUpperMask)"/>
+  </g>
+
+  <!-- Perspective grid floor -->
+  <g>
+    <g stroke="url(#gridFade)" stroke-width="1" fill="none">
+      <g>
+        <animateTransform attributeName="transform"
+          type="translate" from="0 0" to="0 100" dur="3s" repeatCount="indefinite"/>
+        <line x1="-200" y1="280" x2="1400" y2="280"/>
+        <line x1="-200" y1="330" x2="1400" y2="330"/>
+        <line x1="-200" y1="380" x2="1400" y2="380"/>
+        <line x1="-200" y1="430" x2="1400" y2="430"/>
+      </g>
+    </g>
+    <g stroke="#22d3ee" stroke-opacity="0.55" stroke-width="1" fill="none">
+      <line x1="0"    y1="480" x2="600"  y2="330"/>
+      <line x1="100"  y1="480" x2="600"  y2="330"/>
+      <line x1="220"  y1="480" x2="600"  y2="330"/>
+      <line x1="340"  y1="480" x2="600"  y2="330"/>
+      <line x1="460"  y1="480" x2="600"  y2="330"/>
+      <line x1="540"  y1="480" x2="600"  y2="330"/>
+      <line x1="600"  y1="480" x2="600"  y2="330"/>
+      <line x1="660"  y1="480" x2="600"  y2="330"/>
+      <line x1="740"  y1="480" x2="600"  y2="330"/>
+      <line x1="860"  y1="480" x2="600"  y2="330"/>
+      <line x1="980"  y1="480" x2="600"  y2="330"/>
+      <line x1="1100" y1="480" x2="600"  y2="330"/>
+      <line x1="1200" y1="480" x2="600"  y2="330"/>
+    </g>
+  </g>
+
+  <!-- Mountains -->
+  <g fill="#0f172a" opacity="0.85">
+    <polygon points="0,330 140,250 230,290 320,230 410,300 500,260 560,310 600,330"/>
+    <polygon points="640,330 720,250 820,300 900,240 1000,290 1100,260 1200,310 1200,330"/>
+  </g>
+
+  <!-- Title -->
+  <g filter="url(#neon)">
+    <text x="600" y="170"
+          text-anchor="middle"
+          font-family="JetBrains Mono, Fira Code, Consolas, monospace"
+          font-size="68"
+          font-weight="800"
+          letter-spacing="6"
+          fill="url(#titleGrad)">
+      H? NG?C QUÂN
+    </text>
+  </g>
+
+  <text x="600" y="210"
+        text-anchor="middle"
+        font-family="JetBrains Mono, Fira Code, Consolas, monospace"
+        font-size="16"
+        font-weight="600"
+        letter-spacing="8"
+        fill="url(#subGrad)"
+        filter="url(#softGlow)">
+    SOFTWARE  ENGINEERING  •  AI  •  FUTURE  TECH
+  </text>
+
+  <!-- Terminal command-line -->
+  <g font-family="JetBrains Mono, Fira Code, Consolas, monospace"
+     font-size="13"
+     fill="#67e8f9"
+     filter="url(#softGlow)">
+
+    <text x="200" y="80" font-weight="700" fill="#a855f7">???(</text>
+    <text x="245" y="80" fill="#22d3ee">quan</text>
+    <text x="285" y="80" fill="#a855f7">?</text>
+    <text x="305" y="80" fill="#22d3ee">github</text>
+    <text x="355" y="80" fill="#a855f7">)-[</text>
+    <text x="385" y="80" fill="#22d3ee">~/profile</text>
+    <text x="455" y="80" fill="#a855f7">]</text>
+
+    <g font-size="12">
+      <text x="200" y="105" fill="#94a3b8">
+        [ <tspan fill="#22d3ee">OK</tspan> ] Booting neural engine...
+      </text>
+      <text x="200" y="125" fill="#94a3b8" opacity="0">
+        [ <tspan fill="#22d3ee">OK</tspan> ] Loading algorithms v3.14...
+        <animate attributeName="opacity" values="0;1" dur="0.6s" begin="0.4s" fill="freeze"/>
+      </text>
+      <text x="200" y="145" fill="#94a3b8" opacity="0">
+        [ <tspan fill="#22d3ee">OK</tspan> ] Linking GPU cluster...
+        <animate attributeName="opacity" values="0;1" dur="0.6s" begin="0.9s" fill="freeze"/>
+      </text>
+      <text x="200" y="165" fill="#94a3b8" opacity="0">
+        [ <tspan fill="#22d3ee">OK</tspan> ] Initializing AI copilot...
+        <animate attributeName="opacity" values="0;1" dur="0.6s" begin="1.4s" fill="freeze"/>
+      </text>
+      <text x="200" y="185" fill="#94a3b8" opacity="0">
+        [ <tspan fill="#fde68a">WARN</tspan> ] Deploying ambition at full scale...
+        <animate attributeName="opacity" values="0;1" dur="0.6s" begin="1.9s" fill="freeze"/>
+      </text>
+    </g>
+  </g>
+
+  <!-- Right-side status panel -->
+  <g font-family="JetBrains Mono, Fira Code, Consolas, monospace"
+     font-size="12"
+     fill="#67e8f9"
+     filter="url(#softGlow)">
+    <text x="820" y="80" font-weight="700" fill="#a855f7">???[</text>
+    <text x="860" y="80" fill="#22d3ee">SYSTEM</text>
+    <text x="912" y="80" font-weight="700" fill="#a855f7">]</text>
+
+    <text x="820" y="105" fill="#94a3b8">
+      CPU     <tspan fill="#22d3ee">????????</tspan>  62%
+    </text>
+    <text x="820" y="125" fill="#94a3b8">
+      MEM     <tspan fill="#a855f7">????????</tspan>  74%
+    </text>
+    <text x="820" y="145" fill="#94a3b8">
+      GPU×8   <tspan fill="#22d3ee">????????</tspan>  88%
+    </text>
+    <text x="820" y="165" fill="#94a3b8">
+      NET     <tspan fill="#fde68a">????????</tspan>  41%
+    </text>
+    <text x="820" y="185" fill="#94a3b8">
+      UPTIME  <tspan fill="#22d3ee">?</tspan>
+    </text>
+  </g>
+
+  <!-- Floating particles -->
+  <g>
+    <circle cx="120" cy="280" r="1.5" fill="#22d3ee">
+      <animate attributeName="cy" values="480;280" dur="6s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;1;0" dur="6s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="320" cy="380" r="1" fill="#a855f7">
+      <animate attributeName="cy" values="480;280" dur="8s" begin="1s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;1;0" dur="8s" begin="1s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="500" cy="420" r="1.5" fill="#67e8f9">
+      <animate attributeName="cy" values="480;280" dur="7s" begin="2s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;1;0" dur="7s" begin="2s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="700" cy="350" r="1" fill="#f0abfc">
+      <animate attributeName="cy" values="480;280" dur="5.5s" begin="0.5s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;1;0" dur="5.5s" begin="0.5s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="900" cy="400" r="1.5" fill="#22d3ee">
+      <animate attributeName="cy" values="480;280" dur="7.5s" begin="3s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;1;0" dur="7.5s" begin="3s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="1100" cy="300" r="1" fill="#a855f7">
+      <animate attributeName="cy" values="480;280" dur="6.5s" begin="1.5s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;1;0" dur="6.5s" begin="1.5s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <!-- Scan-line overlay -->
+  <rect x="0" y="-40" width="1200" height="40"
+        fill="url(#scanlines)" opacity="0.85">
+    <animate attributeName="y" from="-40" to="480" dur="3s" repeatCount="indefinite"/>
+  </rect>
+
+  <!-- Vignette -->
+  <rect width="1200" height="480" fill="url(#vignette)" pointer-events="none"/>
+
+  <!-- Border frame -->
+  <rect x="2" y="2" width="1196" height="476"
+        fill="none"
+        stroke="#22d3ee"
+        stroke-opacity="0.25"
+        stroke-width="1"/>
+</svg>
