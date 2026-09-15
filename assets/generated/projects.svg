@@ -37,11 +37,11 @@
     <animate attributeName="opacity" values="0.3;1;0.3" dur="2s" begin="0.0s" repeatCount="indefinite"/>
   </circle>
   <text x="34" y="24" class="mono lang">C</text>
-  <text x="520" y="24" text-anchor="end" class="mono meta">? 0 ... 2025-12-10</text>
+  <text x="520" y="24" text-anchor="end" class="mono meta">? 0 ... 2026-05-18</text>
   <text x="20" y="62" class="mono name">GPU-Server-Manager</text>
-  <text x="20" y="86" class="mono desc">B...i t?p l?n K? thu?t L?p tr...nh C - H? th?ng qu?n l... t...i nguy...n m...y ch? GPU</text>
+  <text x="20" y="86" class="mono desc">Bài tập lớn Kỹ thuật Lập trình C - Hệ thống quản lý tài nguyên máy chủ GPU.</text>
   <text x="20" y="128" class="mono meta">DOMAIN ... systems ... backend</text>
-  <text x="20" y="148" class="mono meta">UPDATED ... 2025-12-10</text>
+  <text x="20" y="148" class="mono meta">UPDATED ... 2026-05-18</text>
   <text x="20" y="170" class="mono meta">github.com/hoquan2007/GPU-Server-Manager</text>
   <line x1="20" y1="180" x2="520" y2="180" stroke="#1E293B"/>
 </g>
@@ -56,11 +56,11 @@
     <animate attributeName="opacity" values="0.3;1;0.3" dur="2s" begin="0.3s" repeatCount="indefinite"/>
   </circle>
   <text x="34" y="24" class="mono lang-v">TYPESCRIPT</text>
-  <text x="520" y="24" text-anchor="end" class="mono meta">? 0 ... 2026-08-10</text>
+  <text x="520" y="24" text-anchor="end" class="mono meta">? 0 ... 2026-08-14</text>
   <text x="20" y="62" class="mono name">QEnglish</text>
-  <text x="20" y="86" class="mono desc">QEnglish - N&amp;#x1EC1;n t&amp;#x1EA3;ng h&amp;#x1ECD;c ti&amp;#x1EBF;ng Anh giao ti&amp;#x1EBF;p v&amp;#x1EDB;i...</text>
+  <text x="20" y="86" class="mono desc">QEnglish - Nền tảng học tiếng Anh giao tiếp với AI</text>
   <text x="20" y="128" class="mono meta">DOMAIN ... web ... frontend ... fullstack</text>
-  <text x="20" y="148" class="mono meta">UPDATED ... 2026-08-10</text>
+  <text x="20" y="148" class="mono meta">UPDATED ... 2026-08-14</text>
   <text x="20" y="170" class="mono meta">github.com/hoquan2007/QEnglish</text>
   <line x1="20" y1="180" x2="520" y2="180" stroke="#1E293B"/>
 </g>
@@ -74,13 +74,13 @@
   <circle cx="20" cy="20" r="4" fill="#22D3EE">
     <animate attributeName="opacity" values="0.3;1;0.3" dur="2s" begin="0.6s" repeatCount="indefinite"/>
   </circle>
-  <text x="34" y="24" class="mono lang">TYPESCRIPT</text>
-  <text x="520" y="24" text-anchor="end" class="mono meta">? 0 ... 2026-09-01</text>
-  <text x="20" y="62" class="mono name">face-attendance</text>
-  <text x="20" y="86" class="mono desc">Web-based attendance tracking with face recognition.</text>
-  <text x="20" y="128" class="mono meta">DOMAIN ... web ... frontend ... fullstack</text>
-  <text x="20" y="148" class="mono meta">UPDATED ... 2026-09-01</text>
-  <text x="20" y="170" class="mono meta">github.com/hoquan2007/face-attendance</text>
+  <text x="34" y="24" class="mono lang">...</text>
+  <text x="520" y="24" text-anchor="end" class="mono meta">? 0 ... 2026-07-22</text>
+  <text x="20" y="62" class="mono name">Shadow-Collapse</text>
+  <text x="20" y="86" class="mono desc">Procedural Dungeon Crawler</text>
+  <text x="20" y="128" class="mono meta">DOMAIN ... engineering</text>
+  <text x="20" y="148" class="mono meta">UPDATED ... 2026-07-22</text>
+  <text x="20" y="170" class="mono meta">github.com/hoquan2007/Shadow-Collapse</text>
   <line x1="20" y1="180" x2="520" y2="180" stroke="#1E293B"/>
 </g>
 <g transform="translate(620 300)">
@@ -94,12 +94,12 @@
     <animate attributeName="opacity" values="0.3;1;0.3" dur="2s" begin="0.8999999999999999s" repeatCount="indefinite"/>
   </circle>
   <text x="34" y="24" class="mono lang-v">TYPESCRIPT</text>
-  <text x="520" y="24" text-anchor="end" class="mono meta">? 0 ... 2026-08-20</text>
-  <text x="20" y="62" class="mono name">QITEnglish</text>
-  <text x="20" y="86" class="mono desc">Web h&amp;#x1ECD;c ti&amp;#x1EBF;ng Anh d...nh cho d...n IT</text>
+  <text x="520" y="24" text-anchor="end" class="mono meta">? 0 ... 2026-09-15</text>
+  <text x="20" y="62" class="mono name">face-attendance</text>
+  <text x="20" y="86" class="mono desc">(no description)</text>
   <text x="20" y="128" class="mono meta">DOMAIN ... web ... frontend ... fullstack</text>
-  <text x="20" y="148" class="mono meta">UPDATED ... 2026-08-20</text>
-  <text x="20" y="170" class="mono meta">github.com/hoquan2007/QITEnglish</text>
+  <text x="20" y="148" class="mono meta">UPDATED ... 2026-09-15</text>
+  <text x="20" y="170" class="mono meta">github.com/hoquan2007/face-attendance</text>
   <line x1="20" y1="180" x2="520" y2="180" stroke="#1E293B"/>
 </g>
 <g class="mono">
