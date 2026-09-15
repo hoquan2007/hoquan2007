@@ -1,0 +1,111 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600" role="img" aria-label="Featured projects gallery ... live" font-family="JetBrains Mono, ui-monospace, monospace">
+<title>QUAN.OS // Featured Systems ... Live</title>
+<defs>
+  <linearGradient id="gen-bg3" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#080B16"/>
+    <stop offset="1" stop-color="#020617"/>
+  </linearGradient>
+  <pattern id="gen-grid3" width="20" height="20" patternUnits="userSpaceOnUse">
+    <path d="M20 0H0V20" fill="none" stroke="#10172A" stroke-width="0.4"/>
+  </pattern>
+</defs>
+<style><![CDATA[
+  .mono{font-family:JetBrains Mono,Fira Code,IBM Plex Mono,ui-monospace,Menlo,monospace}
+  .name{font-size:14px;fill:#F8FAFC;letter-spacing:1.5px;font-weight:700}
+  .desc{font-size:10px;fill:#94A3B8;letter-spacing:0.5px}
+  .lang{font-size:9px;fill:#22D3EE;letter-spacing:2px}
+  .lang-v{font-size:9px;fill:#A855F7;letter-spacing:2px}
+  .meta{font-size:9px;fill:#64748B;letter-spacing:1.5px}
+  .micro{font-size:9px;fill:#64748B;letter-spacing:2px}
+  @media (prefers-reduced-motion: reduce){animate,animateTransform{display:none}}
+]]></style>
+<rect width="1200" height="600" fill="url(#gen-bg3)"/>
+<rect width="1200" height="600" fill="url(#gen-grid3)" opacity="0.4"/>
+<g class="mono">
+  <text class="micro" x="40" y="34">SCENE 06 / FEATURED SYSTEMS ... LIVE</text>
+  <line x1="40" y1="42" x2="320" y2="42" stroke="#22D3EE" stroke-opacity="0.6"/>
+  <text class="micro" x="1160" y="34" text-anchor="end">CURATED FROM 22 PUBLIC REPOS</text>
+</g>
+<g transform="translate(40 80)">
+  <rect width="540" height="200" rx="10" fill="#0B1224" stroke="#22D3EE" stroke-opacity="0.65" stroke-width="1"/>
+  <rect x="0" y="0" width="540" height="2" fill="#22D3EE"/>
+  <rect width="540" height="2" fill="#22D3EE" opacity="0">
+    <animate attributeName="y" values="0;200;0" dur="6s" begin="0.0s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0.7;0" dur="6s" begin="0.0s" repeatCount="indefinite"/>
+  </rect>
+  <circle cx="20" cy="20" r="4" fill="#22D3EE">
+    <animate attributeName="opacity" values="0.3;1;0.3" dur="2s" begin="0.0s" repeatCount="indefinite"/>
+  </circle>
+  <text x="34" y="24" class="mono lang">C</text>
+  <text x="520" y="24" text-anchor="end" class="mono meta">? 0 ... 2025-12-10</text>
+  <text x="20" y="62" class="mono name">GPU-Server-Manager</text>
+  <text x="20" y="86" class="mono desc">B...i t?p l?n K? thu?t L?p tr...nh C - H? th?ng qu?n l... t...i nguy...n m...y ch? GPU</text>
+  <text x="20" y="128" class="mono meta">DOMAIN ... systems ... backend</text>
+  <text x="20" y="148" class="mono meta">UPDATED ... 2025-12-10</text>
+  <text x="20" y="170" class="mono meta">github.com/hoquan2007/GPU-Server-Manager</text>
+  <line x1="20" y1="180" x2="520" y2="180" stroke="#1E293B"/>
+</g>
+<g transform="translate(620 80)">
+  <rect width="540" height="200" rx="10" fill="#0B1224" stroke="#A855F7" stroke-opacity="0.65" stroke-width="1"/>
+  <rect x="0" y="0" width="540" height="2" fill="#A855F7"/>
+  <rect width="540" height="2" fill="#A855F7" opacity="0">
+    <animate attributeName="y" values="0;200;0" dur="6s" begin="1.5s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0.7;0" dur="6s" begin="1.5s" repeatCount="indefinite"/>
+  </rect>
+  <circle cx="20" cy="20" r="4" fill="#A855F7">
+    <animate attributeName="opacity" values="0.3;1;0.3" dur="2s" begin="0.3s" repeatCount="indefinite"/>
+  </circle>
+  <text x="34" y="24" class="mono lang-v">TYPESCRIPT</text>
+  <text x="520" y="24" text-anchor="end" class="mono meta">? 0 ... 2026-08-10</text>
+  <text x="20" y="62" class="mono name">QEnglish</text>
+  <text x="20" y="86" class="mono desc">QEnglish - N&amp;#x1EC1;n t&amp;#x1EA3;ng h&amp;#x1ECD;c ti&amp;#x1EBF;ng Anh giao ti&amp;#x1EBF;p v&amp;#x1EDB;i...</text>
+  <text x="20" y="128" class="mono meta">DOMAIN ... web ... frontend ... fullstack</text>
+  <text x="20" y="148" class="mono meta">UPDATED ... 2026-08-10</text>
+  <text x="20" y="170" class="mono meta">github.com/hoquan2007/QEnglish</text>
+  <line x1="20" y1="180" x2="520" y2="180" stroke="#1E293B"/>
+</g>
+<g transform="translate(40 300)">
+  <rect width="540" height="200" rx="10" fill="#0B1224" stroke="#22D3EE" stroke-opacity="0.65" stroke-width="1"/>
+  <rect x="0" y="0" width="540" height="2" fill="#22D3EE"/>
+  <rect width="540" height="2" fill="#22D3EE" opacity="0">
+    <animate attributeName="y" values="0;200;0" dur="6s" begin="3.0s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0.7;0" dur="6s" begin="3.0s" repeatCount="indefinite"/>
+  </rect>
+  <circle cx="20" cy="20" r="4" fill="#22D3EE">
+    <animate attributeName="opacity" values="0.3;1;0.3" dur="2s" begin="0.6s" repeatCount="indefinite"/>
+  </circle>
+  <text x="34" y="24" class="mono lang">TYPESCRIPT</text>
+  <text x="520" y="24" text-anchor="end" class="mono meta">? 0 ... 2026-09-01</text>
+  <text x="20" y="62" class="mono name">face-attendance</text>
+  <text x="20" y="86" class="mono desc">Web-based attendance tracking with face recognition.</text>
+  <text x="20" y="128" class="mono meta">DOMAIN ... web ... frontend ... fullstack</text>
+  <text x="20" y="148" class="mono meta">UPDATED ... 2026-09-01</text>
+  <text x="20" y="170" class="mono meta">github.com/hoquan2007/face-attendance</text>
+  <line x1="20" y1="180" x2="520" y2="180" stroke="#1E293B"/>
+</g>
+<g transform="translate(620 300)">
+  <rect width="540" height="200" rx="10" fill="#0B1224" stroke="#A855F7" stroke-opacity="0.65" stroke-width="1"/>
+  <rect x="0" y="0" width="540" height="2" fill="#A855F7"/>
+  <rect width="540" height="2" fill="#A855F7" opacity="0">
+    <animate attributeName="y" values="0;200;0" dur="6s" begin="4.5s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0.7;0" dur="6s" begin="4.5s" repeatCount="indefinite"/>
+  </rect>
+  <circle cx="20" cy="20" r="4" fill="#A855F7">
+    <animate attributeName="opacity" values="0.3;1;0.3" dur="2s" begin="0.8999999999999999s" repeatCount="indefinite"/>
+  </circle>
+  <text x="34" y="24" class="mono lang-v">TYPESCRIPT</text>
+  <text x="520" y="24" text-anchor="end" class="mono meta">? 0 ... 2026-08-20</text>
+  <text x="20" y="62" class="mono name">QITEnglish</text>
+  <text x="20" y="86" class="mono desc">Web h&amp;#x1ECD;c ti&amp;#x1EBF;ng Anh d...nh cho d...n IT</text>
+  <text x="20" y="128" class="mono meta">DOMAIN ... web ... frontend ... fullstack</text>
+  <text x="20" y="148" class="mono meta">UPDATED ... 2026-08-20</text>
+  <text x="20" y="170" class="mono meta">github.com/hoquan2007/QITEnglish</text>
+  <line x1="20" y1="180" x2="520" y2="180" stroke="#1E293B"/>
+</g>
+<g class="mono">
+  <text class="micro" x="40" y="544">? PRIORITIZED BY REPRESENTATIVENESS ... NOT STAR COUNT ALONE</text>
+  <text class="micro" x="1160" y="544" text-anchor="end" fill="#22D3EE">UPDATED 2026-09-15</text>
+  <text class="micro" x="40" y="562">FULL LIST ? /?tab=repositories</text>
+  <text class="micro" x="1160" y="562" text-anchor="end" fill="#A855F7">QUAN-OS ... GALLERY ENGINE</text>
+</g>
+</svg>

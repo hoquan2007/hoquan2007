@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  05-domains.svg   Hexagonal HUD radar visualizing focus areas.
+  6 hexagons labeled with interest areas. Sweep radar rotates behind.
+  No fake percentages; uses FOCUS / LEARNING / BUILDING / EXPLORING terms.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 520" role="img" aria-label="Engineering domain HUD: focus areas" font-family="JetBrains Mono, ui-monospace, monospace">
+  <title>QUAN.OS // Engineering Domains</title>
+  <defs>
+    <radialGradient id="h-bg" cx="50%" cy="50%" r="60%">
+      <stop offset="0" stop-color="#080B16"/>
+      <stop offset="1" stop-color="#020617"/>
+    </radialGradient>
+    <linearGradient id="h-hex" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#22D3EE" stop-opacity="0.18"/>
+      <stop offset="1" stop-color="#7C3AED" stop-opacity="0.18"/>
+    </linearGradient>
+    <linearGradient id="h-edge" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#22D3EE"/>
+      <stop offset="1" stop-color="#A855F7"/>
+    </linearGradient>
+    <radialGradient id="h-sweep" cx="0" cy="0" r="200" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#22D3EE" stop-opacity="0.45"/>
+      <stop offset="1" stop-color="#22D3EE" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="h-grid" width="24" height="24" patternUnits="userSpaceOnUse">
+      <path d="M24 0H0V24" fill="none" stroke="#10172A" stroke-width="0.5"/>
+    </pattern>
+  </defs>
+  <style><![CDATA[
+    .mono{font-family:JetBrains Mono,Fira Code,IBM Plex Mono,ui-monospace,Menlo,monospace}
+    .lbl{font-size:11px;fill:#F8FAFC;letter-spacing:3px;font-weight:700}
+    .sub{font-size:9px;fill:#94A3B8;letter-spacing:2px}
+    .micro{font-size:9px;fill:#64748B;letter-spacing:2px}
+    .strong{font-size:10px;fill:#22D3EE;letter-spacing:3px}
+    @media (prefers-reduced-motion: reduce){
+      animate,animateTransform{display:none}
+    }
+  ]]></style>
+
+  <rect width="800" height="520" fill="url(#h-bg)"/>
+  <rect width="800" height="520" fill="url(#h-grid)" opacity="0.45"/>
+
+  <!-- header -->
+  <g class="mono">
+    <text class="micro" x="40" y="34">SCENE 05 / ENGINEERING DOMAINS</text>
+    <line x1="40" y1="42" x2="320" y2="42" stroke="#22D3EE" stroke-opacity="0.6"/>
+    <text class="micro" x="760" y="34" text-anchor="end">FOCUS ? LEARNING ? BUILDING ? EXPLORING</text>
+  </g>
+
+  <!-- center hex grid (pointy-top hex layout 1 + 6) -->
+  <g transform="translate(400 290)">
+    <!-- sweep -->
+    <g opacity="0.5">
+      <path d="M0 0 L200 0 A200 200 0 0 1 100 -173 Z" fill="url(#h-sweep)">
+        <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="9s" repeatCount="indefinite"/>
+      </path>
+    </g>
+    <!-- rings -->
+    <g fill="none" stroke="#1E293B" stroke-dasharray="2 6">
+      <circle r="80"/>
+      <circle r="160"/>
+      <circle r="240"/>
+    </g>
+
+    <!-- center hex -->
+    <g>
+      <polygon points="0,-44 38,-22 38,22 0,44 -38,22 -38,-22" fill="#0B1224" stroke="#22D3EE" stroke-width="1.5"/>
+      <text y="-4" text-anchor="middle" class="mono lbl">QUAN</text>
+      <text y="14" text-anchor="middle" class="mono strong">CORE</text>
+    </g>
+
+    <!-- 6 surrounding hexes (radially at 60? intervals, distance 100) -->
+    <!-- helper: hex at radius d with flat-top -> vertices -->
+    <!-- we hand-plot 6 hexes (radius ~50 size, distance 100) -->
+    <g transform="translate(0 -100)">
+      <polygon points="0,-44 38,-22 38,22 0,44 -38,22 -38,-22" fill="url(#h-hex)" stroke="url(#h-edge)" stroke-width="1.2"/>
+      <text y="-6" text-anchor="middle" class="mono lbl" fill="#22D3EE">AI</text>
+      <text y="12" text-anchor="middle" class="mono sub">EXPLORING</text>
+      <circle r="3" fill="#22D3EE">
+        <animate attributeName="opacity" values="1;0.2;1" dur="2.2s" repeatCount="indefinite"/>
+      </circle>
+    </g>
+    <g transform="translate(86.6 -50)">
+      <polygon points="0,-44 38,-22 38,22 0,44 -38,22 -38,-22" fill="url(#h-hex)" stroke="url(#h-edge)" stroke-width="1.2"/>
+      <text y="-6" text-anchor="middle" class="mono lbl" fill="#F8FAFC">ALGORITHMS</text>
+      <text y="12" text-anchor="middle" class="mono sub">LEARNING</text>
+      <circle r="3" fill="#A855F7">
+        <animate attributeName="opacity" values="1;0.2;1" dur="2.6s" repeatCount="indefinite"/>
+      </circle>
+    </g>
+    <g transform="translate(86.6 50)">
+      <polygon points="0,-44 38,-22 38,22 0,44 -38,22 -38,-22" fill="url(#h-hex)" stroke="url(#h-edge)" stroke-width="1.2"/>
+      <text y="-6" text-anchor="middle" class="mono lbl" fill="#F8FAFC">BACKEND</text>
+      <text y="12" text-anchor="middle" class="mono sub">BUILDING</text>
+      <circle r="3" fill="#22D3EE">
+        <animate attributeName="opacity" values="1;0.2;1" dur="2.4s" repeatCount="indefinite"/>
+      </circle>
+    </g>
+    <g transform="translate(0 100)">
+      <polygon points="0,-44 38,-22 38,22 0,44 -38,22 -38,-22" fill="url(#h-hex)" stroke="url(#h-edge)" stroke-width="1.2"/>
+      <text y="-6" text-anchor="middle" class="mono lbl" fill="#F8FAFC">DATABASES</text>
+      <text y="12" text-anchor="middle" class="mono sub">LEARNING</text>
+      <circle r="3" fill="#A855F7">
+        <animate attributeName="opacity" values="1;0.2;1" dur="2.8s" repeatCount="indefinite"/>
+      </circle>
+    </g>
+    <g transform="translate(-86.6 50)">
+      <polygon points="0,-44 38,-22 38,22 0,44 -38,22 -38,-22" fill="url(#h-hex)" stroke="url(#h-edge)" stroke-width="1.2"/>
+      <text y="-6" text-anchor="middle" class="mono lbl" fill="#F8FAFC">SYSTEMS</text>
+      <text y="12" text-anchor="middle" class="mono sub">EXPLORING</text>
+      <circle r="3" fill="#22D3EE">
+        <animate attributeName="opacity" values="1;0.2;1" dur="3.0s" repeatCount="indefinite"/>
+      </circle>
+    </g>
+    <g transform="translate(-86.6 -50)">
+      <polygon points="0,-44 38,-22 38,22 0,44 -38,22 -38,-22" fill="url(#h-hex)" stroke="url(#h-edge)" stroke-width="1.2"/>
+      <text y="-6" text-anchor="middle" class="mono lbl" fill="#F8FAFC">WEB</text>
+      <text y="12" text-anchor="middle" class="mono sub">BUILDING</text>
+      <circle r="3" fill="#A855F7">
+        <animate attributeName="opacity" values="1;0.2;1" dur="2.5s" repeatCount="indefinite"/>
+      </circle>
+    </g>
+
+    <!-- ticks on outer ring -->
+    <g stroke="#22D3EE" stroke-opacity="0.4">
+      <line x1="0" y1="-244" x2="0" y2="-228"/>
+      <line x1="0" y1="244" x2="0" y2="228"/>
+      <line x1="-244" y1="0" x2="-228" y2="0"/>
+      <line x1="244" y1="0" x2="228" y2="0"/>
+    </g>
+  </g>
+
+  <!-- footer / legend -->
+  <g class="mono">
+    <line x1="40" y1="478" x2="760" y2="478" stroke="#1E293B"/>
+    <text class="micro" x="40" y="498">? DECORATIVE RADAR ? NOT A PERFORMANCE METRIC</text>
+    <text class="micro" x="760" y="498" text-anchor="end" fill="#22D3EE">SESSION: LEARNING ? BUILDING</text>
+  </g>
+</svg>

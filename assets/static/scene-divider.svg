@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  scene-divider.svg   1200x40 animated neural wave separator used between scenes.
+  Single self-contained file referenced as <img> by README.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 40" aria-hidden="true">
+  <defs>
+    <linearGradient id="d-line" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#22D3EE" stop-opacity="0"/>
+      <stop offset="0.2" stop-color="#22D3EE" stop-opacity="0.7"/>
+      <stop offset="0.8" stop-color="#A855F7" stop-opacity="0.7"/>
+      <stop offset="1" stop-color="#A855F7" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="40" fill="#020617"/>
+  <path d="M0 20 Q60 4 120 20 T240 20 T360 20 T480 20 T600 20 T720 20 T840 20 T960 20 T1080 20 T1200 20" fill="none" stroke="url(#d-line)" stroke-width="1.6">
+    <animate attributeName="d" dur="6s" repeatCount="indefinite"
+      values="M0 20 Q60 4 120 20 T240 20 T360 20 T480 20 T600 20 T720 20 T840 20 T960 20 T1080 20 T1200 20;
+              M0 20 Q60 36 120 20 T240 20 T360 20 T480 20 T600 20 T720 20 T840 20 T960 20 T1080 20 T1200 20;
+              M0 20 Q60 4 120 20 T240 20 T360 20 T480 20 T600 20 T720 20 T840 20 T960 20 T1080 20 T1200 20"/>
+  </path>
+  <circle cx="600" cy="20" r="2.5" fill="#F8FAFC">
+    <animate attributeName="r" values="1.5;3.5;1.5" dur="2.5s" repeatCount="indefinite"/>
+  </circle>
+</svg>

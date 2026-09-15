@@ -1,0 +1,124 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600" role="img" aria-label="GitHub telemetry dashboard" font-family="JetBrains Mono, ui-monospace, monospace">
+<title>QUAN.OS // GitHub Telemetry</title>
+<defs>
+  <linearGradient id="gen-bg" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#080B16"/>
+    <stop offset="1" stop-color="#020617"/>
+  </linearGradient>
+  <linearGradient id="gen-card" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#0B1224"/>
+    <stop offset="1" stop-color="#070A18"/>
+  </linearGradient>
+  <linearGradient id="gen-edge" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#22D3EE"/>
+    <stop offset="1" stop-color="#A855F7"/>
+  </linearGradient>
+  <pattern id="gen-grid" width="24" height="24" patternUnits="userSpaceOnUse">
+    <path d="M24 0H0V24" fill="none" stroke="#10172A" stroke-width="0.5"/>
+  </pattern>
+</defs>
+<style><![CDATA[
+  .mono{font-family:JetBrains Mono,Fira Code,IBM Plex Mono,ui-monospace,Menlo,monospace}
+  .lbl{font-size:10px;fill:#94A3B8;letter-spacing:3px}
+  .big{font-size:42px;fill:#F8FAFC;letter-spacing:2px;font-weight:700}
+  .big-cyan{font-size:42px;fill:#22D3EE;letter-spacing:2px;font-weight:700}
+  .big-violet{font-size:42px;fill:#A855F7;letter-spacing:2px;font-weight:700}
+  .unit{font-size:11px;fill:#64748B;letter-spacing:2px}
+  .card-title{font-size:11px;fill:#22D3EE;letter-spacing:3px;font-weight:700}
+  .bar-lbl{font-size:11px;fill:#F8FAFC;letter-spacing:2px}
+  .bar-val{font-size:11px;fill:#22D3EE;letter-spacing:2px}
+  .micro{font-size:9px;fill:#64748B;letter-spacing:2px}
+  @media (prefers-reduced-motion: reduce){animate,animateTransform{display:none}}
+]]></style>
+<rect width="1200" height="600" fill="url(#gen-bg)"/>
+<rect width="1200" height="600" fill="url(#gen-grid)" opacity="0.45"/>
+<g class="mono">
+  <text class="micro" x="40" y="34">SCENE 08 / GITHUB TELEMETRY ... SELF-GENERATED</text>
+  <line x1="40" y1="42" x2="380" y2="42" stroke="#22D3EE" stroke-opacity="0.6"/>
+  <text class="micro" x="1160" y="34" text-anchor="end">SOURCE ... api.github.com ... LIVE</text>
+</g>
+
+<!-- 4 KPI cards -->
+<g transform="translate(40 80)">
+  <rect width="270" height="160" rx="10" fill="url(#gen-card)" stroke="#22D3EE" stroke-opacity="0.5"/>
+  <text x="20" y="34" class="card-title">? REPOSITORIES</text>
+  <text x="20" y="100" class="big-cyan">22</text>
+  <text x="170" y="100" class="unit">public</text>
+  <text x="20" y="130" class="lbl">SCOPE ... @hoquan2007</text>
+  <line x1="20" y1="140" x2="250" y2="140" stroke="#1E293B"/>
+  <text x="20" y="156" class="micro">verified via github api</text>
+</g>
+<g transform="translate(330 80)">
+  <rect width="270" height="160" rx="10" fill="url(#gen-card)" stroke="#A855F7" stroke-opacity="0.5"/>
+  <text x="20" y="34" class="card-title" fill="#A855F7">? STARS</text>
+  <text x="20" y="100" class="big-violet">0</text>
+  <text x="170" y="100" class="unit">received</text>
+  <text x="20" y="130" class="lbl">+ 0 forks</text>
+  <line x1="20" y1="140" x2="250" y2="140" stroke="#1E293B"/>
+  <text x="20" y="156" class="micro">across 22 repos</text>
+</g>
+<g transform="translate(620 80)">
+  <rect width="270" height="160" rx="10" fill="url(#gen-card)" stroke="#7C3AED" stroke-opacity="0.5"/>
+  <text x="20" y="34" class="card-title" fill="#A855F7">? NETWORK</text>
+  <text x="20" y="100" class="big">0</text>
+  <text x="120" y="100" class="unit">followers</text>
+  <text x="20" y="120" class="lbl">following ... 0</text>
+  <line x1="20" y1="140" x2="250" y2="140" stroke="#1E293B"/>
+  <text x="20" y="156" class="micro">ratio 0/0</text>
+</g>
+<g transform="translate(910 80)">
+  <rect width="250" height="160" rx="10" fill="url(#gen-card)" stroke="#3B82F6" stroke-opacity="0.5"/>
+  <text x="20" y="34" class="card-title" fill="#22D3EE">? FOOTPRINT</text>
+  <text x="20" y="100" class="big">0</text>
+  <text x="120" y="100" class="unit">MB tracked</text>
+  <text x="20" y="120" class="lbl">2 languages</text>
+  <line x1="20" y1="140" x2="230" y2="140" stroke="#1E293B"/>
+  <text x="20" y="156" class="micro">account ... 2025-07-30</text>
+</g>
+
+<!-- LANGUAGES PANEL -->
+<g transform="translate(40 270)">
+  <rect width="540" height="280" rx="10" fill="url(#gen-card)" stroke="#22D3EE" stroke-opacity="0.45"/>
+  <text x="20" y="34" class="card-title">? LANGUAGE DISTRIBUTION</text>
+  <text x="520" y="34" text-anchor="end" class="micro">top 2 ... live</text>
+  <g transform="translate(20 60)">
+    <text x="0" y="0" class="bar-lbl">TypeScript</text><rect x="100" y="-12" width="260" height="14" rx="2" fill="#0B1224"/><rect x="100" y="-12" width="260" height="14" rx="2" fill="#22D3EE" opacity="0.9"><animate attributeName="width" values="0;260" dur="1.4s" begin="0.1s" fill="freeze"/></rect><text x="370" y="0" class="bar-val">3</text>
+<text x="0" y="26" class="bar-lbl">C</text><rect x="100" y="14" width="260" height="14" rx="2" fill="#0B1224"/><rect x="100" y="14" width="86" height="14" rx="2" fill="#A855F7" opacity="0.9"><animate attributeName="width" values="0;86" dur="1.4s" begin="0.2s" fill="freeze"/></rect><text x="370" y="26" class="bar-val">1</text>
+  </g>
+</g>
+
+<!-- ACTIVITY SPARK -->
+<g transform="translate(620 270)">
+  <rect width="540" height="280" rx="10" fill="url(#gen-card)" stroke="#A855F7" stroke-opacity="0.45"/>
+  <text x="20" y="34" class="card-title" fill="#A855F7">? ACTIVITY ... LAST 12 MONTHS</text>
+  <text x="520" y="34" text-anchor="end" class="micro">repo updates / month</text>
+  <g transform="translate(20 70)">
+    <line x1="0" y1="60" x2="500" y2="60" stroke="#1E293B"/>
+    <path d="M0.0,60.0 L20.0,60.0 L40.0,40.0 L60.0,60.0 L80.0,60.0 L100.0,60.0 L120.0,60.0 L140.0,60.0 L160.0,60.0 L180.0,60.0 L200.0,0.0 L220.0,40.0" fill="none" stroke="#22D3EE" stroke-width="1.6">
+      <animate attributeName="stroke-dasharray" values="0,1000;1000,0" dur="2s" fill="freeze"/>
+    </path>
+    <path d="M0.0,60.0 L20.0,60.0 L40.0,40.0 L60.0,60.0 L80.0,60.0 L100.0,60.0 L120.0,60.0 L140.0,60.0 L160.0,60.0 L180.0,60.0 L200.0,0.0 L220.0,40.0 L 220 60 L 0 60 Z" fill="#22D3EE" opacity="0.12">
+      <animate attributeName="opacity" values="0;0.12" dur="2s" fill="freeze"/>
+    </path>
+  </g>
+  <g transform="translate(20 160)">
+    <text class="micro" y="0">JAN</text>
+    <text class="micro" x="500" y="0" text-anchor="end">NOW</text>
+    <text class="micro" y="40">PEAK ... 3 UPDATES/MO</text>
+    <text class="micro" y="56">SAMPLE ... 5 UPDATES ... 12 MO</text>
+    <text class="micro" y="72">SYNTHESIZED FROM updated_at</text>
+    <text class="micro" y="88">SOURCE ... github rest api</text>
+  </g>
+  <!-- scanning line -->
+  <line x1="0" y1="0" x2="540" y2="0" stroke="#22D3EE" stroke-width="1" opacity="0.4">
+    <animate attributeName="y1" values="0;280;0" dur="6s" repeatCount="indefinite"/>
+    <animate attributeName="y2" values="0;280;0" dur="6s" repeatCount="indefinite"/>
+  </line>
+</g>
+
+<g class="mono">
+  <line x1="40" y1="568" x2="1160" y2="568" stroke="#1E293B"/>
+  <text class="micro" x="40" y="586">REFRESH ... ON WORKFLOW DISPATCH + DAILY 18:00 UTC ... NEVER FAKE</text>
+  <text class="micro" x="1160" y="586" text-anchor="end" fill="#22D3EE">QUAN-OS ... TELEMETRY ENGINE</text>
+</g>
+</svg>

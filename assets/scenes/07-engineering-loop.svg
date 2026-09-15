@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  07-engineering-loop.svg   Engineering cycle workflow.
+  IDEA ? RESEARCH ? DESIGN ? IMPLEMENT ? TEST ? DEPLOY ? OBSERVE ? IMPROVE ? loop.
+  Packets travel around the loop continuously.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 520" role="img" aria-label="Engineering loop: continuous build cycle" font-family="JetBrains Mono, ui-monospace, monospace">
+  <title>QUAN.OS // Engineering Loop</title>
+  <defs>
+    <linearGradient id="l-bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#080B16"/>
+      <stop offset="1" stop-color="#020617"/>
+    </linearGradient>
+    <linearGradient id="l-ring" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#22D3EE"/>
+      <stop offset="1" stop-color="#A855F7"/>
+    </linearGradient>
+    <radialGradient id="l-glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0" stop-color="#22D3EE" stop-opacity="0.25"/>
+      <stop offset="1" stop-color="#22D3EE" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="l-grid" width="24" height="24" patternUnits="userSpaceOnUse">
+      <path d="M24 0H0V24" fill="none" stroke="#10172A" stroke-width="0.5"/>
+    </pattern>
+    <!-- the closed loop path -->
+    <path id="loop-path" d="M 200 260
+                             Q 200 140 320 140
+                             L 880 140
+                             Q 1000 140 1000 260
+                             Q 1000 380 880 380
+                             L 320 380
+                             Q 200 380 200 260 Z" fill="none"/>
+  </defs>
+  <style><![CDATA[
+    .mono{font-family:JetBrains Mono,Fira Code,IBM Plex Mono,ui-monospace,Menlo,monospace}
+    .node-lbl{font-size:13px;fill:#F8FAFC;letter-spacing:2.5px;font-weight:700}
+    .node-sub{font-size:9px;fill:#94A3B8;letter-spacing:2px}
+    .micro{font-size:9px;fill:#64748B;letter-spacing:2px}
+    .arrow{font-size:18px;fill:#22D3EE}
+    @media (prefers-reduced-motion: reduce){
+      animate,animateTransform,animateMotion{display:none}
+    }
+  ]]></style>
+
+  <rect width="1200" height="520" fill="url(#l-bg)"/>
+  <rect width="1200" height="520" fill="url(#l-grid)" opacity="0.45"/>
+
+  <g class="mono">
+    <text class="micro" x="40" y="34">SCENE 07 / ENGINEERING LOOP</text>
+    <line x1="40" y1="42" x2="320" y2="42" stroke="#22D3EE" stroke-opacity="0.6"/>
+    <text class="micro" x="1160" y="34" text-anchor="end">CYCLE ? CONTINUOUS ? OBSESSIVE</text>
+  </g>
+
+  <!-- center decoration -->
+  <g transform="translate(600 260)">
+    <circle r="80" fill="url(#l-glow)"/>
+    <circle r="44" fill="#020617" stroke="#22D3EE" stroke-width="1.2"/>
+    <circle r="44" fill="none" stroke="#22D3EE" stroke-opacity="0.4" stroke-dasharray="3 4">
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="14s" repeatCount="indefinite"/>
+    </circle>
+    <text y="-2" text-anchor="middle" class="mono" font-size="11" fill="#22D3EE" letter-spacing="2.5">BUILD</text>
+    <text y="14" text-anchor="middle" class="mono" font-size="11" fill="#22D3EE" letter-spacing="2.5">CYCLE</text>
+  </g>
+
+  <!-- the loop path (visible) -->
+  <use href="#loop-path" stroke="url(#l-ring)" stroke-width="1.4" stroke-opacity="0.65" stroke-dasharray="6 4"/>
+  <!-- arrow heads along the path -->
+  <g fill="#22D3EE">
+    <polygon points="0,-5 10,0 0,5" transform="translate(560 140) rotate(0)"/>
+    <polygon points="0,-5 10,0 0,5" transform="translate(1000 260) rotate(90)"/>
+    <polygon points="0,-5 10,0 0,5" transform="translate(560 380) rotate(180)"/>
+    <polygon points="0,-5 10,0 0,5" transform="translate(200 260) rotate(270)"/>
+  </g>
+
+  <!-- moving packets -->
+  <g>
+    <circle r="3.5" fill="#F8FAFC" filter="url(#blur4)"/>
+    <circle r="3.5" fill="#F8FAFC">
+      <animateMotion dur="12s" repeatCount="indefinite">
+        <mpath href="#loop-path"/>
+      </animateMotion>
+      <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.05;0.95;1" dur="12s" repeatCount="indefinite"/>
+    </circle>
+    <circle r="2.8" fill="#22D3EE">
+      <animateMotion dur="12s" repeatCount="indefinite" begin="-3s">
+        <mpath href="#loop-path"/>
+      </animateMotion>
+    </circle>
+    <circle r="2.8" fill="#A855F7">
+      <animateMotion dur="12s" repeatCount="indefinite" begin="-6s">
+        <mpath href="#loop-path"/>
+      </animateMotion>
+    </circle>
+    <circle r="2.8" fill="#F8FAFC">
+      <animateMotion dur="12s" repeatCount="indefinite" begin="-9s">
+        <mpath href="#loop-path"/>
+      </animateMotion>
+    </circle>
+  </g>
+  <defs>
+    <filter id="blur4"><feGaussianBlur stdDeviation="2"/></filter>
+  </defs>
+
+  <!-- 8 nodes positioned along loop -->
+  <!-- IDEA: top-left -->
+  <g transform="translate(280 140)">
+    <circle r="22" fill="#020617" stroke="url(#l-ring)" stroke-width="1.4"/>
+    <circle r="22" fill="none" stroke="#22D3EE" stroke-opacity="0.4">
+      <animate attributeName="r" values="22;30;22" dur="2.4s" repeatCount="indefinite"/>
+      <animate attributeName="stroke-opacity" values="0.6;0;0.6" dur="2.4s" repeatCount="indefinite"/>
+    </circle>
+    <text y="3" text-anchor="middle" class="mono node-lbl">IDEA</text>
+    <text y="42" text-anchor="middle" class="mono node-sub">01 ? spark</text>
+  </g>
+  <!-- RESEARCH: top-center-left -->
+  <g transform="translate(440 140)">
+    <circle r="22" fill="#020617" stroke="url(#l-ring)" stroke-width="1.4"/>
+    <circle r="22" fill="none" stroke="#22D3EE" stroke-opacity="0.4">
+      <animate attributeName="r" values="22;30;22" dur="2.6s" repeatCount="indefinite" begin="0.3s"/>
+      <animate attributeName="stroke-opacity" values="0.6;0;0.6" dur="2.6s" repeatCount="indefinite" begin="0.3s"/>
+    </circle>
+    <text y="3" text-anchor="middle" class="mono node-lbl">RESEARCH</text>
+    <text y="42" text-anchor="middle" class="mono node-sub">02 ? context</text>
+  </g>
+  <!-- DESIGN: top-center-right -->
+  <g transform="translate(600 140)">
+    <circle r="22" fill="#020617" stroke="url(#l-ring)" stroke-width="1.4"/>
+    <circle r="22" fill="none" stroke="#22D3EE" stroke-opacity="0.4">
+      <animate attributeName="r" values="22;30;22" dur="2.8s" repeatCount="indefinite" begin="0.6s"/>
+      <animate attributeName="stroke-opacity" values="0.6;0;0.6" dur="2.8s" repeatCount="indefinite" begin="0.6s"/>
+    </circle>
+    <text y="3" text-anchor="middle" class="mono node-lbl">DESIGN</text>
+    <text y="42" text-anchor="middle" class="mono node-sub">03 ? plan</text>
+  </g>
+  <!-- IMPLEMENT: top-right -->
+  <g transform="translate(760 140)">
+    <circle r="22" fill="#020617" stroke="url(#l-ring)" stroke-width="1.4"/>
+    <circle r="22" fill="none" stroke="#22D3EE" stroke-opacity="0.4">
+      <animate attributeName="r" values="22;30;22" dur="3.0s" repeatCount="indefinite" begin="0.9s"/>
+      <animate attributeName="stroke-opacity" values="0.6;0;0.6" dur="3.0s" repeatCount="indefinite" begin="0.9s"/>
+    </circle>
+    <text y="3" text-anchor="middle" class="mono node-lbl">IMPLEMENT</text>
+    <text y="42" text-anchor="middle" class="mono node-sub">04 ? code</text>
+  </g>
+  <!-- TEST: right -->
+  <g transform="translate(1000 260)">
+    <circle r="22" fill="#020617" stroke="url(#l-ring)" stroke-width="1.4"/>
+    <circle r="22" fill="none" stroke="#22D3EE" stroke-opacity="0.4">
+      <animate attributeName="r" values="22;30;22" dur="3.2s" repeatCount="indefinite" begin="1.2s"/>
+      <animate attributeName="stroke-opacity" values="0.6;0;0.6" dur="3.2s" repeatCount="indefinite" begin="1.2s"/>
+    </circle>
+    <text y="3" text-anchor="middle" class="mono node-lbl">TEST</text>
+    <text y="42" text-anchor="middle" class="mono node-sub">05 ? verify</text>
+  </g>
+  <!-- DEPLOY: bottom-right -->
+  <g transform="translate(880 380)">
+    <circle r="22" fill="#020617" stroke="url(#l-ring)" stroke-width="1.4"/>
+    <circle r="22" fill="none" stroke="#22D3EE" stroke-opacity="0.4">
+      <animate attributeName="r" values="22;30;22" dur="3.4s" repeatCount="indefinite" begin="1.5s"/>
+      <animate attributeName="stroke-opacity" values="0.6;0;0.6" dur="3.4s" repeatCount="indefinite" begin="1.5s"/>
+    </circle>
+    <text y="3" text-anchor="middle" class="mono node-lbl">DEPLOY</text>
+    <text y="42" text-anchor="middle" class="mono node-sub">06 ? ship</text>
+  </g>
+  <!-- OBSERVE: bottom-center-right -->
+  <g transform="translate(720 380)">
+    <circle r="22" fill="#020617" stroke="url(#l-ring)" stroke-width="1.4"/>
+    <circle r="22" fill="none" stroke="#22D3EE" stroke-opacity="0.4">
+      <animate attributeName="r" values="22;30;22" dur="3.6s" repeatCount="indefinite" begin="1.8s"/>
+      <animate attributeName="stroke-opacity" values="0.6;0;0.6" dur="3.6s" repeatCount="indefinite" begin="1.8s"/>
+    </circle>
+    <text y="3" text-anchor="middle" class="mono node-lbl">OBSERVE</text>
+    <text y="42" text-anchor="middle" class="mono node-sub">07 ? telemetry</text>
+  </g>
+  <!-- IMPROVE: bottom-center-left -->
+  <g transform="translate(440 380)">
+    <circle r="22" fill="#020617" stroke="url(#l-ring)" stroke-width="1.4"/>
+    <circle r="22" fill="none" stroke="#22D3EE" stroke-opacity="0.4">
+      <animate attributeName="r" values="22;30;22" dur="3.8s" repeatCount="indefinite" begin="2.1s"/>
+      <animate attributeName="stroke-opacity" values="0.6;0;0.6" dur="3.8s" repeatCount="indefinite" begin="2.1s"/>
+    </circle>
+    <text y="3" text-anchor="middle" class="mono node-lbl">IMPROVE</text>
+    <text y="42" text-anchor="middle" class="mono node-sub">08 ? refine</text>
+  </g>
+  <!-- LOOP back: left -->
+  <g transform="translate(200 260)">
+    <circle r="22" fill="none" stroke="#A855F7" stroke-width="1.4" stroke-dasharray="2 3"/>
+    <text y="3" text-anchor="middle" class="mono node-lbl" fill="#A855F7">?</text>
+    <text y="42" text-anchor="middle" class="mono node-sub">cycle repeats</text>
+  </g>
+
+  <g class="mono">
+    <text class="micro" x="40" y="498">? ITERATION &gt; PERFECTION ? THE LOOP IS THE PRODUCT</text>
+    <text class="micro" x="1160" y="498" text-anchor="end" fill="#22D3EE">8 STAGES ? 12s LOOP</text>
+  </g>
+</svg>

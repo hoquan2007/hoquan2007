@@ -1,0 +1,56 @@
+name: Generate Profile Telemetry
+
+on:
+  schedule:
+    # Once per day at 18:00 UTC (after the 3D and snake jobs which run earlier)
+    - cron: "0 18 * * *"
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - "scripts/generate_profile_metrics.py"
+      - ".github/workflows/profile-telemetry.yml"
+
+concurrency:
+  group: profile-telemetry
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Generate telemetry SVGs
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          USERNAME: ${{ github.repository_owner }}
+        run: python scripts/generate_profile_metrics.py
+
+      - name: Commit generated assets
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add -f assets/generated/
+
+          if git diff --cached --quiet; then
+            echo "No telemetry changes"
+            exit 0
+          fi
+
+          git commit -m "chore(telemetry): refresh profile metrics"
+          git push

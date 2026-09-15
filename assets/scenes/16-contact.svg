@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  16-contact.svg   Deep space transmission panel.
+  Only verified contact: GitHub handle. No email / social fabrication.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 440" role="img" aria-label="Open transmission channel" font-family="JetBrains Mono, ui-monospace, monospace">
+  <title>QUAN.OS // Contact</title>
+  <defs>
+    <radialGradient id="c2-bg" cx="50%" cy="50%" r="60%">
+      <stop offset="0" stop-color="#080B16"/>
+      <stop offset="1" stop-color="#020617"/>
+    </radialGradient>
+    <linearGradient id="c2-text" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#22D3EE"/>
+      <stop offset="1" stop-color="#A855F7"/>
+    </linearGradient>
+    <radialGradient id="c2-glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0" stop-color="#22D3EE" stop-opacity="0.45"/>
+      <stop offset="1" stop-color="#22D3EE" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="c2-grid" width="24" height="24" patternUnits="userSpaceOnUse">
+      <path d="M24 0H0V24" fill="none" stroke="#10172A" stroke-width="0.5"/>
+    </pattern>
+  </defs>
+  <style><![CDATA[
+    .mono{font-family:JetBrains Mono,Fira Code,IBM Plex Mono,ui-monospace,Menlo,monospace}
+    .sans{font-family:Inter,system-ui,-apple-system,sans-serif}
+    .title{font-size:36px;fill:url(#c2-text);letter-spacing:8px;font-weight:700}
+    .sub{font-size:12px;fill:#22D3EE;letter-spacing:4px}
+    .handle{font-size:14px;fill:#F8FAFC;letter-spacing:3px}
+    .micro{font-size:9px;fill:#64748B;letter-spacing:2px}
+    @media (prefers-reduced-motion: reduce){
+      animate,animateTransform{display:none}
+    }
+  ]]></style>
+  <rect width="1200" height="440" fill="url(#c2-bg)"/>
+  <rect width="1200" height="440" fill="url(#c2-grid)" opacity="0.45"/>
+  <g class="mono">
+    <text class="micro" x="40" y="34">SCENE 16 / CONTACT ? TRANSMISSION</text>
+    <line x1="40" y1="42" x2="380" y2="42" stroke="#22D3EE" stroke-opacity="0.6"/>
+    <text class="micro" x="1160" y="34" text-anchor="end">CHANNEL ? OPEN</text>
+  </g>
+
+  <!-- center signal source -->
+  <g transform="translate(600 220)">
+    <!-- concentric transmission rings -->
+    <circle r="40" fill="none" stroke="#22D3EE" stroke-opacity="0.8"/>
+    <circle r="40" fill="none" stroke="#22D3EE" stroke-opacity="0.4">
+      <animate attributeName="r" values="40;160;40" dur="3.4s" repeatCount="indefinite"/>
+      <animate attributeName="stroke-opacity" values="0.6;0;0.6" dur="3.4s" repeatCount="indefinite"/>
+    </circle>
+    <circle r="40" fill="none" stroke="#A855F7" stroke-opacity="0.4">
+      <animate attributeName="r" values="40;160;40" dur="3.4s" begin="1.2s" repeatCount="indefinite"/>
+      <animate attributeName="stroke-opacity" values="0.6;0;0.6" dur="3.4s" begin="1.2s" repeatCount="indefinite"/>
+    </circle>
+    <circle r="40" fill="none" stroke="#7C3AED" stroke-opacity="0.4">
+      <animate attributeName="r" values="40;160;40" dur="3.4s" begin="2.4s" repeatCount="indefinite"/>
+      <animate attributeName="stroke-opacity" values="0.6;0;0.6" dur="3.4s" begin="2.4s" repeatCount="indefinite"/>
+    </circle>
+    <circle r="60" fill="url(#c2-glow)"/>
+    <circle r="22" fill="#020617" stroke="#22D3EE" stroke-width="1.4"/>
+    <circle r="4" fill="#22D3EE">
+      <animate attributeName="opacity" values="0.3;1;0.3" dur="1.4s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <!-- title -->
+  <g class="sans" text-anchor="middle">
+    <text x="600" y="100" class="sub">? OPEN CHANNEL ?</text>
+    <text x="600" y="142" class="title">TRANSMISSION AVAILABLE</text>
+  </g>
+
+  <!-- verified contact lines -->
+  <g class="mono" transform="translate(600 380)" text-anchor="middle">
+    <text class="handle" y="-14">? github.com/hoquan2007</text>
+    <text class="micro" y="6">OPEN TO COLLABORATION ON AI ? BACKEND ? ALGORITHMS ? WEB PROJECTS</text>
+    <text class="micro" y="22">ENGLISH ? VIETNAMESE</text>
+  </g>
+
+  <!-- decorative orbit dots -->
+  <g fill="#22D3EE">
+    <circle cx="240" cy="120" r="2"/>
+    <circle cx="960" cy="120" r="2"/>
+    <circle cx="180" cy="340" r="2"/>
+    <circle cx="1020" cy="340" r="2"/>
+  </g>
+
+  <g class="mono">
+    <text class="micro" x="40" y="412">FREQ ? 24/7 ? LATENCY &lt;01ms</text>
+    <text class="micro" x="1160" y="412" text-anchor="end" fill="#22D3EE">UPLINK STABLE</text>
+  </g>
+</svg>

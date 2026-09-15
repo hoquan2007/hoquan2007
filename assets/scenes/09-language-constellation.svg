@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  09-language-constellation.svg   Languages as a constellation.
+  Static fallback SVG for languages data. Real values are inlined from
+  the snapshot taken on 2026-09-15:
+    TypeScript 9 ? HTML 5 ? C 2 ? C++ 2.
+  Animated drift + connection pulses.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600" role="img" aria-label="Language constellation: TypeScript 9, HTML 5, C 2, C++ 2" font-family="JetBrains Mono, ui-monospace, monospace">
+  <title>QUAN.OS // Language Constellation</title>
+  <defs>
+    <radialGradient id="c-bg" cx="50%" cy="50%" r="60%">
+      <stop offset="0" stop-color="#080B16"/>
+      <stop offset="1" stop-color="#020617"/>
+    </radialGradient>
+    <radialGradient id="c-node-ts" cx="50%" cy="50%" r="50%">
+      <stop offset="0" stop-color="#22D3EE"/>
+      <stop offset="1" stop-color="#0E7490"/>
+    </radialGradient>
+    <radialGradient id="c-node-html" cx="50%" cy="50%" r="50%">
+      <stop offset="0" stop-color="#A855F7"/>
+      <stop offset="1" stop-color="#5B21B6"/>
+    </radialGradient>
+    <radialGradient id="c-node-c" cx="50%" cy="50%" r="50%">
+      <stop offset="0" stop-color="#7C3AED"/>
+      <stop offset="1" stop-color="#3B0764"/>
+    </radialGradient>
+    <radialGradient id="c-node-cpp" cx="50%" cy="50%" r="50%">
+      <stop offset="0" stop-color="#3B82F6"/>
+      <stop offset="1" stop-color="#1E3A8A"/>
+    </radialGradient>
+    <pattern id="c-grid" width="24" height="24" patternUnits="userSpaceOnUse">
+      <path d="M24 0H0V24" fill="none" stroke="#10172A" stroke-width="0.5"/>
+    </pattern>
+  </defs>
+  <style><![CDATA[
+    .mono{font-family:JetBrains Mono,Fira Code,IBM Plex Mono,ui-monospace,Menlo,monospace}
+    .lbl{font-size:14px;fill:#F8FAFC;letter-spacing:2px;font-weight:700}
+    .count{font-size:24px;fill:#F8FAFC;letter-spacing:2px;font-weight:700}
+    .pct{font-size:11px;fill:#94A3B8;letter-spacing:2px}
+    .micro{font-size:9px;fill:#64748B;letter-spacing:2px}
+    @media (prefers-reduced-motion: reduce){
+      animate,animateTransform,animateMotion{display:none}
+    }
+  ]]></style>
+
+  <rect width="1200" height="600" fill="url(#c-bg)"/>
+  <rect width="1200" height="600" fill="url(#c-grid)" opacity="0.45"/>
+
+  <!-- decorative stars -->
+  <g fill="#F8FAFC">
+    <circle cx="80" cy="80" r="0.8"/>
+    <circle cx="160" cy="40" r="1"/>
+    <circle cx="240" cy="100" r="0.7"/>
+    <circle cx="320" cy="60" r="1.2"/>
+    <circle cx="500" cy="40" r="0.8"/>
+    <circle cx="640" cy="80" r="1.1"/>
+    <circle cx="800" cy="40" r="0.9"/>
+    <circle cx="940" cy="70" r="1"/>
+    <circle cx="1080" cy="40" r="1.3"/>
+    <circle cx="1160" cy="100" r="0.8"/>
+    <circle cx="40" cy="540" r="1"/>
+    <circle cx="120" cy="500" r="0.7"/>
+    <circle cx="1080" cy="520" r="1.1"/>
+    <circle cx="1160" cy="480" r="0.9"/>
+  </g>
+
+  <!-- header -->
+  <g class="mono">
+    <text class="micro" x="40" y="34">SCENE 09 / LANGUAGE CONSTELLATION</text>
+    <line x1="40" y1="42" x2="340" y2="42" stroke="#22D3EE" stroke-opacity="0.6"/>
+    <text class="micro" x="1160" y="34" text-anchor="end">NODE SIZE = PUBLIC REPO COUNT</text>
+  </g>
+
+  <!-- connection lines (drawn first so they go behind nodes) -->
+  <g stroke-width="1" fill="none">
+    <line x1="600" y1="300" x2="320" y2="220" stroke="#22D3EE" stroke-opacity="0.35">
+      <animate attributeName="stroke-opacity" values="0.15;0.6;0.15" dur="3.6s" repeatCount="indefinite"/>
+    </line>
+    <line x1="600" y1="300" x2="860" y2="220" stroke="#A855F7" stroke-opacity="0.35">
+      <animate attributeName="stroke-opacity" values="0.6;0.15;0.6" dur="3.8s" repeatCount="indefinite"/>
+    </line>
+    <line x1="600" y1="300" x2="420" y2="450" stroke="#7C3AED" stroke-opacity="0.35">
+      <animate attributeName="stroke-opacity" values="0.15;0.6;0.15" dur="4.2s" repeatCount="indefinite"/>
+    </line>
+    <line x1="600" y1="300" x2="780" y2="450" stroke="#3B82F6" stroke-opacity="0.35">
+      <animate attributeName="stroke-opacity" values="0.6;0.15;0.6" dur="4.0s" repeatCount="indefinite"/>
+    </line>
+  </g>
+
+  <!-- traveling pulses -->
+  <g>
+    <circle r="2.5" fill="#F8FAFC">
+      <animateMotion dur="3.6s" repeatCount="indefinite" path="M320 220 L600 300"/>
+    </circle>
+    <circle r="2.5" fill="#F8FAFC">
+      <animateMotion dur="3.8s" repeatCount="indefinite" path="M600 300 L860 220"/>
+    </circle>
+    <circle r="2.5" fill="#F8FAFC">
+      <animateMotion dur="4.2s" repeatCount="indefinite" path="M600 300 L420 450"/>
+    </circle>
+    <circle r="2.5" fill="#F8FAFC">
+      <animateMotion dur="4.0s" repeatCount="indefinite" path="M600 300 L780 450"/>
+    </circle>
+  </g>
+
+  <!-- TypeScript node (largest: 9 repos) -->
+  <g transform="translate(320 220)">
+    <circle r="78" fill="none" stroke="#22D3EE" stroke-opacity="0.2">
+      <animate attributeName="r" values="78;100;78" dur="4.4s" repeatCount="indefinite"/>
+      <animate attributeName="stroke-opacity" values="0.4;0;0.4" dur="4.4s" repeatCount="indefinite"/>
+    </circle>
+    <circle r="62" fill="url(#c-node-ts)" opacity="0.32"/>
+    <circle r="52" fill="#020617" stroke="#22D3EE" stroke-width="1.5"/>
+    <text y="-4" text-anchor="middle" class="mono lbl">TypeScript</text>
+    <text y="20" text-anchor="middle" class="mono count">9</text>
+    <text y="42" text-anchor="middle" class="mono pct">repos ? 50%</text>
+  </g>
+
+  <!-- HTML node (5 repos) -->
+  <g transform="translate(860 220)">
+    <circle r="64" fill="none" stroke="#A855F7" stroke-opacity="0.2">
+      <animate attributeName="r" values="64;84;64" dur="4.0s" repeatCount="indefinite"/>
+      <animate attributeName="stroke-opacity" values="0;0.4;0" dur="4.0s" repeatCount="indefinite"/>
+    </circle>
+    <circle r="50" fill="url(#c-node-html)" opacity="0.3"/>
+    <circle r="40" fill="#020617" stroke="#A855F7" stroke-width="1.4"/>
+    <text y="-2" text-anchor="middle" class="mono lbl">HTML</text>
+    <text y="18" text-anchor="middle" class="mono count">5</text>
+    <text y="38" text-anchor="middle" class="mono pct">repos ? 28%</text>
+  </g>
+
+  <!-- C node (2 repos) -->
+  <g transform="translate(420 450)">
+    <circle r="52" fill="none" stroke="#7C3AED" stroke-opacity="0.2">
+      <animate attributeName="r" values="52;70;52" dur="4.6s" repeatCount="indefinite"/>
+      <animate attributeName="stroke-opacity" values="0.4;0;0.4" dur="4.6s" repeatCount="indefinite"/>
+    </circle>
+    <circle r="40" fill="url(#c-node-c)" opacity="0.3"/>
+    <circle r="30" fill="#020617" stroke="#7C3AED" stroke-width="1.3"/>
+    <text y="-2" text-anchor="middle" class="mono lbl">C</text>
+    <text y="16" text-anchor="middle" class="mono count">2</text>
+    <text y="36" text-anchor="middle" class="mono pct">repos ? 11%</text>
+  </g>
+
+  <!-- C++ node (2 repos) -->
+  <g transform="translate(780 450)">
+    <circle r="52" fill="none" stroke="#3B82F6" stroke-opacity="0.2">
+      <animate attributeName="r" values="52;70;52" dur="4.2s" repeatCount="indefinite"/>
+      <animate attributeName="stroke-opacity" values="0;0.4;0" dur="4.2s" repeatCount="indefinite"/>
+    </circle>
+    <circle r="40" fill="url(#c-node-cpp)" opacity="0.3"/>
+    <circle r="30" fill="#020617" stroke="#3B82F6" stroke-width="1.3"/>
+    <text y="-2" text-anchor="middle" class="mono lbl">C++</text>
+    <text y="16" text-anchor="middle" class="mono count">2</text>
+    <text y="36" text-anchor="middle" class="mono pct">repos ? 11%</text>
+  </g>
+
+  <!-- center hub -->
+  <g transform="translate(600 300)">
+    <circle r="14" fill="#020617" stroke="#F8FAFC"/>
+    <circle r="3" fill="#F8FAFC">
+      <animate attributeName="r" values="2;6;2" dur="2s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <!-- legend -->
+  <g class="mono" transform="translate(60 110)">
+    <text class="micro" fill="#22D3EE">? TYPESCRIPT</text>
+    <text class="micro" y="16" fill="#A855F7">? HTML</text>
+    <text class="micro" y="32" fill="#7C3AED">? C</text>
+    <text class="micro" y="48" fill="#3B82F6">? C++</text>
+  </g>
+
+  <!-- footer -->
+  <g class="mono">
+    <line x1="40" y1="528" x2="1160" y2="528" stroke="#1E293B"/>
+    <text class="micro" x="40" y="552">TOTAL ? 18 LANGUAGE-DECLARED REPOS (4 NULL)</text>
+    <text class="micro" x="1160" y="552" text-anchor="end" fill="#22D3EE">SOURCE ? api.github.com 2026-09-15</text>
+    <text class="micro" x="40" y="572">SELF-GENERATED BY GITHUB ACTIONS ? NO THIRD-PARTY CARDS</text>
+    <text class="micro" x="1160" y="572" text-anchor="end" fill="#A855F7">SAMPLE OF 22 REPOS</text>
+  </g>
+</svg>

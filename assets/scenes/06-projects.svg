@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  06-projects.svg   Holographic project cards. 4 verified projects.
+  Each card shows: name, verified description, language, last update, key concept.
+  Animations: border scanning, status LED, subtle floating.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600" role="img" aria-label="Featured projects gallery" font-family="JetBrains Mono, ui-monospace, monospace">
+  <title>QUAN.OS // Featured Systems</title>
+  <defs>
+    <linearGradient id="p-bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#080B16"/>
+      <stop offset="1" stop-color="#020617"/>
+    </linearGradient>
+    <linearGradient id="p-card" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0B1224"/>
+      <stop offset="1" stop-color="#070A18"/>
+    </linearGradient>
+    <linearGradient id="p-edge" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#22D3EE" stop-opacity="0.65"/>
+      <stop offset="1" stop-color="#A855F7" stop-opacity="0.65"/>
+    </linearGradient>
+    <linearGradient id="p-glow" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#22D3EE" stop-opacity="0.18"/>
+      <stop offset="1" stop-color="#22D3EE" stop-opacity="0"/>
+    </linearGradient>
+    <pattern id="p-grid" width="20" height="20" patternUnits="userSpaceOnUse">
+      <path d="M20 0H0V20" fill="none" stroke="#10172A" stroke-width="0.4"/>
+    </pattern>
+    <symbol id="p-scan" viewBox="0 0 100 4" preserveAspectRatio="none">
+      <rect width="100" height="4" fill="#22D3EE" opacity="0.8"/>
+    </symbol>
+  </defs>
+  <style><![CDATA[
+    .mono{font-family:JetBrains Mono,Fira Code,IBM Plex Mono,ui-monospace,Menlo,monospace}
+    .name{font-size:14px;fill:#F8FAFC;letter-spacing:1.5px;font-weight:700}
+    .desc{font-size:10px;fill:#94A3B8;letter-spacing:0.5px}
+    .lang{font-size:9px;fill:#22D3EE;letter-spacing:2px}
+    .lang-v{font-size:9px;fill:#A855F7;letter-spacing:2px}
+    .meta{font-size:9px;fill:#64748B;letter-spacing:1.5px}
+    .micro{font-size:9px;fill:#64748B;letter-spacing:2px}
+    .lbl{font-size:11px;fill:#94A3B8;letter-spacing:3px}
+    @media (prefers-reduced-motion: reduce){
+      animate,animateTransform{display:none}
+    }
+  ]]></style>
+
+  <rect width="1200" height="600" fill="url(#p-bg)"/>
+  <rect width="1200" height="600" fill="url(#p-grid)" opacity="0.4"/>
+
+  <!-- header -->
+  <g class="mono">
+    <text class="micro" x="40" y="34">SCENE 06 / FEATURED SYSTEMS</text>
+    <line x1="40" y1="42" x2="320" y2="42" stroke="#22D3EE" stroke-opacity="0.6"/>
+    <text class="micro" x="1160" y="34" text-anchor="end">4 HIGHLIGHTED REPOSITORIES</text>
+  </g>
+
+  <!-- card template coordinates: 4 cards arranged 2x2 with margins
+       card width 540, height 200; positions: (40,80), (620,80), (40,300), (620,300)
+  -->
+
+  <!-- CARD 1: GPU-Server-Manager (top-left) -->
+  <g transform="translate(40 80)">
+    <rect width="540" height="200" rx="10" fill="url(#p-card)" stroke="url(#p-edge)" stroke-width="1"/>
+    <rect width="540" height="200" rx="10" fill="url(#p-glow)"/>
+    <!-- top accent bar -->
+    <rect x="0" y="0" width="540" height="2" fill="#22D3EE" opacity="0.85"/>
+    <!-- border scan line (animated) -->
+    <rect width="540" height="2" fill="#22D3EE" opacity="0">
+      <animate attributeName="y" values="0;200;0" dur="6s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;0.7;0" dur="6s" repeatCount="indefinite"/>
+    </rect>
+    <!-- status LED -->
+    <circle cx="20" cy="20" r="4" fill="#22D3EE">
+      <animate attributeName="opacity" values="0.3;1;0.3" dur="1.8s" repeatCount="indefinite"/>
+    </circle>
+    <text x="34" y="24" class="mono lang">SYS ? C</text>
+    <text x="520" y="24" text-anchor="end" class="mono meta">  0 ? UPDATED 2026</text>
+
+    <text x="20" y="62" class="mono name">GPU-Server-Manager</text>
+    <text x="20" y="86" class="mono desc">B?i t?p l?n K? thu?t L?p tr?nh C   H? th?ng qu?n l? t?i nguy?n m?y ch? GPU.</text>
+
+    <!-- mini diagram -->
+    <g transform="translate(360 110)" class="mono">
+      <rect x="0" y="0" width="160" height="60" rx="4" fill="#020617" stroke="#22D3EE" stroke-opacity="0.45"/>
+      <text x="8" y="16" class="mono micro" fill="#22D3EE">  GPU POOL   </text>
+      <text x="8" y="32" class="mono micro">RTX ? A100 ? H100</text>
+      <text x="8" y="46" class="mono micro" fill="#A855F7">scheduler ? queue ? util</text>
+    </g>
+
+    <text x="20" y="128" class="mono meta">CONCEPTS ? C ? scheduling ? resource mgmt</text>
+    <text x="20" y="148" class="mono meta">DOMAIN ? systems / backend</text>
+    <text x="20" y="170" class="mono meta">github.com/hoquan2007/GPU-Server-Manager</text>
+    <line x1="20" y1="180" x2="520" y2="180" stroke="#1E293B"/>
+  </g>
+
+  <!-- CARD 2: QEnglish (top-right) -->
+  <g transform="translate(620 80)">
+    <rect width="540" height="200" rx="10" fill="url(#p-card)" stroke="url(#p-edge)" stroke-width="1"/>
+    <rect width="540" height="200" rx="10" fill="url(#p-glow)"/>
+    <rect x="0" y="0" width="540" height="2" fill="#A855F7" opacity="0.85"/>
+    <rect width="540" height="2" fill="#A855F7" opacity="0">
+      <animate attributeName="y" values="0;200;0" dur="6s" begin="1.5s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;0.7;0" dur="6s" begin="1.5s" repeatCount="indefinite"/>
+    </rect>
+    <circle cx="20" cy="20" r="4" fill="#A855F7">
+      <animate attributeName="opacity" values="1;0.3;1" dur="2.0s" repeatCount="indefinite"/>
+    </circle>
+    <text x="34" y="24" class="mono lang-v">WEB ? TYPESCRIPT</text>
+    <text x="520" y="24" text-anchor="end" class="mono meta">  0 ? UPDATED 2026</text>
+
+    <text x="20" y="62" class="mono name">QEnglish</text>
+    <text x="20" y="86" class="mono desc">QEnglish   N?n t?ng h?c ti?ng Anh giao ti?p v?i AI.</text>
+
+    <g transform="translate(360 110)" class="mono">
+      <rect x="0" y="0" width="160" height="60" rx="4" fill="#020617" stroke="#A855F7" stroke-opacity="0.45"/>
+      <text x="8" y="16" class="mono micro" fill="#A855F7">  CHAT        </text>
+      <text x="8" y="32" class="mono micro">user ? ai tutor</text>
+      <text x="8" y="46" class="mono micro" fill="#22D3EE">pronunciation ? vocabulary</text>
+    </g>
+
+    <text x="20" y="128" class="mono meta">CONCEPTS ? ts ? ai ? conversation</text>
+    <text x="20" y="148" class="mono meta">DOMAIN ? web / ai</text>
+    <text x="20" y="170" class="mono meta">github.com/hoquan2007/QEnglish</text>
+    <line x1="20" y1="180" x2="520" y2="180" stroke="#1E293B"/>
+  </g>
+
+  <!-- CARD 3: Shadow-Collapse (bottom-left) -->
+  <g transform="translate(40 300)">
+    <rect width="540" height="200" rx="10" fill="url(#p-card)" stroke="url(#p-edge)" stroke-width="1"/>
+    <rect width="540" height="200" rx="10" fill="url(#p-glow)"/>
+    <rect x="0" y="0" width="540" height="2" fill="#22D3EE" opacity="0.85"/>
+    <rect width="540" height="2" fill="#22D3EE" opacity="0">
+      <animate attributeName="y" values="0;200;0" dur="6s" begin="3.0s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;0.7;0" dur="6s" begin="3.0s" repeatCount="indefinite"/>
+    </rect>
+    <circle cx="20" cy="20" r="4" fill="#22D3EE">
+      <animate attributeName="opacity" values="0.3;1;0.3" dur="2.4s" repeatCount="indefinite"/>
+    </circle>
+    <text x="34" y="24" class="mono lang">GAME ? WEB</text>
+    <text x="520" y="24" text-anchor="end" class="mono meta">  0 ? UPDATED 2025</text>
+
+    <text x="20" y="62" class="mono name">Shadow-Collapse</text>
+    <text x="20" y="86" class="mono desc">Procedural Dungeon Crawler.</text>
+
+    <g transform="translate(360 110)" class="mono">
+      <rect x="0" y="0" width="160" height="60" rx="4" fill="#020617" stroke="#22D3EE" stroke-opacity="0.45"/>
+      <text x="8" y="16" class="mono micro" fill="#22D3EE">  DUNGEON   </text>
+      <text x="8" y="32" class="mono micro">procgen ? grid ? ai</text>
+      <text x="8" y="46" class="mono micro" fill="#A855F7">tilemap ? pathfinding</text>
+    </g>
+
+    <text x="20" y="128" class="mono meta">CONCEPTS ? procedural generation ? game loop</text>
+    <text x="20" y="148" class="mono meta">DOMAIN ? algorithms / web</text>
+    <text x="20" y="170" class="mono meta">github.com/hoquan2007/Shadow-Collapse</text>
+    <line x1="20" y1="180" x2="520" y2="180" stroke="#1E293B"/>
+  </g>
+
+  <!-- CARD 4: face-attendance (bottom-right) -->
+  <g transform="translate(620 300)">
+    <rect width="540" height="200" rx="10" fill="url(#p-card)" stroke="url(#p-edge)" stroke-width="1"/>
+    <rect width="540" height="200" rx="10" fill="url(#p-glow)"/>
+    <rect x="0" y="0" width="540" height="2" fill="#A855F7" opacity="0.85"/>
+    <rect width="540" height="2" fill="#A855F7" opacity="0">
+      <animate attributeName="y" values="0;200;0" dur="6s" begin="4.5s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;0.7;0" dur="6s" begin="4.5s" repeatCount="indefinite"/>
+    </rect>
+    <circle cx="20" cy="20" r="4" fill="#A855F7">
+      <animate attributeName="opacity" values="1;0.3;1" dur="1.6s" repeatCount="indefinite"/>
+    </circle>
+    <text x="34" y="24" class="mono lang-v">WEB ? TYPESCRIPT</text>
+    <text x="520" y="24" text-anchor="end" class="mono meta">  0 ? UPDATED 2025</text>
+
+    <text x="20" y="62" class="mono name">face-attendance</text>
+    <text x="20" y="86" class="mono desc">Web-based attendance tracking with face recognition.</text>
+
+    <g transform="translate(360 110)" class="mono">
+      <rect x="0" y="0" width="160" height="60" rx="4" fill="#020617" stroke="#A855F7" stroke-opacity="0.45"/>
+      <text x="8" y="16" class="mono micro" fill="#A855F7">  CAMERA    </text>
+      <text x="8" y="32" class="mono micro">detect ? match ? log</text>
+      <text x="8" y="46" class="mono micro" fill="#22D3EE">ts ? realtime</text>
+    </g>
+
+    <text x="20" y="128" class="mono meta">CONCEPTS ? computer vision ? web</text>
+    <text x="20" y="148" class="mono meta">DOMAIN ? ai / web</text>
+    <text x="20" y="170" class="mono meta">github.com/hoquan2007/face-attendance</text>
+    <line x1="20" y1="180" x2="520" y2="180" stroke="#1E293B"/>
+  </g>
+
+  <!-- footer -->
+  <g class="mono">
+    <text class="micro" x="40" y="544">? PROJECTS HOSTED INLINE   RESILIENT TO NETWORK FAILURE</text>
+    <text class="micro" x="1160" y="544" text-anchor="end" fill="#22D3EE">SCAN ACTIVE ? LED CYCLING</text>
+    <text class="micro" x="40" y="562">SELECTED FROM 22 PUBLIC REPOSITORIES</text>
+    <text class="micro" x="1160" y="562" text-anchor="end" fill="#A855F7">FULL LIST ? /?tab=repositories</text>
+  </g>
+</svg>

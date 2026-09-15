@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  14-roadmap.svg   Skill tree. Branches under SOFTWARE ENGINEERING.
+  Uses LEARNING / ACTIVE / EXPLORING / BUILDING terms. No mastery claims.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 540" role="img" aria-label="Skill tree roadmap" font-family="JetBrains Mono, ui-monospace, monospace">
+  <title>QUAN.OS // Skill Tree</title>
+  <defs>
+    <linearGradient id="r-bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#080B16"/>
+      <stop offset="1" stop-color="#020617"/>
+    </linearGradient>
+    <pattern id="r-grid" width="24" height="24" patternUnits="userSpaceOnUse">
+      <path d="M24 0H0V24" fill="none" stroke="#10172A" stroke-width="0.5"/>
+    </pattern>
+  </defs>
+  <style><![CDATA[
+    .mono{font-family:JetBrains Mono,Fira Code,IBM Plex Mono,ui-monospace,Menlo,monospace}
+    .root{font-size:18px;fill:#F8FAFC;letter-spacing:3px;font-weight:700}
+    .branch{font-size:13px;fill:#22D3EE;letter-spacing:2.5px}
+    .leaf{font-size:11px;fill:#F8FAFC;letter-spacing:2px}
+    .state{font-size:9px;fill:#94A3B8;letter-spacing:2px}
+    .micro{font-size:9px;fill:#64748B;letter-spacing:2px}
+    @media (prefers-reduced-motion: reduce){
+      animate,animateTransform{display:none}
+    }
+  ]]></style>
+  <rect width="1200" height="540" fill="url(#r-bg)"/>
+  <rect width="1200" height="540" fill="url(#r-grid)" opacity="0.45"/>
+  <g class="mono">
+    <text class="micro" x="40" y="34">SCENE 14 / SKILL TREE</text>
+    <line x1="40" y1="42" x2="320" y2="42" stroke="#22D3EE" stroke-opacity="0.6"/>
+    <text class="micro" x="1160" y="34" text-anchor="end">ROOT ? SOFTWARE ENGINEERING</text>
+  </g>
+
+  <!-- root -->
+  <g transform="translate(600 110)">
+    <rect x="-180" y="-26" width="360" height="52" rx="6" fill="#0B1224" stroke="#22D3EE" stroke-width="1.2"/>
+    <text x="0" y="6" text-anchor="middle" class="mono root">SOFTWARE ENGINEERING</text>
+    <!-- glow -->
+    <rect x="-180" y="-26" width="360" height="52" rx="6" fill="none" stroke="#22D3EE" stroke-opacity="0.4">
+      <animate attributeName="stroke-opacity" values="0.2;0.8;0.2" dur="3.6s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+
+  <!-- branch connections from root to 5 columns -->
+  <g stroke="#22D3EE" stroke-opacity="0.5" stroke-width="1" fill="none">
+    <line x1="600" y1="136" x2="160" y2="240"/>
+    <line x1="600" y1="136" x2="370" y2="240"/>
+    <line x1="600" y1="136" x2="600" y2="240"/>
+    <line x1="600" y1="136" x2="830" y2="240"/>
+    <line x1="600" y1="136" x2="1040" y2="240"/>
+  </g>
+  <!-- traveling pulse along each branch -->
+  <g>
+    <circle r="2.5" fill="#F8FAFC"><animateMotion dur="3s" repeatCount="indefinite" path="M600 136 L160 240"/></circle>
+    <circle r="2.5" fill="#F8FAFC"><animateMotion dur="3.2s" repeatCount="indefinite" path="M600 136 L370 240"/></circle>
+    <circle r="2.5" fill="#F8FAFC"><animateMotion dur="3.4s" repeatCount="indefinite" path="M600 136 L600 240"/></circle>
+    <circle r="2.5" fill="#F8FAFC"><animateMotion dur="3.6s" repeatCount="indefinite" path="M600 136 L830 240"/></circle>
+    <circle r="2.5" fill="#F8FAFC"><animateMotion dur="3.8s" repeatCount="indefinite" path="M600 136 L1040 240"/></circle>
+  </g>
+
+  <!-- 5 branches -->
+  <g class="mono">
+    <g transform="translate(160 240)">
+      <circle r="6" fill="#22D3EE"/>
+      <text x="0" y="22" text-anchor="middle" class="branch">ALGORITHMS</text>
+      <text x="0" y="40" text-anchor="middle" class="state">LEARNING</text>
+    </g>
+    <g transform="translate(370 240)">
+      <circle r="6" fill="#A855F7"/>
+      <text x="0" y="22" text-anchor="middle" class="branch">WEB STACK</text>
+      <text x="0" y="40" text-anchor="middle" class="state">BUILDING</text>
+    </g>
+    <g transform="translate(600 240)">
+      <circle r="6" fill="#22D3EE"/>
+      <text x="0" y="22" text-anchor="middle" class="branch">BACKEND</text>
+      <text x="0" y="40" text-anchor="middle" class="state">BUILDING</text>
+    </g>
+    <g transform="translate(830 240)">
+      <circle r="6" fill="#A855F7"/>
+      <text x="0" y="22" text-anchor="middle" class="branch">DATABASES</text>
+      <text x="0" y="40" text-anchor="middle" class="state">LEARNING</text>
+    </g>
+    <g transform="translate(1040 240)">
+      <circle r="6" fill="#7C3AED"/>
+      <text x="0" y="22" text-anchor="middle" class="branch">AI</text>
+      <text x="0" y="40" text-anchor="middle" class="state">EXPLORING</text>
+    </g>
+  </g>
+
+  <!-- leaves -->
+  <g class="mono">
+    <!-- ALGORITHMS -->
+    <g transform="translate(160 320)">
+      <rect x="-100" y="-12" width="200" height="80" rx="4" fill="#0B1224" stroke="#22D3EE" stroke-opacity="0.4"/>
+      <text x="0" y="6" text-anchor="middle" class="leaf">sorting ? searching</text>
+      <text x="0" y="24" text-anchor="middle" class="leaf">graphs ? dp ? greedy</text>
+      <text x="0" y="42" text-anchor="middle" class="state">ProjectChess ? c</text>
+      <text x="0" y="58" text-anchor="middle" class="state">codeforces prep</text>
+    </g>
+    <!-- WEB -->
+    <g transform="translate(370 320)">
+      <rect x="-100" y="-12" width="200" height="80" rx="4" fill="#0B1224" stroke="#A855F7" stroke-opacity="0.4"/>
+      <text x="0" y="6" text-anchor="middle" class="leaf">ts ? react ? next</text>
+      <text x="0" y="24" text-anchor="middle" class="leaf">node ? express</text>
+      <text x="0" y="42" text-anchor="middle" class="state">QEnglish ? Web-xem-phim</text>
+      <text x="0" y="58" text-anchor="middle" class="state">face-attendance</text>
+    </g>
+    <!-- BACKEND -->
+    <g transform="translate(600 320)">
+      <rect x="-100" y="-12" width="200" height="80" rx="4" fill="#0B1224" stroke="#22D3EE" stroke-opacity="0.4"/>
+      <text x="0" y="6" text-anchor="middle" class="leaf">apis ? servers</text>
+      <text x="0" y="24" text-anchor="middle" class="leaf">auth ? queues</text>
+      <text x="0" y="42" text-anchor="middle" class="state">GPU-Server-Manager</text>
+      <text x="0" y="58" text-anchor="middle" class="state">research ? ai tooling</text>
+    </g>
+    <!-- DATABASES -->
+    <g transform="translate(830 320)">
+      <rect x="-100" y="-12" width="200" height="80" rx="4" fill="#0B1224" stroke="#A855F7" stroke-opacity="0.4"/>
+      <text x="0" y="6" text-anchor="middle" class="leaf">sql ? nosql</text>
+      <text x="0" y="24" text-anchor="middle" class="leaf">indexing ? schema</text>
+      <text x="0" y="42" text-anchor="middle" class="state">planned study path</text>
+      <text x="0" y="58" text-anchor="middle" class="state">next quarter</text>
+    </g>
+    <!-- AI -->
+    <g transform="translate(1040 320)">
+      <rect x="-100" y="-12" width="200" height="80" rx="4" fill="#0B1224" stroke="#7C3AED" stroke-opacity="0.4"/>
+      <text x="0" y="6" text-anchor="middle" class="leaf">ml fundamentals</text>
+      <text x="0" y="24" text-anchor="middle" class="leaf">applied nlp ? vision</text>
+      <text x="0" y="42" text-anchor="middle" class="state">ResearchAI ? learning</text>
+      <text x="0" y="58" text-anchor="middle" class="state">QEnglish tutor</text>
+    </g>
+  </g>
+
+  <g class="mono">
+    <text class="micro" x="40" y="498">SKILL STATE LABELS ? NOT PERCENTAGES ? UPDATED 2026-09</text>
+    <text class="micro" x="1160" y="498" text-anchor="end" fill="#22D3EE">5 BRANCHES ? 5 LEAVES</text>
+    <text class="micro" x="40" y="518">EVIDENCE-DRIVEN ? EVERY LEAF TIES BACK TO A PUBLIC REPO OR PLANNED STUDY</text>
+    <text class="micro" x="1160" y="518" text-anchor="end" fill="#A855F7">REV 2026.09</text>
+  </g>
+</svg>

@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  03-neural-core.svg   Animated radial neural network. HO QUAN center, 6 branches:
+  AI ? SOFTWARE ? SYSTEMS ? DATA ? ALGORITHMS ? BACKEND.
+  Asynchronous pulse on each branch.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" role="img" aria-label="Neural core: HO QUAN with 6 active branches" font-family="JetBrains Mono, ui-monospace, monospace">
+  <title>QUAN.OS // Neural Core</title>
+  <defs>
+    <radialGradient id="n-bg" cx="50%" cy="50%" r="60%">
+      <stop offset="0" stop-color="#0B1224"/>
+      <stop offset="1" stop-color="#020617"/>
+    </radialGradient>
+    <radialGradient id="n-core" cx="50%" cy="50%" r="50%">
+      <stop offset="0" stop-color="#22D3EE"/>
+      <stop offset="0.5" stop-color="#7C3AED"/>
+      <stop offset="1" stop-color="#020617" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="n-halo" cx="50%" cy="50%" r="50%">
+      <stop offset="0" stop-color="#22D3EE" stop-opacity="0.5"/>
+      <stop offset="1" stop-color="#22D3EE" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="n-grid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M32 0H0V32" fill="none" stroke="#10172A" stroke-width="0.5"/>
+    </pattern>
+    <filter id="n-blur" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="3"/>
+    </filter>
+  </defs>
+  <style><![CDATA[
+    .mono{font-family:JetBrains Mono,Fira Code,IBM Plex Mono,ui-monospace,Menlo,monospace}
+    .lbl{font-size:11px;fill:#94A3B8;letter-spacing:3px}
+    .lbl-strong{font-size:12px;fill:#22D3EE;letter-spacing:3px}
+    .center-name{font-size:18px;fill:#F8FAFC;letter-spacing:4px;font-weight:700}
+    .branch{font-size:11px;fill:#94A3B8;letter-spacing:2.5px}
+    .micro{font-size:9px;fill:#64748B;letter-spacing:2px}
+    @media (prefers-reduced-motion: reduce){
+      animate,animateTransform,animateMotion{display:none}
+    }
+  ]]></style>
+
+  <rect width="800" height="800" fill="url(#n-bg)"/>
+  <rect width="800" height="800" fill="url(#n-grid)" opacity="0.5"/>
+
+  <!-- decorative outer ring -->
+  <circle cx="400" cy="400" r="390" fill="none" stroke="#1E293B" stroke-dasharray="2 8"/>
+  <circle cx="400" cy="400" r="370" fill="none" stroke="#22D3EE" stroke-opacity="0.18"/>
+
+  <!-- 6 branches at angles 0?, 60?, 120?, 180?, 240?, 300? (going out from center) -->
+  <!-- branch positions: angle = -90 + 60*i (so first is top) -->
+  <!-- we hand-place for visual balance -->
+
+  <!-- branch lines (from center 400,400 to outer nodes) -->
+  <g stroke-width="1.4" opacity="0.6">
+    <!-- AI (top) -->
+    <line x1="400" y1="400" x2="400" y2="120" stroke="#22D3EE">
+      <animate attributeName="stroke-opacity" values="0.2;0.9;0.2" dur="3.4s" repeatCount="indefinite"/>
+    </line>
+    <!-- SOFTWARE (top-right) -->
+    <line x1="400" y1="400" x2="647" y2="260" stroke="#A855F7">
+      <animate attributeName="stroke-opacity" values="0.2;0.9;0.2" dur="4.0s" repeatCount="indefinite"/>
+    </line>
+    <!-- SYSTEMS (bottom-right) -->
+    <line x1="400" y1="400" x2="647" y2="540" stroke="#22D3EE">
+      <animate attributeName="stroke-opacity" values="0.9;0.2;0.9" dur="3.6s" repeatCount="indefinite"/>
+    </line>
+    <!-- DATA (bottom) -->
+    <line x1="400" y1="400" x2="400" y2="680" stroke="#A855F7">
+      <animate attributeName="stroke-opacity" values="0.2;0.9;0.2" dur="4.4s" repeatCount="indefinite"/>
+    </line>
+    <!-- ALGORITHMS (bottom-left) -->
+    <line x1="400" y1="400" x2="153" y2="540" stroke="#22D3EE">
+      <animate attributeName="stroke-opacity" values="0.9;0.2;0.9" dur="3.8s" repeatCount="indefinite"/>
+    </line>
+    <!-- BACKEND (top-left) -->
+    <line x1="400" y1="400" x2="153" y2="260" stroke="#A855F7">
+      <animate attributeName="stroke-opacity" values="0.2;0.9;0.2" dur="4.2s" repeatCount="indefinite"/>
+    </line>
+  </g>
+
+  <!-- traveling packets along each branch -->
+  <g>
+    <circle r="3" fill="#F8FAFC">
+      <animateMotion dur="3.4s" repeatCount="indefinite" path="M400 400 L400 120"/>
+    </circle>
+    <circle r="3" fill="#F8FAFC">
+      <animateMotion dur="4.0s" repeatCount="indefinite" path="M400 400 L647 260"/>
+    </circle>
+    <circle r="3" fill="#F8FAFC">
+      <animateMotion dur="3.6s" repeatCount="indefinite" path="M400 400 L647 540"/>
+    </circle>
+    <circle r="3" fill="#F8FAFC">
+      <animateMotion dur="4.4s" repeatCount="indefinite" path="M400 400 L400 680"/>
+    </circle>
+    <circle r="3" fill="#F8FAFC">
+      <animateMotion dur="3.8s" repeatCount="indefinite" path="M400 400 L153 540"/>
+    </circle>
+    <circle r="3" fill="#F8FAFC">
+      <animateMotion dur="4.2s" repeatCount="indefinite" path="M400 400 L153 260"/>
+    </circle>
+  </g>
+
+  <!-- inter-branch thin connections (lattice) -->
+  <g stroke="#1E293B" stroke-width="0.5" fill="none" opacity="0.6">
+    <line x1="400" y1="120" x2="647" y2="260"/>
+    <line x1="647" y1="260" x2="647" y2="540"/>
+    <line x1="647" y1="540" x2="400" y2="680"/>
+    <line x1="400" y1="680" x2="153" y2="540"/>
+    <line x1="153" y1="540" x2="153" y2="260"/>
+    <line x1="153" y1="260" x2="400" y2="120"/>
+  </g>
+
+  <!-- center core -->
+  <g>
+    <circle cx="400" cy="400" r="120" fill="url(#n-halo)" filter="url(#n-blur)"/>
+    <circle cx="400" cy="400" r="80" fill="none" stroke="#22D3EE" stroke-opacity="0.4"/>
+    <circle cx="400" cy="400" r="58" fill="#020617" stroke="#22D3EE" stroke-width="1.5"/>
+    <circle cx="400" cy="400" r="6" fill="#22D3EE">
+      <animate attributeName="r" values="3;8;3" dur="2s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.4;1;0.4" dur="2s" repeatCount="indefinite"/>
+    </circle>
+    <text x="400" y="-6" text-anchor="middle" class="mono center-name">HO QUAN</text>
+    <text x="400" y="16" text-anchor="middle" class="mono lbl-strong">ENGINEER</text>
+    <text x="400" y="34" text-anchor="middle" class="mono micro">node 00</text>
+  </g>
+
+  <!-- branch nodes -->
+  <g class="mono">
+    <!-- AI -->
+    <g transform="translate(400 120)">
+      <circle r="38" fill="#020617" stroke="#22D3EE" stroke-width="1.4"/>
+      <circle r="38" fill="none" stroke="#22D3EE" stroke-opacity="0.55">
+        <animate attributeName="r" values="38;50;38" dur="3.4s" repeatCount="indefinite"/>
+        <animate attributeName="stroke-opacity" values="0.8;0;0.8" dur="3.4s" repeatCount="indefinite"/>
+      </circle>
+      <text y="-2" text-anchor="middle" class="branch" fill="#F8FAFC">AI</text>
+      <text y="14" text-anchor="middle" class="micro">artificial intelligence</text>
+    </g>
+    <!-- SOFTWARE -->
+    <g transform="translate(647 260)">
+      <circle r="38" fill="#020617" stroke="#A855F7" stroke-width="1.4"/>
+      <circle r="38" fill="none" stroke="#A855F7" stroke-opacity="0.55">
+        <animate attributeName="r" values="38;50;38" dur="4.0s" repeatCount="indefinite"/>
+        <animate attributeName="stroke-opacity" values="0;0.8;0" dur="4.0s" repeatCount="indefinite"/>
+      </circle>
+      <text y="-2" text-anchor="middle" class="branch" fill="#F8FAFC">SOFTWARE</text>
+      <text y="14" text-anchor="middle" class="micro">engineering craft</text>
+    </g>
+    <!-- SYSTEMS -->
+    <g transform="translate(647 540)">
+      <circle r="38" fill="#020617" stroke="#22D3EE" stroke-width="1.4"/>
+      <circle r="38" fill="none" stroke="#22D3EE" stroke-opacity="0.55">
+        <animate attributeName="r" values="38;50;38" dur="3.6s" repeatCount="indefinite"/>
+        <animate attributeName="stroke-opacity" values="0.8;0;0.8" dur="3.6s" repeatCount="indefinite"/>
+      </circle>
+      <text y="-2" text-anchor="middle" class="branch" fill="#F8FAFC">SYSTEMS</text>
+      <text y="14" text-anchor="middle" class="micro">os ? networks ? low-level</text>
+    </g>
+    <!-- DATA -->
+    <g transform="translate(400 680)">
+      <circle r="38" fill="#020617" stroke="#A855F7" stroke-width="1.4"/>
+      <circle r="38" fill="none" stroke="#A855F7" stroke-opacity="0.55">
+        <animate attributeName="r" values="38;50;38" dur="4.4s" repeatCount="indefinite"/>
+        <animate attributeName="stroke-opacity" values="0;0.8;0" dur="4.4s" repeatCount="indefinite"/>
+      </circle>
+      <text y="-2" text-anchor="middle" class="branch" fill="#F8FAFC">DATA</text>
+      <text y="14" text-anchor="middle" class="micro">databases ? storage</text>
+    </g>
+    <!-- ALGORITHMS -->
+    <g transform="translate(153 540)">
+      <circle r="38" fill="#020617" stroke="#22D3EE" stroke-width="1.4"/>
+      <circle r="38" fill="none" stroke="#22D3EE" stroke-opacity="0.55">
+        <animate attributeName="r" values="38;50;38" dur="3.8s" repeatCount="indefinite"/>
+        <animate attributeName="stroke-opacity" values="0.8;0;0.8" dur="3.8s" repeatCount="indefinite"/>
+      </circle>
+      <text y="-2" text-anchor="middle" class="branch" fill="#F8FAFC">ALGORITHMS</text>
+      <text y="14" text-anchor="middle" class="micro">structures ? theory</text>
+    </g>
+    <!-- BACKEND -->
+    <g transform="translate(153 260)">
+      <circle r="38" fill="#020617" stroke="#A855F7" stroke-width="1.4"/>
+      <circle r="38" fill="none" stroke="#A855F7" stroke-opacity="0.55">
+        <animate attributeName="r" values="38;50;38" dur="4.2s" repeatCount="indefinite"/>
+        <animate attributeName="stroke-opacity" values="0;0.8;0" dur="4.2s" repeatCount="indefinite"/>
+      </circle>
+      <text y="-2" text-anchor="middle" class="branch" fill="#F8FAFC">BACKEND</text>
+      <text y="14" text-anchor="middle" class="micro">servers ? apis</text>
+    </g>
+  </g>
+
+  <!-- corner labels -->
+  <g class="mono">
+    <text class="micro" x="40" y="40">SCENE 03 / NEURAL CORE</text>
+    <text class="micro" x="40" y="56" fill="#22D3EE">6 BRANCHES ? ACTIVE</text>
+    <text class="micro" x="760" y="40" text-anchor="end">SYNC OK ? DRIFT 0.00%</text>
+    <text class="micro" x="760" y="56" text-anchor="end" fill="#A855F7">PHASE LOCK ? 4.0s</text>
+    <text class="micro" x="40" y="780">? signal flow outward ? cognition inward</text>
+    <text class="micro" x="760" y="780" text-anchor="end">? energy: nominal</text>
+  </g>
+</svg>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  12-snake-frame.svg   Frame for the third-party contribution snake.
+  Heading: CONTRIBUTION NETWORK ? uses cyan/violet palette consistent with QUAN.OS.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 200" role="img" aria-label="Contribution snake network frame" font-family="JetBrains Mono, ui-monospace, monospace">
+  <title>QUAN.OS // Contribution Network</title>
+  <defs>
+    <linearGradient id="sf-bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#020617"/>
+      <stop offset="1" stop-color="#080B16"/>
+    </linearGradient>
+  </defs>
+  <style><![CDATA[
+    .mono{font-family:JetBrains Mono,Fira Code,IBM Plex Mono,ui-monospace,Menlo,monospace}
+    .title{font-size:32px;fill:#F8FAFC;letter-spacing:8px;font-weight:700}
+    .sub{font-size:11px;fill:#A855F7;letter-spacing:6px}
+    .micro{font-size:9px;fill:#64748B;letter-spacing:2px}
+    @media (prefers-reduced-motion: reduce){
+      animate,animateTransform{display:none}
+    }
+  ]]></style>
+  <rect width="1200" height="200" fill="url(#sf-bg)"/>
+  <g stroke="#1E293B" stroke-width="0.5">
+    <line x1="0" y1="180" x2="1200" y2="180"/>
+    <line x1="0" y1="20" x2="1200" y2="20"/>
+  </g>
+  <!-- decorative moving wave -->
+  <path d="M0 60 Q200 40 400 60 T800 60 T1200 60" stroke="#22D3EE" stroke-width="1.2" fill="none" stroke-opacity="0.6">
+    <animate attributeName="d" dur="6s" repeatCount="indefinite"
+      values="M0 60 Q200 40 400 60 T800 60 T1200 60;
+              M0 60 Q200 80 400 60 T800 60 T1200 60;
+              M0 60 Q200 40 400 60 T800 60 T1200 60"/>
+  </path>
+  <text x="60" y="100" class="mono sub">SCENE 12 / CONTRIBUTION NETWORK</text>
+  <text x="60" y="138" class="mono title">SNAKE PROTOCOL</text>
+  <text x="60" y="166" class="mono micro">snake animation generated nightly ? Platane/snk@v3</text>
+  <g class="mono">
+    <text x="1140" y="100" text-anchor="end" class="micro" fill="#22D3EE">PATH TRACE</text>
+    <text x="1140" y="118" text-anchor="end" class="micro" fill="#A855F7">PALETTE: CYAN/VIOLET</text>
+    <text x="1140" y="136" text-anchor="end" class="micro">SEGMENTS ? 53</text>
+    <text x="1140" y="154" text-anchor="end" class="micro">SOURCE ? github contributions</text>
+    <text x="1140" y="172" text-anchor="end" class="micro">VERSION ? v3</text>
+  </g>
+</svg>
