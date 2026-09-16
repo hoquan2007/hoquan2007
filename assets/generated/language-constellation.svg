@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600" role="img" aria-label="Language constellation ÃÂÃÂ live" font-family="JetBrains Mono, ui-monospace, monospace">
 <title>QUAN.OS ÃÂÃÂ Language Constellation ÃÂÃÂ Live</title>
-<desc>Radial constellation of programming languages used across HNQuan's repositories.</desc>
+<desc>Radial constellation of programming languages used across hoquan2007's repositories.</desc>
 <defs>
   <radialGradient id="gen-bg4" cx="50%" cy="50%" r="60%">
     <stop offset="0" stop-color="#080B16"/>
@@ -42,8 +42,8 @@
   <text class="micro" x="1160" y="34" text-anchor="end">NODE SIZE = REPO COUNT</text>
 </g>
 <g>
-  <line x1="600" y1="320" x2="600" y2="120" stroke="#22D3EE" stroke-opacity="0.35"><animate attributeName="stroke-opacity" values="0.15;0.6;0.15" dur="3.4s" repeatCount="indefinite"/></line><line x1="600" y1="320" x2="773" y2="221" stroke="#A855F7" stroke-opacity="0.35"><animate attributeName="stroke-opacity" values="0.15;0.6;0.15" dur="3.8s" repeatCount="indefinite"/></line>
-  <circle r="2.5" fill="#F8FAFC"><animateMotion dur="3.4s" repeatCount="indefinite" path="M600 320 L600 120"/></circle><circle r="2.5" fill="#F8FAFC"><animateMotion dur="3.8s" repeatCount="indefinite" path="M600 320 L773 221"/></circle>
+  <line x1="600" y1="320" x2="600" y2="120" stroke="#22D3EE" stroke-opacity="0.35"><animate attributeName="stroke-opacity" values="0.15;0.6;0.15" dur="3.4s" repeatCount="indefinite"/></line><line x1="600" y1="320" x2="773" y2="221" stroke="#A855F7" stroke-opacity="0.35"><animate attributeName="stroke-opacity" values="0.15;0.6;0.15" dur="3.8s" repeatCount="indefinite"/></line><line x1="600" y1="320" x2="773" y2="419" stroke="#7C3AED" stroke-opacity="0.35"><animate attributeName="stroke-opacity" values="0.15;0.6;0.15" dur="4.2s" repeatCount="indefinite"/></line><line x1="600" y1="320" x2="600" y2="520" stroke="#3B82F6" stroke-opacity="0.35"><animate attributeName="stroke-opacity" values="0.15;0.6;0.15" dur="4.6s" repeatCount="indefinite"/></line>
+  <circle r="2.5" fill="#F8FAFC"><animateMotion dur="3.4s" repeatCount="indefinite" path="M600 320 L600 120"/></circle><circle r="2.5" fill="#F8FAFC"><animateMotion dur="3.8s" repeatCount="indefinite" path="M600 320 L773 221"/></circle><circle r="2.5" fill="#F8FAFC"><animateMotion dur="4.2s" repeatCount="indefinite" path="M600 320 L773 419"/></circle><circle r="2.5" fill="#F8FAFC"><animateMotion dur="4.6s" repeatCount="indefinite" path="M600 320 L600 520"/></circle>
 </g>
 <g transform="translate(600 320)">
   <circle r="14" fill="#020617" stroke="#F8FAFC"/>
@@ -52,30 +52,50 @@
   </circle>
 </g>
 <g transform="translate(600 120)">
-  <circle r="66" fill="none" stroke="#22D3EE" stroke-opacity="0.2">
-    <animate attributeName="r" values="66;78;66" dur="4.0s" repeatCount="indefinite"/>
+  <circle r="102" fill="none" stroke="#22D3EE" stroke-opacity="0.2">
+    <animate attributeName="r" values="102;114;102" dur="4.0s" repeatCount="indefinite"/>
     <animate attributeName="stroke-opacity" values="0.4;0;0.4" dur="4.0s" repeatCount="indefinite"/>
   </circle>
-  <circle r="48" fill="url(#g-cyan)" opacity="0.30"/>
-  <circle r="38" fill="#020617" stroke="#22D3EE" stroke-width="1.4"/>
+  <circle r="84" fill="url(#g-cyan)" opacity="0.30"/>
+  <circle r="74" fill="#020617" stroke="#22D3EE" stroke-width="1.4"/>
   <text y="-2" text-anchor="middle" class="mono lang-lbl">TypeScript</text>
-  <text y="14" text-anchor="middle" class="mono lang-count">3</text>
-  <text y="32" text-anchor="middle" class="mono lang-pct">75%</text>
+  <text y="14" text-anchor="middle" class="mono lang-count">9</text>
+  <text y="32" text-anchor="middle" class="mono lang-pct">47%</text>
 </g><g transform="translate(773 221)">
-  <circle r="54" fill="none" stroke="#A855F7" stroke-opacity="0.2">
-    <animate attributeName="r" values="54;66;54" dur="4.4s" repeatCount="indefinite"/>
+  <circle r="78" fill="none" stroke="#A855F7" stroke-opacity="0.2">
+    <animate attributeName="r" values="78;90;78" dur="4.4s" repeatCount="indefinite"/>
     <animate attributeName="stroke-opacity" values="0.4;0;0.4" dur="4.4s" repeatCount="indefinite"/>
   </circle>
-  <circle r="36" fill="url(#g-violet)" opacity="0.30"/>
-  <circle r="26" fill="#020617" stroke="#A855F7" stroke-width="1.4"/>
+  <circle r="60" fill="url(#g-violet)" opacity="0.30"/>
+  <circle r="50" fill="#020617" stroke="#A855F7" stroke-width="1.4"/>
+  <text y="-2" text-anchor="middle" class="mono lang-lbl">HTML</text>
+  <text y="14" text-anchor="middle" class="mono lang-count">5</text>
+  <text y="32" text-anchor="middle" class="mono lang-pct">26%</text>
+</g><g transform="translate(773 419)">
+  <circle r="60" fill="none" stroke="#7C3AED" stroke-opacity="0.2">
+    <animate attributeName="r" values="60;72;60" dur="4.8s" repeatCount="indefinite"/>
+    <animate attributeName="stroke-opacity" values="0.4;0;0.4" dur="4.8s" repeatCount="indefinite"/>
+  </circle>
+  <circle r="42" fill="url(#g-purple)" opacity="0.30"/>
+  <circle r="32" fill="#020617" stroke="#7C3AED" stroke-width="1.4"/>
   <text y="-2" text-anchor="middle" class="mono lang-lbl">C</text>
-  <text y="14" text-anchor="middle" class="mono lang-count">1</text>
-  <text y="32" text-anchor="middle" class="mono lang-pct">25%</text>
+  <text y="14" text-anchor="middle" class="mono lang-count">2</text>
+  <text y="32" text-anchor="middle" class="mono lang-pct">11%</text>
+</g><g transform="translate(600 520)">
+  <circle r="60" fill="none" stroke="#3B82F6" stroke-opacity="0.2">
+    <animate attributeName="r" values="60;72;60" dur="5.2s" repeatCount="indefinite"/>
+    <animate attributeName="stroke-opacity" values="0.4;0;0.4" dur="5.2s" repeatCount="indefinite"/>
+  </circle>
+  <circle r="42" fill="url(#g-blue)" opacity="0.30"/>
+  <circle r="32" fill="#020617" stroke="#3B82F6" stroke-width="1.4"/>
+  <text y="-2" text-anchor="middle" class="mono lang-lbl">C++</text>
+  <text y="14" text-anchor="middle" class="mono lang-count">2</text>
+  <text y="32" text-anchor="middle" class="mono lang-pct">11%</text>
 </g>
 <g class="mono">
   <line x1="40" y1="528" x2="1160" y2="528" stroke="#1E293B"/>
-  <text class="micro" x="40" y="552">TOTAL ÃÂÃÂ 4 LANGUAGE-DECLARED REPOS ÃÂ· 4 SHOWN</text>
-  <text class="micro" x="1160" y="552" text-anchor="end" fill="#22D3EE">UPDATED 2026-09-15</text>
+  <text class="micro" x="40" y="552">TOTAL ÃÂÃÂ 19 LANGUAGE-DECLARED REPOS ÃÂ· 4 SHOWN</text>
+  <text class="micro" x="1160" y="552" text-anchor="end" fill="#22D3EE">UPDATED 2026-09-16</text>
   <text class="micro" x="40" y="572">SELF-GENERATED BY GITHUB ACTIONS ÃÂÃÂ NO THIRD-PARTY</text>
   <text class="micro" x="1160" y="572" text-anchor="end" fill="#A855F7">QUAN-OS ÃÂÃÂ CONSTELLATION ENGINE</text>
 </g>

@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600" role="img" aria-label="GitHub telemetry dashboard" font-family="JetBrains Mono, ui-monospace, monospace">
 <title>QUAN.OS ÃÂÃÂ GitHub Telemetry</title>
-<desc>Self-generated telemetry dashboard for HNQuan. KPI cards, language distribution, 12-month activity sparkline.</desc>
+<desc>Self-generated telemetry dashboard for hoquan2007. KPI cards, language distribution, 12-month activity sparkline.</desc>
 <defs>
   <linearGradient id="gen-bg" x1="0" y1="0" x2="0" y2="1">
     <stop offset="0" stop-color="#080B16"/>
@@ -41,16 +41,16 @@
   <text x="170" y="100" class="unit">public</text>
   <text x="20" y="130" class="lbl">verified via github api</text>
   <line x1="20" y1="140" x2="250" y2="140" stroke="#1E293B"/>
-  <text x="20" y="156" class="micro">scope ÃÂÃÂ @HNQuan</text>
+  <text x="20" y="156" class="micro">scope ÃÂÃÂ @hoquan2007</text>
 </g>
 <g transform="translate(330 80)">
   <rect width="270" height="160" rx="10" fill="url(#gen-card)" stroke="#A855F7" stroke-opacity="0.5"/>
   <text x="20" y="34" class="card-title" fill="#A855F7">ÃÂÃÂ· STARS</text>
   <text x="20" y="100" class="big-violet">0</text>
   <text x="170" y="100" class="unit">received</text>
-  <text x="20" y="130" class="lbl">+ 0 forks</text>
+  <text x="20" y="130" class="lbl">+ 1 forks</text>
   <line x1="20" y1="140" x2="250" y2="140" stroke="#1E293B"/>
-  <text x="20" y="156" class="micro">scope ÃÂÃÂ @HNQuan</text>
+  <text x="20" y="156" class="micro">scope ÃÂÃÂ @hoquan2007</text>
 </g>
 <g transform="translate(620 80)">
   <rect width="270" height="160" rx="10" fill="url(#gen-card)" stroke="#7C3AED" stroke-opacity="0.5"/>
@@ -59,24 +59,27 @@
   <text x="170" y="100" class="unit">followers</text>
   <text x="20" y="130" class="lbl">following ÃÂÃÂ 0</text>
   <line x1="20" y1="140" x2="250" y2="140" stroke="#1E293B"/>
-  <text x="20" y="156" class="micro">scope ÃÂÃÂ @HNQuan</text>
+  <text x="20" y="156" class="micro">scope ÃÂÃÂ @hoquan2007</text>
 </g>
 <g transform="translate(910 80)">
   <rect width="250" height="160" rx="10" fill="url(#gen-card)" stroke="#3B82F6" stroke-opacity="0.5"/>
   <text x="20" y="34" class="card-title" fill="#3B82F6">ÃÂÃÂ· FOOTPRINT</text>
-  <text x="20" y="100" class="big-cyan">0</text>
+  <text x="20" y="100" class="big-cyan">670</text>
   <text x="170" y="100" class="unit">MB tracked</text>
-  <text x="20" y="130" class="lbl">2 languages</text>
+  <text x="20" y="130" class="lbl">5 languages</text>
   <line x1="20" y1="140" x2="230" y2="140" stroke="#1E293B"/>
-  <text x="20" y="156" class="micro">scope ÃÂÃÂ @HNQuan</text>
+  <text x="20" y="156" class="micro">scope ÃÂÃÂ @hoquan2007</text>
 </g>
 <g transform="translate(40 270)">
   <rect width="540" height="280" rx="10" fill="url(#gen-card)" stroke="#22D3EE" stroke-opacity="0.45"/>
   <text x="20" y="34" class="card-title" fill="#22D3EE">ÃÂÃÂ LANGUAGE DISTRIBUTION</text>
-  <text x="520" y="34" text-anchor="end" class="micro">top 2 ÃÂÃÂ live</text>
+  <text x="520" y="34" text-anchor="end" class="micro">top 5 ÃÂÃÂ live</text>
   <g transform="translate(20 60)">
-    <text x="0" y="0" class="bar-lbl">TypeScript</text><rect x="100" y="-12" width="260" height="14" rx="2" fill="#0B1224"/><rect x="100" y="-12" width="260" height="14" rx="2" fill="#22D3EE" opacity="0.9"><animate attributeName="width" values="0;260" dur="1.4s" begin="0.1s" fill="freeze"/></rect><text x="370" y="0" class="bar-val">3</text>
-<text x="0" y="26" class="bar-lbl">C</text><rect x="100" y="14" width="260" height="14" rx="2" fill="#0B1224"/><rect x="100" y="14" width="86" height="14" rx="2" fill="#A855F7" opacity="0.9"><animate attributeName="width" values="0;86" dur="1.4s" begin="0.2s" fill="freeze"/></rect><text x="370" y="26" class="bar-val">1</text>
+    <text x="0" y="0" class="bar-lbl">TypeScript</text><rect x="100" y="-12" width="260" height="14" rx="2" fill="#0B1224"/><rect x="100" y="-12" width="260" height="14" rx="2" fill="#22D3EE" opacity="0.9"><animate attributeName="width" values="0;260" dur="1.4s" begin="0.1s" fill="freeze"/></rect><text x="370" y="0" class="bar-val">9</text>
+<text x="0" y="26" class="bar-lbl">HTML</text><rect x="100" y="14" width="260" height="14" rx="2" fill="#0B1224"/><rect x="100" y="14" width="144" height="14" rx="2" fill="#A855F7" opacity="0.9"><animate attributeName="width" values="0;144" dur="1.4s" begin="0.2s" fill="freeze"/></rect><text x="370" y="26" class="bar-val">5</text>
+<text x="0" y="52" class="bar-lbl">C</text><rect x="100" y="40" width="260" height="14" rx="2" fill="#0B1224"/><rect x="100" y="40" width="57" height="14" rx="2" fill="#7C3AED" opacity="0.9"><animate attributeName="width" values="0;57" dur="1.4s" begin="0.30000000000000004s" fill="freeze"/></rect><text x="370" y="52" class="bar-val">2</text>
+<text x="0" y="78" class="bar-lbl">C++</text><rect x="100" y="66" width="260" height="14" rx="2" fill="#0B1224"/><rect x="100" y="66" width="57" height="14" rx="2" fill="#3B82F6" opacity="0.9"><animate attributeName="width" values="0;57" dur="1.4s" begin="0.4s" fill="freeze"/></rect><text x="370" y="78" class="bar-val">2</text>
+<text x="0" y="104" class="bar-lbl">Python</text><rect x="100" y="92" width="260" height="14" rx="2" fill="#0B1224"/><rect x="100" y="92" width="28" height="14" rx="2" fill="#F8FAFC" opacity="0.9"><animate attributeName="width" values="0;28" dur="1.4s" begin="0.5s" fill="freeze"/></rect><text x="370" y="104" class="bar-val">1</text>
   </g>
 </g>
 <g transform="translate(620 270)">
@@ -85,18 +88,18 @@
   <text x="520" y="34" text-anchor="end" class="micro">repo updates / month</text>
   <g transform="translate(20 70)">
     <line x1="0" y1="60" x2="500" y2="60" stroke="#1E293B"/>
-    <path d="M0.0,60.0 L20.0,60.0 L40.0,40.0 L60.0,60.0 L80.0,60.0 L100.0,60.0 L120.0,60.0 L140.0,60.0 L160.0,60.0 L180.0,60.0 L200.0,0.0 L220.0,40.0" fill="none" stroke="#22D3EE" stroke-width="1.6">
+    <path d="M0.0,60.0 L20.0,60.0 L40.0,60.0 L60.0,60.0 L80.0,60.0 L100.0,34.3 L120.0,60.0 L140.0,51.4 L160.0,60.0 L180.0,0.0 L200.0,0.0 L220.0,25.7" fill="none" stroke="#22D3EE" stroke-width="1.6">
       <animate attributeName="stroke-dasharray" values="0,1000;1000,0" dur="2s" fill="freeze"/>
     </path>
-    <path d="M0.0,60.0 L20.0,60.0 L40.0,40.0 L60.0,60.0 L80.0,60.0 L100.0,60.0 L120.0,60.0 L140.0,60.0 L160.0,60.0 L180.0,60.0 L200.0,0.0 L220.0,40.0 L 220 60 L 0 60 Z" fill="#22D3EE" opacity="0.12">
+    <path d="M0.0,60.0 L20.0,60.0 L40.0,60.0 L60.0,60.0 L80.0,60.0 L100.0,34.3 L120.0,60.0 L140.0,51.4 L160.0,60.0 L180.0,0.0 L200.0,0.0 L220.0,25.7 L 220 60 L 0 60 Z" fill="#22D3EE" opacity="0.12">
       <animate attributeName="opacity" values="0;0.12" dur="2s" fill="freeze"/>
     </path>
   </g>
   <g transform="translate(20 160)">
     <text class="micro" y="0">JAN</text>
     <text class="micro" x="500" y="0" text-anchor="end">NOW</text>
-    <text class="micro" y="40">PEAK ÃÂÃÂ?ÃÂÃÂ 3 UPDATES/MO</text>
-    <text class="micro" y="56">SAMPLE ÃÂÃÂ 5 UPDATES ÃÂÃÂ?ÃÂÃÂ 12 MO</text>
+    <text class="micro" y="40">PEAK ÃÂÃÂ?ÃÂÃÂ 7 UPDATES/MO</text>
+    <text class="micro" y="56">SAMPLE ÃÂÃÂ 22 UPDATES ÃÂÃÂ?ÃÂÃÂ 12 MO</text>
     <text class="micro" y="72">SYNTHESIZED FROM updated_at</text>
     <text class="micro" y="88">SOURCE ÃÂÃÂ?ÃÂÃÂ github rest api</text>
   </g>
