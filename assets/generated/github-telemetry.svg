@@ -64,7 +64,7 @@
 <g transform="translate(910 80)">
   <rect width="250" height="160" rx="10" fill="url(#gen-card)" stroke="#3B82F6" stroke-opacity="0.5"/>
   <text x="20" y="34" class="card-title" fill="#3B82F6">ÃÂÃÂ· FOOTPRINT</text>
-  <text x="20" y="100" class="big-cyan">670</text>
+  <text x="20" y="100" class="big-cyan">671</text>
   <text x="170" y="100" class="unit">MB tracked</text>
   <text x="20" y="130" class="lbl">5 languages</text>
   <line x1="20" y1="140" x2="230" y2="140" stroke="#1E293B"/>
