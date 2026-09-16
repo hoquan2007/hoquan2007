@@ -1,0 +1,70 @@
+{
+  "version": "2.0.0",
+  "identity": {
+    "name": "Hồ Ngọc Quân",
+    "handle": "@hoquan2007",
+    "github_url": "https://github.com/hoquan2007",
+    "role": "Software Engineering Student",
+    "mode": "LEARNING / BUILDING / EXPERIMENTING",
+    "founded": "2025-07-30",
+    "languages_known": ["Vietnamese", "English"]
+  },
+  "interests": [
+    "Artificial Intelligence",
+    "Algorithms",
+    "Backend Engineering",
+    "Database Systems",
+    "Computer Systems",
+    "Web Engineering",
+    "Future Technology"
+  ],
+  "domains": ["AI", "Backend", "Systems", "Algorithms", "Web", "Data"],
+  "tech_stack": {
+    "languages": ["TypeScript", "JavaScript", "C", "C++", "HTML"],
+    "web": ["React", "Next.js", "HTML5"],
+    "backend": ["Node.js", "MongoDB", "PostgreSQL"],
+    "data": ["SQL", "JSON"],
+    "tools": ["Git", "GitHub", "Linux", "Vercel", "Cursor"]
+  },
+  "featured_projects": [
+    {
+      "slug": "GPU-Server-Manager",
+      "language": "C",
+      "domain": "systems / backend",
+      "concepts": ["C", "scheduling", "resource management"],
+      "url": "https://github.com/hoquan2007/GPU-Server-Manager"
+    },
+    {
+      "slug": "QEnglish",
+      "language": "TypeScript",
+      "domain": "web / ai",
+      "concepts": ["TypeScript", "AI conversation", "education"],
+      "url": "https://github.com/hoquan2007/QEnglish"
+    },
+    {
+      "slug": "Shadow-Collapse",
+      "language": "TypeScript",
+      "domain": "algorithms / web",
+      "concepts": ["procedural generation", "game loop", "pathfinding"],
+      "url": "https://github.com/hoquan2007/Shadow-Collapse"
+    },
+    {
+      "slug": "face-attendance",
+      "language": "TypeScript",
+      "domain": "ai / web",
+      "concepts": ["computer vision", "real-time", "attendance"],
+      "url": "https://github.com/hoquan2007/face-attendance"
+    }
+  ],
+  "current_mission": {
+    "learning": ["Algorithms", "Data Structures"],
+    "building": ["Backend & AI experiments", "QEnglish conversation", "face-attendance", "Shadow-Collapse"],
+    "exploring": ["Systems & low-level", "GPU resource management", "C systems code", "performance thinking"],
+    "next": ["Deeper AI foundations", "ResearchAI", "ML fundamentals", "Database internals"]
+  },
+  "philosophy": ["LEARN.", "BUILD.", "BREAK.", "UNDERSTAND.", "IMPROVE."],
+  "connect": {
+    "github": "https://github.com/hoquan2007",
+    "repositories": "https://github.com/hoquan2007?tab=repositories"
+  }
+}

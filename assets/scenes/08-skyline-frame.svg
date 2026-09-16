@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-  11-city-frame.svg   Frame for the third-party 3D contribution skyline.
+  08-skyline-frame.svg   Frame for the third-party 3D contribution skyline.
   Provides the "CONTRIBUTION SKYLINE / NEURAL CITY" heading and frame.
-  The actual 3D graph is referenced separately via <picture> in README.
+  The actual 3D graph is referenced separately via raw URL in the README.
   Size 1200x200 so it pairs with an image of equal width.
 -->
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 200" role="img" aria-label="Contribution skyline frame" font-family="JetBrains Mono, ui-monospace, monospace">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 200" role="img" aria-label="Contribution skyline frame — Neural City heading" font-family="JetBrains Mono, ui-monospace, monospace">
   <title>QUAN.OS // Contribution Skyline Frame</title>
+  <desc>Decorative frame introducing the 3D contribution skyline below.</desc>
   <defs>
     <linearGradient id="cf-bg" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0" stop-color="#020617"/>
@@ -29,24 +30,21 @@
     }
   ]]></style>
   <rect width="1200" height="200" fill="url(#cf-bg)"/>
-  <!-- decorative grid -->
   <g stroke="#1E293B" stroke-width="0.5">
     <line x1="0" y1="180" x2="1200" y2="180"/>
     <line x1="0" y1="20" x2="1200" y2="20"/>
   </g>
-  <!-- accent line -->
   <rect x="0" y="60" width="1200" height="2" fill="url(#cf-stripe)">
     <animate attributeName="x" values="-100;100;200" dur="6s" repeatCount="indefinite"/>
   </rect>
-  <text x="60" y="100" class="mono sub">SCENE 11 / CONTRIBUTION SKYLINE</text>
+  <text x="60" y="100" class="mono sub">SCENE 08 / CONTRIBUTION SKYLINE</text>
   <text x="60" y="138" class="mono title">NEURAL CITY</text>
-  <text x="60" y="166" class="mono micro">3D contribution skyline generated nightly ? yoshi389111/github-profile-3d-contrib</text>
-  <!-- right side HUD -->
+  <text x="60" y="166" class="mono micro">3D contribution skyline · yoshi389111/github-profile-3d-contrib</text>
   <g class="mono">
     <text x="1140" y="100" text-anchor="end" class="micro" fill="#22D3EE">SECTOR 52 NODES</text>
-    <text x="1140" y="118" text-anchor="end" class="micro" fill="#A855F7">ZONE 07 ? NIGHT</text>
-    <text x="1140" y="136" text-anchor="end" class="micro">SYNC ? OK</text>
-    <text x="1140" y="154" text-anchor="end" class="micro">QUAN-OS/ENGINE</text>
-    <text x="1140" y="172" text-anchor="end" class="micro">v1.0.0</text>
+    <text x="1140" y="118" text-anchor="end" class="micro" fill="#A855F7">ZONE 07 · NIGHT</text>
+    <text x="1140" y="136" text-anchor="end" class="micro">SYNC · OK</text>
+    <text x="1140" y="154" text-anchor="end" class="micro">QUAN-OS / ENGINE</text>
+    <text x="1140" y="172" text-anchor="end" class="micro">v2.0.0</text>
   </g>
 </svg>

@@ -1,144 +1,159 @@
 # QUAN.OS // Profile Guide
 
-> A scene-by-scene walkthrough of the `hoquan2007` GitHub profile.
-> Read this if you want to understand, edit, or extend the design system.
+This guide documents how the GitHub profile `hoquan2007` is built, how to
+regenerate every visual locally, and how to safely change colors,
+copy, or layout without breaking the contract.
 
 ---
 
-## 1. Repository layout
+## 1. Where everything lives
 
 ```
 hoquan2007/
-├── README.md                       17-scene sequence
-├── .github/workflows/
-│   ├── profile-telemetry.yml       self-hosted GitHub metrics (daily + manual)
-│   ├── snake.yml                   third-party snake (output branch)
-│   └── profile-3d.yml              third-party 3D skyline
+├── README.md                       # the profile itself (Markdown + image tags)
+├── .github/workflows/              # 4 GitHub Actions
+│   ├── profile-3d.yml              # yoshi389111/github-profile-3d-contrib nightly
+│   ├── profile-telemetry.yml       # api.github.com → 4 SVG files (nightly + push)
+│   ├── snake.yml                   # Platane/snk@v3 → output branch (nightly)
+│   └── validate.yml                # scripts/validate_profile.py on push + PR
 ├── assets/
-│   ├── scenes/                     hand-crafted SVG scenes (01..17)
-│   ├── static/                     icons.svg + scene-divider.svg
-│   └── generated/                  produced by profile-telemetry.yml
+│   ├── scenes/                     # static, hand-authored scenes (01-12)
+│   ├── generated/                  # CI-generated SVGs (4 files)
+│   ├── static/scene-divider.svg    # reserved for future transitions
+│   └── ...
+├── profile-3d-contrib/             # CI-generated 3D skyline variants
+├── config/
+│   ├── profile.json                # identity / projects / mission / philosophy
+│   └── theme.json                  # colors / motion timings / metadata
 ├── scripts/
-│   ├── generate_profile_metrics.py standard-library-only telemetry generator
-│   └── check_paths.py              validates README asset paths exist
+│   ├── generate_profile_metrics.py # main SVG generator (uses config/*.json)
+│   └── validate_profile.py         # linting on every push + PR
 └── docs/
-    ├── DESIGN_RESEARCH.md          research notes & source decisions
-    └── PROFILE_GUIDE.md            this file
+    ├── DESIGN_SYSTEM.md            # single source of truth for visuals
+    ├── UX_UI_AUDIT_BEFORE.md       # 47 baseline issues
+    ├── UX_UI_AUDIT_AFTER.md        # how each was fixed + score card
+    └── PROFILE_GUIDE.md            # this file
 ```
 
-## 2. The 17 scenes
+## 2. The 12 scenes (in the order they appear)
 
-| # | Scene | File | Source of truth |
-| --- | --- | --- | --- |
-| 01 | Cinematic boot / hero | `assets/scenes/01-hero.svg` | Hand-crafted |
-| 02 | Identity terminal | `assets/scenes/02-identity.svg` | Hand-crafted |
-| 03 | Neural core | `assets/scenes/03-neural-core.svg` | Hand-crafted |
-| 04 | Tech universe | `assets/scenes/04-tech-orbit.svg` | Verified repos |
-| 05 | Domain HUD | `assets/scenes/05-domains.svg` | Hand-crafted |
-| 06 | Featured projects (LIVE) | `assets/generated/projects.svg` | GitHub API |
-| 06b| Featured projects (FALLBACK) | `assets/scenes/06-projects.svg` | Snapshot 2026-09-15 |
-| 07 | Engineering loop | `assets/scenes/07-engineering-loop.svg` | Hand-crafted |
-| 08 | GitHub telemetry | `assets/generated/github-telemetry.svg` | GitHub API |
-| 09 | Language constellation | `assets/generated/language-constellation.svg` | GitHub API |
-| 10 | Activity stream | `assets/generated/activity-stream.svg` | Events API |
-| 11 | 3D skyline | `profile-3d-contrib/profile-night-rainbow.svg` | yoshi389111 action |
-| 12 | Snake | `output/github-snake[-dark].svg` | Platane/snk |
-| 13 | Current mission | `assets/scenes/13-mission.svg` | Verified repos |
-| 14 | Skill tree | `assets/scenes/14-roadmap.svg` | Verified repos |
-| 15 | Philosophy | `assets/scenes/15-philosophy.svg` | Hand-crafted |
-| 16 | Contact | `assets/scenes/16-contact.svg` | GitHub handle |
-| 17 | Shutdown / footer | `assets/scenes/17-footer.svg` | Hand-crafted |
-
-## 3. Color tokens (locked)
-
-| Token | Hex | Use |
+| # | File | Purpose |
 | --- | --- | --- |
-| BG0 | `#020617` | SVG background base |
-| BG1 | `#050816` | Layered panels |
-| BG2 | `#080B16` | Card surfaces |
-| BG3 | `#0D1117` | GitHub-dark fallback |
-| CYAN | `#22D3EE` | Primary accent |
-| CYAN2 | `#0E7490` | Cyan dark |
-| VIOLET | `#A855F7` | Brand violet |
-| VIOLET2 | `#5B21B6` | Violet dark |
-| PURPLE | `#7C3AED` | Mid violet |
-| BLUE | `#3B82F6` | Cool info |
-| SNOW | `#F8FAFC` | Rare highlight |
-| MUTED | `#94A3B8` | Body text |
-| DIM | `#64748B` | Micro labels |
+| 01 | `assets/scenes/01-hero.svg` | Identity + boot sequence (high energy, slow) |
+| 02 | `assets/scenes/02-whoami.svg` | Terminal-style `whoami` block (medium) |
+| 03 | `assets/scenes/03-engineering-dna.svg` | Engineering DNA central node (calm) |
+| 04 | `assets/scenes/04-tech-universe.svg` | Tech orbital system (medium) |
+| 05 | `assets/scenes/05-domains.svg` | Hexagonal domain HUD (calm) |
+| 06 | `assets/generated/projects.svg` | Top-5 project cards (high) — CI-generated |
+| 07 | `assets/scenes/06-workflow.svg` | Engineering loop (medium) |
+| 08 | `assets/scenes/08-skyline-frame.svg` | Header for the 3D skyline (calm) |
+| 09 | `assets/generated/github-telemetry.svg` | Live profile metrics (medium) |
+| 10 | `assets/scenes/09-mission.svg` | Current mission cards (high) |
+| 11 | `assets/scenes/10-roadmap.svg` | Skill tree (medium) |
+| 12 | `assets/scenes/11-contact.svg` | Final transmission (high) |
+| (footer) | `assets/scenes/12-footer.svg` | Shutdown (calm) |
 
-Never use rainbow colors. Never use red/green/yellow unless used for status indicators (LEDs).
+(Note: the scene numbers visible inside each SVG file are kept stable
+even though file names are renumbered — `assets/scenes/01-hero.svg`
+contains `SCENE 01 / HERO BOOT` and so on.)
 
-## 4. Typography
-
-- Mono stack: `JetBrains Mono, Fira Code, IBM Plex Mono, ui-monospace, Menlo, monospace`
-- Sans stack: `Inter, Segoe UI, system-ui, -apple-system, sans-serif`
-- No `@font-face` is used. GitHub strips custom font loading; system fallbacks resolve cleanly.
-
-## 5. Animation rules
-
-- Loops resync (no snap-back): `gradientTransform` rotations and `<animateMotion>` paths are closed.
-- Reduced motion: every SVG contains the snippet
-  ```css
-  @media (prefers-reduced-motion: reduce){
-    animate,animateTransform,animateMotion{display:none}
-  }
-  ```
-- Loops are 2.4s, 3.4s, 4.0s, etc. — share factors where possible.
-- Pulse strokes use `stroke-opacity` not `stroke`, so the line color stays constant.
-
-## 6. CI workflows
-
-### profile-telemetry.yml
-
-Runs daily at 18:00 UTC + on every push to `scripts/`. Generates:
-
-- `assets/generated/github-telemetry.svg`
-- `assets/generated/projects.svg`
-- `assets/generated/language-constellation.svg`
-- `assets/generated/activity-stream.svg`
-
-Uses only the GitHub REST API. No `pip install`. No third-party services. No fake metrics.
-
-### snake.yml (unchanged)
-
-Generates the snake animation and publishes it to the `output` branch.
-
-### profile-3d.yml (unchanged)
-
-Generates the 3D contribution skyline and commits it under `profile-3d-contrib/`.
-
-## 7. Editing safely
-
-1. Edit an SVG in `assets/scenes/`.
-2. Validate: `python -c "import xml.etree.ElementTree as ET; ET.parse('path/to/file.svg')"`
-3. (Optional) Use `scripts/check_paths.py` to ensure README references still resolve.
-4. Commit and push. The README loads everything from this repository, so GitHub will pick up the changes automatically.
-
-## 8. Performing a clean rebuild
-
-If you ever want to reset:
+## 3. How to run things locally
 
 ```bash
-git checkout main
-git pull
-git log --oneline | head
-# baseline commits available:
-#   cedb5e9 chore(profile): wipe legacy implementation, scaffold QUAN.OS research
-#   e96e7d5 feat(profile): fix workflows, add 3D cube SVG, slim README to animated-only
-#   35418e6 feat(profile): custom cyber-terminal SVG header & footer
+# regenerate all 4 dynamic SVGs into assets/generated/
+python scripts/generate_profile_metrics.py
+
+# lint the README + assets + workflows
+python scripts/validate_profile.py
 ```
 
-## 9. Non-goals (intentional)
+Both scripts are safe to run repeatedly; they are idempotent. The
+generator only hits `api.github.com` for `github_user_name` resolved from
+`GITHUB_USER` or `HNQuan`. Set `GITHUB_TOKEN` to raise the rate limit
+(60 unauthenticated / 5000 authenticated requests/hour).
 
-- No fake stats (`AI 95%`). The HUD uses `LEARNING / BUILDING / EXPLORING / ACTIVE`.
-- No rainbow badges. No `shields.io` cluster.
-- No JS, no iframes, no canvas, no WebGL.
-- No fabricated companies, schools, certifications, or email.
-- No hard-coded stars beyond what the GitHub API returns.
+## 4. How to change colors
 
-## 10. License
+Open `config/theme.json` and edit any value. Re-run the generator. The
+generator pulls every color from this file; the static scenes use the
+same hex codes by hand and are kept in sync via the design-system doc.
 
-This is a personal profile repository. You are welcome to read and learn from
-the structure; please do not lift the personal information (name, repos,
-descriptions) for unrelated purposes.
+If you want to change a static scene's color, also update
+`docs/DESIGN_SYSTEM.md` to keep the documentation honest.
+
+## 5. How to add a new scene
+
+1. Author the SVG in `assets/scenes/NN-name.svg` using the existing
+   palette + reduced-motion media query.
+2. Add a README anchor (`<a id="..."></a>`) and an image tag.
+3. Add the file to `scripts/validate_profile.py`'s expected list.
+4. Re-run the validator.
+5. Open a pull request — `validate.yml` will gate regressions.
+
+## 6. How to update profile data
+
+Open `config/profile.json` and edit the relevant section. Run
+`python scripts/generate_profile_metrics.py` to refresh
+`assets/generated/projects.svg`. Commit both files.
+
+## 7. Common maintenance tasks
+
+| Task | Steps |
+| --- | --- |
+| Bump palette | `config/theme.json` + static scenes (manually mirror changes) |
+| Update featured projects | `config/profile.json` → run generator → commit |
+| Update mission / roadmap | edit static scenes in `assets/scenes/` |
+| Add a new workflow | `.github/workflows/*.yml` (use concurrency + permissions) |
+| Change tagline | `config/theme.json` → static hero → docs |
+
+## 8. Reduced-motion contract
+
+Every animated SVG in this profile ships with:
+
+```css
+@media (prefers-reduced-motion: reduce){
+  animate,animateTransform{display:none}
+}
+```
+
+When the user enables reduced motion, every `<animate>` and
+`<animateTransform>` is removed from layout, so the scene settles into
+its resting state.
+
+## 9. Accessibility contract
+
+Every animated SVG ships with `role="img"`, a useful `aria-label`, an
+SVG `<title>`, and an SVG `<desc>`. Body text outside of decorative
+micro-labels uses at least `#94A3B8` on `#020617` (contrast > 7:1,
+WCAG AAA).
+
+## 10. Performance contract
+
+- Static scenes are hand-authored under 10 KB each.
+- Generated scenes are < 12 KB each.
+- Hero uses no `feGaussianBlur` filters (those caused expensive paints).
+- Animations are `transform`, `opacity`, and `stroke-dasharray` only.
+- Particle counts never exceed 6 per scene.
+- One slow orbit, not five overlapping orbits.
+
+## 11. Trust / honesty contract
+
+- No fake completion percentages.
+- No "I am fluent in..." claims.
+- No fake contact channels (only verified GitHub handle).
+- Every mission card references either an actual repository or a
+  planned study path in `profile.json`.
+
+## 12. The 10-line "I want to ship QUAN.OS" recipe
+
+```bash
+git clone https://github.com/hoquan2007/hoquan2007
+cd hoquan2007
+python scripts/generate_profile_metrics.py
+python scripts/validate_profile.py
+git add -A
+git commit -m "QUAN.OS / refresh"
+git push origin main
+```
+
+That's the entire local workflow.

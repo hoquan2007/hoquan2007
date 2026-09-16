@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  04-tech-universe.svg   Technology solar system.
+  Center: ENGINEERING CORE. 5 orbital rings: Languages, Web, Backend, Data, Tools.
+  Each ring holds verified tech nodes. Nodes drift slowly around the center,
+  but labels remain HORIZONTAL and READABLE (not rotated upside-down).
+  All tech names are verified from the user's actual public repos.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" role="img" aria-label="Technology solar system — Engineering Core surrounded by languages, web stack, backend, data, systems, tools" font-family="JetBrains Mono, ui-monospace, monospace">
+  <title>QUAN.OS // Tech Universe</title>
+  <desc>Engineering Core surrounded by five orbital rings of verified technologies.</desc>
+  <defs>
+    <radialGradient id="o-bg" cx="50%" cy="50%" r="60%">
+      <stop offset="0" stop-color="#0B1224"/>
+      <stop offset="1" stop-color="#020617"/>
+    </radialGradient>
+    <radialGradient id="o-core" cx="50%" cy="50%" r="50%">
+      <stop offset="0" stop-color="#22D3EE"/>
+      <stop offset="0.6" stop-color="#7C3AED"/>
+      <stop offset="1" stop-color="#020617"/>
+    </radialGradient>
+    <radialGradient id="o-halo" cx="50%" cy="50%" r="50%">
+      <stop offset="0" stop-color="#22D3EE" stop-opacity="0.4"/>
+      <stop offset="1" stop-color="#22D3EE" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="o-grid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M32 0H0V32" fill="none" stroke="#10172A" stroke-width="0.5"/>
+    </pattern>
+    <filter id="o-blur"><feGaussianBlur stdDeviation="2"/></filter>
+  </defs>
+  <style><![CDATA[
+    .mono{font-family:JetBrains Mono,Fira Code,IBM Plex Mono,ui-monospace,Menlo,monospace}
+    .tech{font-size:11px;fill:#F8FAFC;letter-spacing:1.2px}
+    .ring-lbl{font-size:10px;fill:#22D3EE;letter-spacing:3px;font-weight:700}
+    .ring-lbl-v{font-size:10px;fill:#A855F7;letter-spacing:3px;font-weight:700}
+    .micro{font-size:9px;fill:#64748B;letter-spacing:2px}
+    @media (prefers-reduced-motion: reduce){
+      animate,animateTransform{display:none}
+    }
+  ]]></style>
+
+  <rect width="800" height="800" fill="url(#o-bg)"/>
+  <rect width="800" height="800" fill="url(#o-grid)" opacity="0.45"/>
+
+  <!-- ring labels (placed in fixed corners so they stay readable) -->
+  <g class="mono">
+    <text class="ring-lbl" x="40" y="100">LANGUAGES</text>
+    <text class="ring-lbl-v" x="40" y="700">WEB STACK</text>
+    <text class="ring-lbl" x="760" y="100" text-anchor="end">SYSTEMS</text>
+    <text class="ring-lbl-v" x="760" y="700" text-anchor="end">TOOLS</text>
+    <text class="ring-lbl" x="400" y="64" text-anchor="middle">DATA · BACKEND</text>
+  </g>
+
+  <!-- orbit rings -->
+  <g fill="none">
+    <circle cx="400" cy="400" r="90"  stroke="#22D3EE" stroke-opacity="0.3" stroke-dasharray="2 4"/>
+    <circle cx="400" cy="400" r="150" stroke="#7C3AED" stroke-opacity="0.28" stroke-dasharray="2 4"/>
+    <circle cx="400" cy="400" r="210" stroke="#22D3EE" stroke-opacity="0.25" stroke-dasharray="2 4"/>
+    <circle cx="400" cy="400" r="270" stroke="#A855F7" stroke-opacity="0.22" stroke-dasharray="2 4"/>
+    <circle cx="400" cy="400" r="330" stroke="#22D3EE" stroke-opacity="0.18" stroke-dasharray="2 4"/>
+  </g>
+
+  <!--
+    Tech nodes. Each node sits at a fixed position so its label is horizontal.
+    Only a thin SIGNAL ARC glides around each ring to suggest motion.
+    The text labels themselves never rotate, so readability is preserved.
+  -->
+
+  <!-- Ring 1: LANGUAGES -->
+  <g class="mono" font-size="9">
+    <!-- signal arc (animated dashoffset) -->
+    <circle cx="400" cy="400" r="90" fill="none" stroke="#22D3EE" stroke-opacity="0.7" stroke-width="1.4" stroke-dasharray="40 525" pathLength="565">
+      <animate attributeName="stroke-dashoffset" from="0" to="-565" dur="40s" repeatCount="indefinite"/>
+    </circle>
+    <g transform="translate(400 310)">
+      <circle r="14" fill="#0B1224" stroke="#22D3EE" stroke-width="1.2"/>
+      <text y="3" text-anchor="middle" class="tech" font-size="9">TS</text>
+      <text y="-22" text-anchor="middle" class="micro">TypeScript</text>
+    </g>
+    <g transform="translate(464 464)">
+      <circle r="14" fill="#0B1224" stroke="#22D3EE" stroke-width="1.2"/>
+      <text y="3" text-anchor="middle" class="tech" font-size="9">JS</text>
+      <text x="22" y="3" class="micro">JavaScript</text>
+    </g>
+    <g transform="translate(336 464)">
+      <circle r="14" fill="#0B1224" stroke="#A855F7" stroke-width="1.2"/>
+      <text y="3" text-anchor="middle" class="tech" font-size="9">C</text>
+      <text x="-22" y="3" text-anchor="end" class="micro">C</text>
+    </g>
+    <g transform="translate(400 490)">
+      <circle r="14" fill="#0B1224" stroke="#A855F7" stroke-width="1.2"/>
+      <text y="3" text-anchor="middle" class="tech" font-size="9">C++</text>
+      <text y="26" text-anchor="middle" class="micro">C++</text>
+    </g>
+  </g>
+
+  <!-- Ring 2: WEB STACK -->
+  <g class="mono" font-size="9">
+    <circle cx="400" cy="400" r="150" fill="none" stroke="#7C3AED" stroke-opacity="0.7" stroke-width="1.4" stroke-dasharray="50 893" pathLength="943">
+      <animate attributeName="stroke-dashoffset" from="0" to="943" dur="50s" repeatCount="indefinite"/>
+    </circle>
+    <g transform="translate(400 250)">
+      <circle r="14" fill="#0B1224" stroke="#A855F7" stroke-width="1.2"/>
+      <text y="3" text-anchor="middle" class="tech" font-size="9">REACT</text>
+      <text y="-22" text-anchor="middle" class="micro">React</text>
+    </g>
+    <g transform="translate(550 400)">
+      <circle r="14" fill="#0B1224" stroke="#A855F7" stroke-width="1.2"/>
+      <text y="3" text-anchor="middle" class="tech" font-size="9">NEXT</text>
+      <text x="22" y="3" class="micro">Next.js</text>
+    </g>
+    <g transform="translate(250 400)">
+      <circle r="14" fill="#0B1224" stroke="#22D3EE" stroke-width="1.2"/>
+      <text y="3" text-anchor="middle" class="tech" font-size="9">HTML</text>
+      <text x="-22" y="3" text-anchor="end" class="micro">HTML5</text>
+    </g>
+  </g>
+
+  <!-- Ring 3: BACKEND -->
+  <g class="mono" font-size="9">
+    <circle cx="400" cy="400" r="210" fill="none" stroke="#22D3EE" stroke-opacity="0.7" stroke-width="1.4" stroke-dasharray="60 1259" pathLength="1319">
+      <animate attributeName="stroke-dashoffset" from="0" to="-1319" dur="60s" repeatCount="indefinite"/>
+    </circle>
+    <g transform="translate(400 190)">
+      <circle r="14" fill="#0B1224" stroke="#22D3EE" stroke-width="1.2"/>
+      <text y="3" text-anchor="middle" class="tech" font-size="9">NODE</text>
+      <text y="-22" text-anchor="middle" class="micro">Node.js</text>
+    </g>
+    <g transform="translate(580 510)">
+      <circle r="14" fill="#0B1224" stroke="#22D3EE" stroke-width="1.2"/>
+      <text y="3" text-anchor="middle" class="tech" font-size="9">MONGO</text>
+      <text x="22" y="3" class="micro">MongoDB</text>
+    </g>
+    <g transform="translate(220 510)">
+      <circle r="14" fill="#0B1224" stroke="#22D3EE" stroke-width="1.2"/>
+      <text y="3" text-anchor="middle" class="tech" font-size="9">PG</text>
+      <text x="-22" y="3" text-anchor="end" class="micro">PostgreSQL</text>
+    </g>
+  </g>
+
+  <!-- Ring 4: DATA -->
+  <g class="mono" font-size="9">
+    <circle cx="400" cy="400" r="270" fill="none" stroke="#A855F7" stroke-opacity="0.7" stroke-width="1.4" stroke-dasharray="70 1626" pathLength="1696">
+      <animate attributeName="stroke-dashoffset" from="0" to="1696" dur="70s" repeatCount="indefinite"/>
+    </circle>
+    <g transform="translate(400 130)">
+      <circle r="14" fill="#0B1224" stroke="#A855F7" stroke-width="1.2"/>
+      <text y="3" text-anchor="middle" class="tech" font-size="9">SQL</text>
+      <text y="-22" text-anchor="middle" class="micro">SQL</text>
+    </g>
+    <g transform="translate(670 400)">
+      <circle r="14" fill="#0B1224" stroke="#A855F7" stroke-width="1.2"/>
+      <text y="3" text-anchor="middle" class="tech" font-size="9">JSON</text>
+      <text x="22" y="3" class="micro">JSON</text>
+    </g>
+  </g>
+
+  <!-- Ring 5: TOOLS -->
+  <g class="mono" font-size="9">
+    <circle cx="400" cy="400" r="330" fill="none" stroke="#22D3EE" stroke-opacity="0.7" stroke-width="1.4" stroke-dasharray="90 1983" pathLength="2073">
+      <animate attributeName="stroke-dashoffset" from="0" to="-2073" dur="90s" repeatCount="indefinite"/>
+    </circle>
+    <g transform="translate(400 70)">
+      <circle r="14" fill="#0B1224" stroke="#22D3EE" stroke-width="1.2"/>
+      <text y="3" text-anchor="middle" class="tech" font-size="9">GIT</text>
+      <text y="-22" text-anchor="middle" class="micro">Git</text>
+    </g>
+    <g transform="translate(730 400)">
+      <circle r="14" fill="#0B1224" stroke="#22D3EE" stroke-width="1.2"/>
+      <text y="3" text-anchor="middle" class="tech" font-size="9">GH</text>
+      <text x="22" y="3" class="micro">GitHub</text>
+    </g>
+    <g transform="translate(400 730)">
+      <circle r="14" fill="#0B1224" stroke="#A855F7" stroke-width="1.2"/>
+      <text y="3" text-anchor="middle" class="tech" font-size="9">LINUX</text>
+      <text y="26" text-anchor="middle" class="micro">Linux</text>
+    </g>
+    <g transform="translate(70 400)">
+      <circle r="14" fill="#0B1224" stroke="#A855F7" stroke-width="1.2"/>
+      <text y="3" text-anchor="middle" class="tech" font-size="9">VERCEL</text>
+      <text x="-22" y="3" text-anchor="end" class="micro">Vercel</text>
+    </g>
+    <g transform="translate(167 167)">
+      <circle r="14" fill="#0B1224" stroke="#22D3EE" stroke-width="1.2"/>
+      <text y="3" text-anchor="middle" class="tech" font-size="9">CRS</text>
+      <text x="-22" y="3" text-anchor="end" class="micro">Cursor</text>
+    </g>
+  </g>
+
+  <!-- core -->
+  <g>
+    <circle cx="400" cy="400" r="80" fill="url(#o-halo)" filter="url(#o-blur)"/>
+    <circle cx="400" cy="400" r="46" fill="url(#o-core)"/>
+    <circle cx="400" cy="400" r="46" fill="none" stroke="#22D3EE" stroke-opacity="0.6"/>
+    <circle cx="400" cy="400" r="56" fill="none" stroke="#22D3EE" stroke-opacity="0.3" stroke-dasharray="2 4">
+      <animateTransform attributeName="transform" type="rotate" from="0 400 400" to="360 400 400" dur="20s" repeatCount="indefinite"/>
+    </circle>
+    <text x="400" y="396" text-anchor="middle" class="mono" font-size="11" fill="#020617" letter-spacing="2" font-weight="700">ENGINEERING</text>
+    <text x="400" y="412" text-anchor="middle" class="mono" font-size="10" fill="#020617" letter-spacing="2" font-weight="700">CORE</text>
+  </g>
+
+  <!-- corner labels -->
+  <g class="mono">
+    <text class="micro" x="40" y="40">SCENE 04 / TECH UNIVERSE</text>
+    <text class="micro" x="40" y="56" fill="#22D3EE">5 ORBITS · 16 NODES</text>
+    <text class="micro" x="760" y="40" text-anchor="end">VERIFIED FROM PUBLIC REPOS</text>
+    <text class="micro" x="760" y="56" text-anchor="end" fill="#A855F7">REV 2026.09</text>
+    <text class="micro" x="40" y="780">· orbits verified from public repos</text>
+    <text class="micro" x="760" y="780" text-anchor="end">· all systems nominal</text>
+  </g>
+</svg>

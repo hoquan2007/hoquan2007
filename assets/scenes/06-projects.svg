@@ -73,22 +73,22 @@
     <circle cx="20" cy="20" r="4" fill="#22D3EE">
       <animate attributeName="opacity" values="0.3;1;0.3" dur="1.8s" repeatCount="indefinite"/>
     </circle>
-    <text x="34" y="24" class="mono lang">SYS ? C</text>
-    <text x="520" y="24" text-anchor="end" class="mono meta">  0 ? UPDATED 2026</text>
+    <text x="34" y="24" class="mono lang">SYS ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ· C</text>
+    <text x="520" y="24" text-anchor="end" class="mono meta">  0 ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ· UPDATED 2026</text>
 
     <text x="20" y="62" class="mono name">GPU-Server-Manager</text>
-    <text x="20" y="86" class="mono desc">B?i t?p l?n K? thu?t L?p tr?nh C   H? th?ng qu?n l? t?i nguy?n m?y ch? GPU.</text>
+    <text x="20" y="86" class="mono desc">C programming final project - GPU server resource management system.</text>
 
     <!-- mini diagram -->
     <g transform="translate(360 110)" class="mono">
       <rect x="0" y="0" width="160" height="60" rx="4" fill="#020617" stroke="#22D3EE" stroke-opacity="0.45"/>
       <text x="8" y="16" class="mono micro" fill="#22D3EE">  GPU POOL   </text>
-      <text x="8" y="32" class="mono micro">RTX ? A100 ? H100</text>
-      <text x="8" y="46" class="mono micro" fill="#A855F7">scheduler ? queue ? util</text>
+      <text x="8" y="32" class="mono micro">RTX ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ· A100 ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ· H100</text>
+      <text x="8" y="46" class="mono micro" fill="#A855F7">scheduler ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ· queue ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ· util</text>
     </g>
 
-    <text x="20" y="128" class="mono meta">CONCEPTS ? C ? scheduling ? resource mgmt</text>
-    <text x="20" y="148" class="mono meta">DOMAIN ? systems / backend</text>
+    <text x="20" y="128" class="mono meta">CONCEPTS ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ· C ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ· scheduling ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ· resource mgmt</text>
+    <text x="20" y="148" class="mono meta">DOMAIN ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ· systems / backend</text>
     <text x="20" y="170" class="mono meta">github.com/hoquan2007/GPU-Server-Manager</text>
     <line x1="20" y1="180" x2="520" y2="180" stroke="#1E293B"/>
   </g>
@@ -105,21 +105,21 @@
     <circle cx="20" cy="20" r="4" fill="#A855F7">
       <animate attributeName="opacity" values="1;0.3;1" dur="2.0s" repeatCount="indefinite"/>
     </circle>
-    <text x="34" y="24" class="mono lang-v">WEB ? TYPESCRIPT</text>
-    <text x="520" y="24" text-anchor="end" class="mono meta">  0 ? UPDATED 2026</text>
+    <text x="34" y="24" class="mono lang-v">WEB ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ· TYPESCRIPT</text>
+    <text x="520" y="24" text-anchor="end" class="mono meta">  0 ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ· UPDATED 2026</text>
 
     <text x="20" y="62" class="mono name">QEnglish</text>
-    <text x="20" y="86" class="mono desc">QEnglish   N?n t?ng h?c ti?ng Anh giao ti?p v?i AI.</text>
+    <text x="20" y="86" class="mono desc">QEnglish - AI conversation platform for English learners.</text>
 
     <g transform="translate(360 110)" class="mono">
       <rect x="0" y="0" width="160" height="60" rx="4" fill="#020617" stroke="#A855F7" stroke-opacity="0.45"/>
       <text x="8" y="16" class="mono micro" fill="#A855F7">  CHAT        </text>
-      <text x="8" y="32" class="mono micro">user ? ai tutor</text>
-      <text x="8" y="46" class="mono micro" fill="#22D3EE">pronunciation ? vocabulary</text>
+      <text x="8" y="32" class="mono micro">user ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ· ai tutor</text>
+      <text x="8" y="46" class="mono micro" fill="#22D3EE">pronunciation ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ· vocabulary</text>
     </g>
 
-    <text x="20" y="128" class="mono meta">CONCEPTS ? ts ? ai ? conversation</text>
-    <text x="20" y="148" class="mono meta">DOMAIN ? web / ai</text>
+    <text x="20" y="128" class="mono meta">CONCEPTS ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ· ts ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ· ai ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ· conversation</text>
+    <text x="20" y="148" class="mono meta">DOMAIN ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ· web / ai</text>
     <text x="20" y="170" class="mono meta">github.com/hoquan2007/QEnglish</text>
     <line x1="20" y1="180" x2="520" y2="180" stroke="#1E293B"/>
   </g>
@@ -136,21 +136,21 @@
     <circle cx="20" cy="20" r="4" fill="#22D3EE">
       <animate attributeName="opacity" values="0.3;1;0.3" dur="2.4s" repeatCount="indefinite"/>
     </circle>
-    <text x="34" y="24" class="mono lang">GAME ? WEB</text>
-    <text x="520" y="24" text-anchor="end" class="mono meta">  0 ? UPDATED 2025</text>
+    <text x="34" y="24" class="mono lang">GAME ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ· WEB</text>
+    <text x="520" y="24" text-anchor="end" class="mono meta">  0 ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ· UPDATED 2025</text>
 
     <text x="20" y="62" class="mono name">Shadow-Collapse</text>
-    <text x="20" y="86" class="mono desc">Procedural Dungeon Crawler.</text>
+    <text x="20" y="86" class="mono desc">Procedural dungeon crawler with tilemap and pathfinding.</text>
 
     <g transform="translate(360 110)" class="mono">
       <rect x="0" y="0" width="160" height="60" rx="4" fill="#020617" stroke="#22D3EE" stroke-opacity="0.45"/>
       <text x="8" y="16" class="mono micro" fill="#22D3EE">  DUNGEON   </text>
-      <text x="8" y="32" class="mono micro">procgen ? grid ? ai</text>
-      <text x="8" y="46" class="mono micro" fill="#A855F7">tilemap ? pathfinding</text>
+      <text x="8" y="32" class="mono micro">procgen ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ· grid ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ· ai</text>
+      <text x="8" y="46" class="mono micro" fill="#A855F7">tilemap ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ· pathfinding</text>
     </g>
 
-    <text x="20" y="128" class="mono meta">CONCEPTS ? procedural generation ? game loop</text>
-    <text x="20" y="148" class="mono meta">DOMAIN ? algorithms / web</text>
+    <text x="20" y="128" class="mono meta">CONCEPTS ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ· procedural generation ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ· game loop</text>
+    <text x="20" y="148" class="mono meta">DOMAIN ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ· algorithms / web</text>
     <text x="20" y="170" class="mono meta">github.com/hoquan2007/Shadow-Collapse</text>
     <line x1="20" y1="180" x2="520" y2="180" stroke="#1E293B"/>
   </g>
@@ -167,8 +167,8 @@
     <circle cx="20" cy="20" r="4" fill="#A855F7">
       <animate attributeName="opacity" values="1;0.3;1" dur="1.6s" repeatCount="indefinite"/>
     </circle>
-    <text x="34" y="24" class="mono lang-v">WEB ? TYPESCRIPT</text>
-    <text x="520" y="24" text-anchor="end" class="mono meta">  0 ? UPDATED 2025</text>
+    <text x="34" y="24" class="mono lang-v">WEB ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ· TYPESCRIPT</text>
+    <text x="520" y="24" text-anchor="end" class="mono meta">  0 ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ· UPDATED 2025</text>
 
     <text x="20" y="62" class="mono name">face-attendance</text>
     <text x="20" y="86" class="mono desc">Web-based attendance tracking with face recognition.</text>
@@ -176,21 +176,22 @@
     <g transform="translate(360 110)" class="mono">
       <rect x="0" y="0" width="160" height="60" rx="4" fill="#020617" stroke="#A855F7" stroke-opacity="0.45"/>
       <text x="8" y="16" class="mono micro" fill="#A855F7">  CAMERA    </text>
-      <text x="8" y="32" class="mono micro">detect ? match ? log</text>
-      <text x="8" y="46" class="mono micro" fill="#22D3EE">ts ? realtime</text>
+      <text x="8" y="32" class="mono micro">detect ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ· match ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ· log</text>
+      <text x="8" y="46" class="mono micro" fill="#22D3EE">ts ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ· realtime</text>
     </g>
 
-    <text x="20" y="128" class="mono meta">CONCEPTS ? computer vision ? web</text>
-    <text x="20" y="148" class="mono meta">DOMAIN ? ai / web</text>
+    <text x="20" y="128" class="mono meta">CONCEPTS ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ· computer vision ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ· web</text>
+    <text x="20" y="148" class="mono meta">DOMAIN ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ· ai / web</text>
     <text x="20" y="170" class="mono meta">github.com/hoquan2007/face-attendance</text>
     <line x1="20" y1="180" x2="520" y2="180" stroke="#1E293B"/>
   </g>
 
   <!-- footer -->
   <g class="mono">
-    <text class="micro" x="40" y="544">? PROJECTS HOSTED INLINE   RESILIENT TO NETWORK FAILURE</text>
-    <text class="micro" x="1160" y="544" text-anchor="end" fill="#22D3EE">SCAN ACTIVE ? LED CYCLING</text>
+    <text class="micro" x="40" y="544">ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ· PROJECTS HOSTED INLINE   RESILIENT TO NETWORK FAILURE</text>
+    <text class="micro" x="1160" y="544" text-anchor="end" fill="#22D3EE">SCAN ACTIVE ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ· LED CYCLING</text>
     <text class="micro" x="40" y="562">SELECTED FROM 22 PUBLIC REPOSITORIES</text>
-    <text class="micro" x="1160" y="562" text-anchor="end" fill="#A855F7">FULL LIST ? /?tab=repositories</text>
+    <text class="micro" x="1160" y="562" text-anchor="end" fill="#A855F7">FULL LIST · /?tab=repositories</text>
+
   </g>
 </svg>

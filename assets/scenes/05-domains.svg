@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
   05-domains.svg   Hexagonal HUD radar visualizing focus areas.
-  6 hexagons labeled with interest areas. Sweep radar rotates behind.
+  6 hexagons labeled with focus areas. Sweep radar rotates behind.
   No fake percentages; uses FOCUS / LEARNING / BUILDING / EXPLORING terms.
 -->
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 520" role="img" aria-label="Engineering domain HUD: focus areas" font-family="JetBrains Mono, ui-monospace, monospace">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 520" role="img" aria-label="Engineering domain HUD — six focus areas surrounding core" font-family="JetBrains Mono, ui-monospace, monospace">
   <title>QUAN.OS // Engineering Domains</title>
+  <desc>Hexagonal HUD visualizing six engineering focus areas: AI, Algorithms, Backend, Databases, Systems, Web. Categories use only verified status words: FOCUS, LEARNING, BUILDING, EXPLORING.</desc>
   <defs>
     <radialGradient id="h-bg" cx="50%" cy="50%" r="60%">
       <stop offset="0" stop-color="#080B16"/>
@@ -45,15 +46,15 @@
   <g class="mono">
     <text class="micro" x="40" y="34">SCENE 05 / ENGINEERING DOMAINS</text>
     <line x1="40" y1="42" x2="320" y2="42" stroke="#22D3EE" stroke-opacity="0.6"/>
-    <text class="micro" x="760" y="34" text-anchor="end">FOCUS ? LEARNING ? BUILDING ? EXPLORING</text>
+    <text class="micro" x="760" y="34" text-anchor="end">FOCUS · LEARNING · BUILDING · EXPLORING</text>
   </g>
 
-  <!-- center hex grid (pointy-top hex layout 1 + 6) -->
+  <!-- center hex grid -->
   <g transform="translate(400 290)">
-    <!-- sweep -->
+    <!-- slow radar sweep -->
     <g opacity="0.5">
       <path d="M0 0 L200 0 A200 200 0 0 1 100 -173 Z" fill="url(#h-sweep)">
-        <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="9s" repeatCount="indefinite"/>
+        <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="14s" repeatCount="indefinite"/>
       </path>
     </g>
     <!-- rings -->
@@ -70,9 +71,7 @@
       <text y="14" text-anchor="middle" class="mono strong">CORE</text>
     </g>
 
-    <!-- 6 surrounding hexes (radially at 60? intervals, distance 100) -->
-    <!-- helper: hex at radius d with flat-top -> vertices -->
-    <!-- we hand-plot 6 hexes (radius ~50 size, distance 100) -->
+    <!-- 6 surrounding hexes -->
     <g transform="translate(0 -100)">
       <polygon points="0,-44 38,-22 38,22 0,44 -38,22 -38,-22" fill="url(#h-hex)" stroke="url(#h-edge)" stroke-width="1.2"/>
       <text y="-6" text-anchor="middle" class="mono lbl" fill="#22D3EE">AI</text>
@@ -134,7 +133,7 @@
   <!-- footer / legend -->
   <g class="mono">
     <line x1="40" y1="478" x2="760" y2="478" stroke="#1E293B"/>
-    <text class="micro" x="40" y="498">? DECORATIVE RADAR ? NOT A PERFORMANCE METRIC</text>
-    <text class="micro" x="760" y="498" text-anchor="end" fill="#22D3EE">SESSION: LEARNING ? BUILDING</text>
+    <text class="micro" x="40" y="498">▸ DECORATIVE RADAR · NOT A PERFORMANCE METRIC</text>
+    <text class="micro" x="760" y="498" text-anchor="end" fill="#22D3EE">SESSION: LEARNING · BUILDING</text>
   </g>
 </svg>

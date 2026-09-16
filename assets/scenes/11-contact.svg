@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-  16-contact.svg   Deep space transmission panel.
+  11-contact.svg   Deep space transmission panel.
   Only verified contact: GitHub handle. No email / social fabrication.
 -->
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 440" role="img" aria-label="Open transmission channel" font-family="JetBrains Mono, ui-monospace, monospace">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 440" role="img" aria-label="Open transmission channel — github.com/hoquan2007" font-family="JetBrains Mono, ui-monospace, monospace">
   <title>QUAN.OS // Contact</title>
+  <desc>Final scene inviting collaboration via the GitHub handle @hoquan2007. Concentric transmission rings around a central signal node.</desc>
   <defs>
     <radialGradient id="c2-bg" cx="50%" cy="50%" r="60%">
       <stop offset="0" stop-color="#080B16"/>
@@ -36,14 +37,13 @@
   <rect width="1200" height="440" fill="url(#c2-bg)"/>
   <rect width="1200" height="440" fill="url(#c2-grid)" opacity="0.45"/>
   <g class="mono">
-    <text class="micro" x="40" y="34">SCENE 16 / CONTACT ? TRANSMISSION</text>
+    <text class="micro" x="40" y="34">SCENE 11 / CONTACT · TRANSMISSION</text>
     <line x1="40" y1="42" x2="380" y2="42" stroke="#22D3EE" stroke-opacity="0.6"/>
-    <text class="micro" x="1160" y="34" text-anchor="end">CHANNEL ? OPEN</text>
+    <text class="micro" x="1160" y="34" text-anchor="end">CHANNEL · OPEN</text>
   </g>
 
   <!-- center signal source -->
   <g transform="translate(600 220)">
-    <!-- concentric transmission rings -->
     <circle r="40" fill="none" stroke="#22D3EE" stroke-opacity="0.8"/>
     <circle r="40" fill="none" stroke="#22D3EE" stroke-opacity="0.4">
       <animate attributeName="r" values="40;160;40" dur="3.4s" repeatCount="indefinite"/>
@@ -66,15 +66,15 @@
 
   <!-- title -->
   <g class="sans" text-anchor="middle">
-    <text x="600" y="100" class="sub">? OPEN CHANNEL ?</text>
+    <text x="600" y="100" class="sub">▸ OPEN CHANNEL ·</text>
     <text x="600" y="142" class="title">TRANSMISSION AVAILABLE</text>
   </g>
 
   <!-- verified contact lines -->
   <g class="mono" transform="translate(600 380)" text-anchor="middle">
-    <text class="handle" y="-14">? github.com/hoquan2007</text>
-    <text class="micro" y="6">OPEN TO COLLABORATION ON AI ? BACKEND ? ALGORITHMS ? WEB PROJECTS</text>
-    <text class="micro" y="22">ENGLISH ? VIETNAMESE</text>
+    <text class="handle" y="-14">▸ github.com/hoquan2007</text>
+    <text class="micro" y="6">OPEN TO COLLABORATION ON AI · BACKEND · ALGORITHMS · WEB PROJECTS</text>
+    <text class="micro" y="22">ENGLISH · VIETNAMESE</text>
   </g>
 
   <!-- decorative orbit dots -->
@@ -86,7 +86,7 @@
   </g>
 
   <g class="mono">
-    <text class="micro" x="40" y="412">FREQ ? 24/7 ? LATENCY &lt;01ms</text>
+    <text class="micro" x="40" y="412">FREQ · 24/7 · LATENCY &lt;01ms</text>
     <text class="micro" x="1160" y="412" text-anchor="end" fill="#22D3EE">UPLINK STABLE</text>
   </g>
 </svg>

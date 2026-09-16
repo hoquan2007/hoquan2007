@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-  13-mission.svg   Current mission queue. Verified items only.
-  Categories: LEARNING ? BUILDING ? EXPLORING ? NEXT.
+  09-mission.svg   Current mission queue. Verified items only.
+  Categories: LEARNING · BUILDING · EXPLORING · NEXT.
 -->
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 540" role="img" aria-label="Current mission queue" font-family="JetBrains Mono, ui-monospace, monospace">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 540" role="img" aria-label="Current mission queue — Learning, Building, Exploring, Next" font-family="JetBrains Mono, ui-monospace, monospace">
   <title>QUAN.OS // Current Mission</title>
+  <desc>Four mission cards: Learning (Algorithms), Building (Backend + AI), Exploring (Systems + Low-Level), Next (Deeper AI Foundations). No fake completion percentages; uses only verified status words.</desc>
   <defs>
     <linearGradient id="m-bg" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0" stop-color="#080B16"/>
@@ -32,9 +33,9 @@
   <rect width="1200" height="540" fill="url(#m-bg)"/>
   <rect width="1200" height="540" fill="url(#m-grid)" opacity="0.45"/>
   <g class="mono">
-    <text class="micro" x="40" y="34">SCENE 13 / CURRENT MISSION</text>
+    <text class="micro" x="40" y="34">SCENE 09 / CURRENT MISSION</text>
     <line x1="40" y1="42" x2="320" y2="42" stroke="#22D3EE" stroke-opacity="0.6"/>
-    <text class="micro" x="1160" y="34" text-anchor="end">VERIFIED ITEMS ? NO FABRICATED PROGRESS %</text>
+    <text class="micro" x="1160" y="34" text-anchor="end">VERIFIED ITEMS · NO FABRICATED PROGRESS %</text>
   </g>
 
   <!-- 4 mission cards -->
@@ -42,15 +43,14 @@
     <!-- LEARNING -->
     <g transform="translate(40 80)">
       <rect width="270" height="200" rx="8" fill="url(#m-card)" stroke="#22D3EE" stroke-opacity="0.45"/>
-      <text class="cat" x="20" y="32">? LEARNING</text>
+      <text class="cat" x="20" y="32">▸ LEARNING</text>
       <text class="title" x="20" y="62">Algorithms</text>
       <text class="title" x="20" y="86">&amp; Data Structures</text>
       <line x1="20" y1="100" x2="250" y2="100" stroke="#1E293B"/>
-      <text class="item" x="20" y="124">? Sorting &amp; Searching</text>
-      <text class="item" x="20" y="142">? Graph theory</text>
-      <text class="item" x="20" y="160">? Dynamic programming</text>
-      <text class="status" x="20" y="184">STATUS ? ACTIVE</text>
-      <!-- moving cursor -->
+      <text class="item" x="20" y="124">▸ Sorting &amp; Searching</text>
+      <text class="item" x="20" y="142">▸ Graph theory</text>
+      <text class="item" x="20" y="160">▸ Dynamic programming</text>
+      <text class="status" x="20" y="184">STATUS · ACTIVE</text>
       <rect x="148" y="172" width="7" height="14" fill="#22D3EE">
         <animate attributeName="opacity" values="1;0;1" dur="1.2s" repeatCount="indefinite"/>
       </rect>
@@ -58,38 +58,38 @@
     <!-- BUILDING -->
     <g transform="translate(330 80)">
       <rect width="270" height="200" rx="8" fill="url(#m-card)" stroke="#A855F7" stroke-opacity="0.45"/>
-      <text class="cat" x="20" y="32" fill="#A855F7">? BUILDING</text>
+      <text class="cat" x="20" y="32" fill="#A855F7">▸ BUILDING</text>
       <text class="title" x="20" y="62">Backend &amp; AI</text>
       <text class="title" x="20" y="86">Experiments</text>
       <line x1="20" y1="100" x2="250" y2="100" stroke="#1E293B"/>
-      <text class="item" x="20" y="124">? QEnglish conversation</text>
-      <text class="item" x="20" y="142">? face-attendance</text>
-      <text class="item" x="20" y="160">? Shadow-Collapse</text>
-      <text class="status" x="20" y="184">STATUS ? ITERATING</text>
+      <text class="item" x="20" y="124">▸ QEnglish conversation</text>
+      <text class="item" x="20" y="142">▸ face-attendance</text>
+      <text class="item" x="20" y="160">▸ Shadow-Collapse</text>
+      <text class="status" x="20" y="184">STATUS · ITERATING</text>
     </g>
     <!-- EXPLORING -->
     <g transform="translate(620 80)">
       <rect width="270" height="200" rx="8" fill="url(#m-card)" stroke="#7C3AED" stroke-opacity="0.45"/>
-      <text class="cat" x="20" y="32" fill="#A855F7">? EXPLORING</text>
+      <text class="cat" x="20" y="32" fill="#A855F7">▸ EXPLORING</text>
       <text class="title" x="20" y="62">Systems &amp;</text>
       <text class="title" x="20" y="86">Low-Level</text>
       <line x1="20" y1="100" x2="250" y2="100" stroke="#1E293B"/>
-      <text class="item" x="20" y="124">? GPU resource mgmt</text>
-      <text class="item" x="20" y="142">? C / systems code</text>
-      <text class="item" x="20" y="160">? Performance thinking</text>
-      <text class="status" x="20" y="184">STATUS ? CURIOUS</text>
+      <text class="item" x="20" y="124">▸ GPU resource mgmt</text>
+      <text class="item" x="20" y="142">▸ C / systems code</text>
+      <text class="item" x="20" y="160">▸ Performance thinking</text>
+      <text class="status" x="20" y="184">STATUS · CURIOUS</text>
     </g>
     <!-- NEXT -->
     <g transform="translate(910 80)">
       <rect width="250" height="200" rx="8" fill="url(#m-card)" stroke="#3B82F6" stroke-opacity="0.45"/>
-      <text class="cat" x="20" y="32" fill="#22D3EE">? NEXT</text>
+      <text class="cat" x="20" y="32" fill="#22D3EE">▸ NEXT</text>
       <text class="title" x="20" y="62">Deeper AI</text>
       <text class="title" x="20" y="86">Foundations</text>
       <line x1="20" y1="100" x2="230" y2="100" stroke="#1E293B"/>
-      <text class="item" x="20" y="124">? ResearchAI</text>
-      <text class="item" x="20" y="142">? ML fundamentals</text>
-      <text class="item" x="20" y="160">? Database internals</text>
-      <text class="status" x="20" y="184">STATUS ? QUEUED</text>
+      <text class="item" x="20" y="124">▸ ResearchAI</text>
+      <text class="item" x="20" y="142">▸ ML fundamentals</text>
+      <text class="item" x="20" y="160">▸ Database internals</text>
+      <text class="status" x="20" y="184">STATUS · QUEUED</text>
     </g>
   </g>
 
@@ -97,11 +97,9 @@
   <g class="mono" transform="translate(40 320)">
     <text class="cat" y="14">MISSION TIMELINE</text>
     <line x1="0" y1="40" x2="1120" y2="40" stroke="#1E293B"/>
-    <!-- moving dot -->
     <circle r="6" fill="#22D3EE">
       <animateMotion dur="14s" repeatCount="indefinite" path="M0 40 L1120 40"/>
     </circle>
-    <!-- milestones -->
     <g class="mono">
       <circle cx="0" cy="40" r="6" fill="#22D3EE"/>
       <text x="0" y="64" text-anchor="start" class="micro">2025-07-30</text>
@@ -127,8 +125,8 @@
 
   <g class="mono">
     <text class="micro" x="40" y="498">ALL ITEMS DERIVED FROM ACTUAL PUBLIC REPOSITORIES</text>
-    <text class="micro" x="1160" y="498" text-anchor="end" fill="#22D3EE">QUAN-OS ? MISSION CONTROL</text>
-    <text class="micro" x="40" y="518">NO FAKE COMPLETION PERCENTAGES ? ONLY VERIFIED SIGNALS</text>
+    <text class="micro" x="1160" y="498" text-anchor="end" fill="#22D3EE">QUAN-OS · MISSION CONTROL</text>
+    <text class="micro" x="40" y="518">NO FAKE COMPLETION PERCENTAGES · ONLY VERIFIED SIGNALS</text>
     <text class="micro" x="1160" y="518" text-anchor="end" fill="#A855F7">REV 2026.09</text>
   </g>
 </svg>

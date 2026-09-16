@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-  03-neural-core.svg   Animated radial neural network. HO QUAN center, 6 branches:
-  AI ? SOFTWARE ? SYSTEMS ? DATA ? ALGORITHMS ? BACKEND.
+  03-engineering-dna.svg   Engineering DNA. HO QUAN center, 6 branches:
+  AI · SOFTWARE · SYSTEMS · DATA · ALGORITHMS · BACKEND.
   Asynchronous pulse on each branch.
 -->
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" role="img" aria-label="Neural core: HO QUAN with 6 active branches" font-family="JetBrains Mono, ui-monospace, monospace">
-  <title>QUAN.OS // Neural Core</title>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" role="img" aria-label="Engineering DNA — HO QUAN connected to AI, SOFTWARE, SYSTEMS, DATA, ALGORITHMS, BACKEND" font-family="JetBrains Mono, ui-monospace, monospace">
+  <title>QUAN.OS // Engineering DNA</title>
   <defs>
     <radialGradient id="n-bg" cx="50%" cy="50%" r="60%">
       <stop offset="0" stop-color="#0B1224"/>
@@ -46,7 +46,7 @@
   <circle cx="400" cy="400" r="390" fill="none" stroke="#1E293B" stroke-dasharray="2 8"/>
   <circle cx="400" cy="400" r="370" fill="none" stroke="#22D3EE" stroke-opacity="0.18"/>
 
-  <!-- 6 branches at angles 0?, 60?, 120?, 180?, 240?, 300? (going out from center) -->
+  <!-- 6 branches at 0, 60, 120, 180, 240, 300 (going out from center) -->
   <!-- branch positions: angle = -90 + 60*i (so first is top) -->
   <!-- we hand-place for visual balance -->
 
@@ -154,7 +154,7 @@
         <animate attributeName="stroke-opacity" values="0.8;0;0.8" dur="3.6s" repeatCount="indefinite"/>
       </circle>
       <text y="-2" text-anchor="middle" class="branch" fill="#F8FAFC">SYSTEMS</text>
-      <text y="14" text-anchor="middle" class="micro">os ? networks ? low-level</text>
+      <text y="14" text-anchor="middle" class="micro">os · networks · low-level</text>
     </g>
     <!-- DATA -->
     <g transform="translate(400 680)">
@@ -164,7 +164,7 @@
         <animate attributeName="stroke-opacity" values="0;0.8;0" dur="4.4s" repeatCount="indefinite"/>
       </circle>
       <text y="-2" text-anchor="middle" class="branch" fill="#F8FAFC">DATA</text>
-      <text y="14" text-anchor="middle" class="micro">databases ? storage</text>
+      <text y="14" text-anchor="middle" class="micro">databases · storage</text>
     </g>
     <!-- ALGORITHMS -->
     <g transform="translate(153 540)">
@@ -190,11 +190,11 @@
 
   <!-- corner labels -->
   <g class="mono">
-    <text class="micro" x="40" y="40">SCENE 03 / NEURAL CORE</text>
-    <text class="micro" x="40" y="56" fill="#22D3EE">6 BRANCHES ? ACTIVE</text>
-    <text class="micro" x="760" y="40" text-anchor="end">SYNC OK ? DRIFT 0.00%</text>
-    <text class="micro" x="760" y="56" text-anchor="end" fill="#A855F7">PHASE LOCK ? 4.0s</text>
-    <text class="micro" x="40" y="780">? signal flow outward ? cognition inward</text>
-    <text class="micro" x="760" y="780" text-anchor="end">? energy: nominal</text>
+    <text class="micro" x="40" y="40">SCENE 03 / ENGINEERING DNA</text>
+    <text class="micro" x="40" y="56" fill="#22D3EE">6 BRANCHES · ACTIVE</text>
+    <text class="micro" x="760" y="40" text-anchor="end">SYNC OK · DRIFT 0.00%</text>
+    <text class="micro" x="760" y="56" text-anchor="end" fill="#A855F7">PHASE LOCK · 4.0s</text>
+    <text class="micro" x="40" y="780">· signal flow outward · cognition inward</text>
+    <text class="micro" x="760" y="780" text-anchor="end">· energy: nominal</text>
   </g>
 </svg>

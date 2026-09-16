@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-  17-footer.svg   System shutdown / session complete.
+  12-footer.svg   System shutdown / session complete.
   Aurora fade, particles, slow wave, thanks for visiting.
 -->
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 320" role="img" aria-label="System shutdown   session complete" font-family="JetBrains Mono, ui-monospace, monospace">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 320" role="img" aria-label="System shutdown — session complete" font-family="JetBrains Mono, ui-monospace, monospace">
   <title>QUAN.OS // Shutdown</title>
+  <desc>Closing scene: thanks for visiting, neural core powering down.</desc>
   <defs>
     <radialGradient id="f-bg" cx="50%" cy="80%" r="60%">
       <stop offset="0" stop-color="#080B16"/>
@@ -32,14 +33,13 @@
     .title{font-size:28px;fill:url(#f-text);letter-spacing:6px;font-weight:700}
     .sub{font-size:11px;fill:#22D3EE;letter-spacing:4px}
     .micro{font-size:9px;fill:#64748B;letter-spacing:2px}
-    .caret{fill:#22D3EE}
     @media (prefers-reduced-motion: reduce){
       animate,animateTransform{display:none}
     }
   ]]></style>
   <rect width="1200" height="320" fill="url(#f-bg)"/>
 
-  <!-- particles -->
+  <!-- particles (few, calm) -->
   <g fill="#F8FAFC">
     <circle cx="120" cy="80" r="1"><animate attributeName="opacity" values="0;1;0" dur="4s" repeatCount="indefinite"/></circle>
     <circle cx="280" cy="60" r="1.2"><animate attributeName="opacity" values="0;1;0" dur="4.6s" begin="0.4s" repeatCount="indefinite"/></circle>
@@ -52,7 +52,7 @@
   <!-- horizon glow -->
   <ellipse cx="600" cy="320" rx="900" ry="120" fill="url(#f-horizon)"/>
 
-  <!-- wave -->
+  <!-- waves -->
   <path d="M0 240 Q150 220 300 240 T600 240 T900 240 T1200 240" stroke="url(#f-wave)" stroke-width="1.5" fill="none">
     <animate attributeName="d" dur="6s" repeatCount="indefinite"
       values="M0 240 Q150 220 300 240 T600 240 T900 240 T1200 240;
@@ -68,7 +68,7 @@
 
   <!-- titles -->
   <g class="sans" text-anchor="middle">
-    <text x="600" y="118" class="sub">? SESSION 01 ? COMPLETE ?</text>
+    <text x="600" y="118" class="sub">▸ SESSION 01 · COMPLETE ·</text>
     <text x="600" y="170" class="title">THANKS FOR VISITING</text>
   </g>
 
@@ -83,7 +83,7 @@
 
   <line x1="0" y1="290" x2="1200" y2="290" stroke="#1E293B" stroke-width="0.5"/>
   <g class="mono">
-    <text class="micro" x="40" y="306">? POWERING DOWN NEURAL CORE ?</text>
-    <text class="micro" x="1160" y="306" text-anchor="end" fill="#22D3EE">QUAN.OS ? EOL ? 2026-09-15</text>
+    <text class="micro" x="40" y="306">▸ POWERING DOWN NEURAL CORE ·</text>
+    <text class="micro" x="1160" y="306" text-anchor="end" fill="#22D3EE">QUAN.OS · ONLINE · 2026</text>
   </g>
 </svg>

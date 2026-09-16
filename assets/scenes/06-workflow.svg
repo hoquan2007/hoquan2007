@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-  07-engineering-loop.svg   Engineering cycle workflow.
-  IDEA ? RESEARCH ? DESIGN ? IMPLEMENT ? TEST ? DEPLOY ? OBSERVE ? IMPROVE ? loop.
+  06-workflow.svg   Engineering cycle workflow.
+  IDEA → RESEARCH → DESIGN → IMPLEMENT → TEST → DEPLOY → OBSERVE → IMPROVE → loop.
   Packets travel around the loop continuously.
 -->
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 520" role="img" aria-label="Engineering loop: continuous build cycle" font-family="JetBrains Mono, ui-monospace, monospace">
-  <title>QUAN.OS // Engineering Loop</title>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 520" role="img" aria-label="Engineering workflow loop — idea, research, design, implement, test, deploy, observe, improve" font-family="JetBrains Mono, ui-monospace, monospace">
+  <title>QUAN.OS // Engineering Workflow</title>
   <defs>
     <linearGradient id="l-bg" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0" stop-color="#080B16"/>
@@ -46,9 +46,9 @@
   <rect width="1200" height="520" fill="url(#l-grid)" opacity="0.45"/>
 
   <g class="mono">
-    <text class="micro" x="40" y="34">SCENE 07 / ENGINEERING LOOP</text>
+    <text class="micro" x="40" y="34">SCENE 06 / ENGINEERING WORKFLOW</text>
     <line x1="40" y1="42" x2="320" y2="42" stroke="#22D3EE" stroke-opacity="0.6"/>
-    <text class="micro" x="1160" y="34" text-anchor="end">CYCLE ? CONTINUOUS ? OBSESSIVE</text>
+    <text class="micro" x="1160" y="34" text-anchor="end">CYCLE · CONTINUOUS · OBSESSIVE</text>
   </g>
 
   <!-- center decoration -->
@@ -190,7 +190,7 @@
   </g>
 
   <g class="mono">
-    <text class="micro" x="40" y="498">? ITERATION &gt; PERFECTION ? THE LOOP IS THE PRODUCT</text>
-    <text class="micro" x="1160" y="498" text-anchor="end" fill="#22D3EE">8 STAGES ? 12s LOOP</text>
+    <text class="micro" x="40" y="498">· ITERATION &gt; PERFECTION · THE LOOP IS THE PRODUCT</text>
+    <text class="micro" x="1160" y="498" text-anchor="end" fill="#22D3EE">8 STAGES · 12s LOOP</text>
   </g>
 </svg>

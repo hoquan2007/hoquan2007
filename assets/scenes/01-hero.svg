@@ -84,11 +84,11 @@
 
   <!-- Layer 1: aurora (animated translate) -->
   <g opacity="0.85">
-    <ellipse cx="600" cy="180" rx="900" ry="140" fill="url(#aurora1)" filter="url(#blur6)">
-      <animate attributeName="cx" values="200;1000;200" dur="14s" repeatCount="indefinite"/>
+    <ellipse cx="600" cy="180" rx="700" ry="120" fill="url(#aurora1)">
+      <animate attributeName="cx" values="300;900;300" dur="18s" repeatCount="indefinite"/>
     </ellipse>
-    <ellipse cx="500" cy="320" rx="800" ry="110" fill="url(#aurora2)" filter="url(#blur6)">
-      <animate attributeName="cx" values="1000;200;1000" dur="18s" repeatCount="indefinite"/>
+    <ellipse cx="500" cy="320" rx="600" ry="100" fill="url(#aurora2)">
+      <animate attributeName="cx" values="900;300;900" dur="22s" repeatCount="indefinite"/>
     </ellipse>
   </g>
 
@@ -163,8 +163,8 @@
   <!-- Layer 6: top edge telemetry labels -->
   <g class="mono">
     <text class="micro" x="86" y="38">SYS://HOQUAN2007</text>
-    <text class="micro" x="86" y="54" fill="#22D3EE">? UPLINK ACTIVE</text>
-    <text class="micro" x="1114" y="38" text-anchor="end">NODE 01 ? BUILD 2026</text>
+    <text class="micro" x="86" y="54" fill="#22D3EE">ÃÂ¢ÃÂÃÂ¸ UPLINK ACTIVE</text>
+    <text class="micro" x="1114" y="38" text-anchor="end">NODE 01 ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ· BUILD 2026</text>
     <text class="micro" x="1114" y="54" text-anchor="end" fill="#A855F7">LATENCY &lt;01ms</text>
     <line x1="0" y1="70" x2="1200" y2="70" stroke="#1E293B" stroke-width="0.6"/>
   </g>
@@ -172,7 +172,7 @@
   <!-- Layer 7: center identity -->
   <g>
     <!-- radial glow behind name -->
-    <circle cx="600" cy="220" r="280" fill="url(#glow)" filter="url(#blur6)" opacity="0.9"/>
+    <circle cx="600" cy="220" r="280" fill="url(#glow)" opacity="0.9"/>
 
     <!-- tag above -->
     <g transform="translate(600 130)">
@@ -184,8 +184,8 @@
       <text x="-72" y="4" class="badge">ENGINEERING COMMAND CENTER</text>
     </g>
 
-    <text x="600" y="232" text-anchor="middle" class="sans name">H? NG?C QU?N</text>
-    <text x="600" y="268" text-anchor="middle" class="mono sub">SOFTWARE ? SYSTEMS ? INTELLIGENCE</text>
+    <text x="600" y="232" text-anchor="middle" class="sans name">H&#x1ED4; NG&#x1EC8;C QU&#xC2;N</text>
+    <text x="600" y="268" text-anchor="middle" class="mono sub">SOFTWARE ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ· SYSTEMS ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ· INTELLIGENCE</text>
 
     <!-- caret under name -->
     <g transform="translate(600 300)">
@@ -202,7 +202,7 @@
     <circle cx="14" cy="13" r="4" fill="#7C3AED"/>
     <circle cx="28" cy="13" r="4" fill="#A855F7"/>
     <circle cx="42" cy="13" r="4" fill="#22D3EE"/>
-    <text x="60" y="17" class="mono micro" fill="#94A3B8">quan-os ? /dev/stdout</text>
+    <text x="60" y="17" class="mono micro" fill="#94A3B8">quan-os ÃÂ· /dev/stdout</text>
 
     <!-- boot lines with typewriter reveal -->
     <g class="mono" font-size="13">
@@ -259,7 +259,7 @@
 
     <g transform="translate(1080 200)" text-anchor="end">
       <text class="lbl-strong">GPU</text>
-      <text class="lbl" y="14">RTX ? READY</text>
+      <text class="lbl" y="14">RTX ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ· READY</text>
       <text class="lbl" y="28">DRIVER OK</text>
       <rect x="0" y="36" width="80" height="3" fill="#0F172A"/>
       <rect x="0" y="36" width="55" height="3" fill="#22D3EE">
@@ -268,7 +268,7 @@
     </g>
     <g transform="translate(1080 320)" text-anchor="end">
       <text class="lbl-strong">AI</text>
-      <text class="lbl" y="14">MODEL ? STANDBY</text>
+      <text class="lbl" y="14">MODEL ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ· STANDBY</text>
       <text class="lbl" y="28">TOKEN d 8K</text>
       <rect x="0" y="36" width="80" height="3" fill="#0F172A"/>
       <rect x="0" y="36" width="35" height="3" fill="#A855F7">
@@ -291,6 +291,6 @@
 
   <!-- Layer 11: footer micro labels -->
   <g class="mono">
-    <text class="micro" x="600" y="548" text-anchor="middle">? TRANSMISSION CHANNEL OPEN ?</text>
+    <text class="micro" x="600" y="548" text-anchor="middle">ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ· TRANSMISSION CHANNEL OPEN ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ·</text>
   </g>
 </svg>

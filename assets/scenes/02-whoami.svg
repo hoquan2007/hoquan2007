@@ -48,9 +48,9 @@
 
   <!-- section label -->
   <g class="mono">
-    <text class="micro" x="40" y="34">SCENE 02 / IDENTITY ? WHOAMI</text>
+    <text class="micro" x="40" y="34">SCENE 02 / IDENTITY · WHOAMI</text>
     <line x1="40" y1="42" x2="220" y2="42" stroke="#22D3EE" stroke-opacity="0.7" stroke-width="1"/>
-    <text class="micro" x="1160" y="34" text-anchor="end">SECURE LINK ? TLS</text>
+    <text class="micro" x="1160" y="34" text-anchor="end">SECURE LINK · TLS</text>
     <line x1="980" y1="42" x2="1160" y2="42" stroke="#A855F7" stroke-opacity="0.7" stroke-width="1"/>
   </g>
 
@@ -113,7 +113,7 @@
       <text x="100" y="66" class="val">"Software Engineering Student"</text>
 
       <text x="20" y="88" class="key">"mode":</text>
-      <text x="100" y="88" class="val">"LEARNING ? BUILDING ? EXPERIMENTING"</text>
+      <text x="100" y="88" class="val">"LEARNING · BUILDING · EXPERIMENTING"</text>
 
       <text x="20" y="110" class="key">"founded":</text>
       <text x="120" y="110" class="val-cyan">"2025-07-30"</text>
@@ -139,7 +139,7 @@
   <!-- RIGHT: micro system diagram -->
   <g transform="translate(760 100)">
     <text class="mono lbl" x="0" y="0">SYSTEM MAP</text>
-    <text class="mono micro" x="0" y="14">5 ACTIVE NODES ? 12 LINKS</text>
+    <text class="mono micro" x="0" y="14">5 ACTIVE NODES · 12 LINKS</text>
 
     <!-- nodes -->
     <g transform="translate(180 130)">
@@ -221,6 +221,6 @@
   <g class="mono">
     <text class="micro" x="40" y="414">authentication .......... verified</text>
     <text class="micro" x="600" y="414" text-anchor="middle">all modules reporting nominal</text>
-    <text class="micro" x="1160" y="414" text-anchor="end">session ? encrypted</text>
+    <text class="micro" x="1160" y="414" text-anchor="end">session · encrypted</text>
   </g>
 </svg>
