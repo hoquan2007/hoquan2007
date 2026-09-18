@@ -36,7 +36,7 @@
 <g class="mono">
   <line x1="40" y1="478" x2="1160" y2="478" stroke="#1E293B"/>
   <text class="micro" x="40" y="500">FALLBACK ÃÂÃÂ updated_at WHEN EVENTS API UNAVAILABLE</text>
-  <text class="micro" x="1160" y="500" text-anchor="end" fill="#22D3EE">2026-09-17 20:49 UTC</text>
+  <text class="micro" x="1160" y="500" text-anchor="end" fill="#22D3EE">2026-09-18 20:15 UTC</text>
   <text class="micro" x="40" y="520">PUBLIC DATA ONLY ÃÂÃÂ NEVER LEAK PRIVATE INFO</text>
   <text class="micro" x="1160" y="520" text-anchor="end" fill="#A855F7">QUAN-OS ÃÂÃÂ STREAM ENGINE</text>
 </g>
