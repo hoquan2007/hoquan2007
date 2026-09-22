@@ -25,7 +25,7 @@
 <g class="mono">
   <text class="micro" x="40" y="34">SCENE 06 / FEATURED SYSTEMS ÃÂÃÂ LIVE</text>
   <line x1="40" y1="42" x2="320" y2="42" stroke="#22D3EE" stroke-opacity="0.6"/>
-  <text class="micro" x="1160" y="34" text-anchor="end">CURATED FROM 22 PUBLIC REPOS</text>
+  <text class="micro" x="1160" y="34" text-anchor="end">CURATED FROM 24 PUBLIC REPOS</text>
 </g>
 <g transform="translate(40 80)">
   <rect width="540" height="200" rx="10" fill="#0B1224" stroke="#22D3EE" stroke-opacity="0.65" stroke-width="1"/>
@@ -105,7 +105,7 @@
 </g>
 <g class="mono">
   <text class="micro" x="40" y="544">? PRIORITIZED BY REPRESENTATIVENESS ÃÂÃÂ NOT STAR COUNT ALONE</text>
-  <text class="micro" x="1160" y="544" text-anchor="end" fill="#22D3EE">UPDATED 2026-09-21</text>
+  <text class="micro" x="1160" y="544" text-anchor="end" fill="#22D3EE">UPDATED 2026-09-22</text>
   <text class="micro" x="40" y="562">FULL LIST ÃÂÃÂ?ÃÂÃÂ /?tab=repositories</text>
   <text class="micro" x="1160" y="562" text-anchor="end" fill="#A855F7">QUAN-OS ÃÂÃÂ GALLERY ENGINE</text>
 </g>
