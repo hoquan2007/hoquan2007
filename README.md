@@ -1,348 +1,226 @@
-<!--
-  QUAN.OS // README
-  Sequence of 12 SVG scenes + real Markdown content.
-  All visuals are self-hosted. No JS. No iframes. SVG only.
--->
-
 <div align="center">
 
-<img
-  src="./assets/scenes/01-hero.svg"
-  width="100%"
-  alt="QUAN.OS // boot sequence — Hồ Ngọc Quân engineering command center"
-/>
+<!-- HERO BANNER -->
+<img src="./assets/hero-banner.svg" alt="Hồ Ngọc Quân - Hero Banner" width="100%" />
+
+<br/>
+
+<!-- DYNAMIC TYPING HEADLINE -->
+<a href="https://github.com/hoquan2007">
+  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=19&duration=3000&pause=1200&color=00E5FF&center=true&vCenter=true&multiline=false&width=750&height=42&lines=👋+Hello%2C+I'm+H%E1%BB%93+Ng%E1%BB%8Dc+Qu%C3%A2n+(%40hoquan2007);⚡+Software+Engineering+Student+%E2%80%A2+Systems+%26+Web;🛠️+Crafting+reliable+software+from+C%2FC%2B%2B+to+TypeScript;🤖+Exploring+Applied+AI%2C+Computer+Vision+%26+Algorithms;🚀+Building+high-impact+projects+with+clean+code" alt="Typing SVG Banner" />
+</a>
+
+<br/>
+
+<!-- QUICK STATUS PILLS & SOCIAL CONNECT -->
+<p align="center">
+  <a href="https://github.com/hoquan2007">
+    <img src="https://img.shields.io/badge/GitHub-%40hoquan2007-0B132B?style=for-the-badge&logo=github&logoColor=00E5FF&labelColor=030712" alt="GitHub Profile" />
+  </a>
+  <a href="https://github.com/hoquan2007?tab=repositories">
+    <img src="https://img.shields.io/badge/Repositories-20%2B_Projects-0B132B?style=for-the-badge&logo=git&logoColor=38BDF8&labelColor=030712" alt="Repositories" />
+  </a>
+  <a href="https://github.com/hoquan2007">
+    <img src="https://img.shields.io/badge/Status-Open_for_Opportunities-0B132B?style=for-the-badge&logo=codeforces&logoColor=10B981&labelColor=030712" alt="Status" />
+  </a>
+  <a href="https://github.com/hoquan2007">
+    <img src="https://img.shields.io/badge/Location-Vietnam_🇻🇳-0B132B?style=for-the-badge&logo=googlemaps&logoColor=F59E0B&labelColor=030712" alt="Location" />
+  </a>
+</p>
 
 </div>
 
-<br/>
+---
+
+### 🍱 Engineering Pillars & Background `[Bento View]`
+
+<table>
+  <tr>
+    <td width="50%" valign="top">
+      <h3>⚡ Low-Level Systems &amp; Architecture</h3>
+      <p>
+        Đam mê nghiên cứu kiến trúc máy tính, hệ điều hành và cơ chế quản trị tài nguyên phần cứng. Thích viết code C/C++ tường minh, an toàn bộ nhớ và tối ưu hiệu năng cao.
+      </p>
+      <ul>
+        <li><b>Core:</b> C · C++ · POSIX Systems · Linux</li>
+        <li><b>Tập trung:</b> GPU resource scheduling, process management, memory layout.</li>
+      </ul>
+    </td>
+    <td width="50%" valign="top">
+      <h3>🤖 Applied AI &amp; Intelligent Tools</h3>
+      <p>
+        Nghiên cứu ứng dụng trí tuệ nhân tạo và thị giác máy tính vào sản phẩm thực tế. Tối ưu hoá trải nghiệm người dùng với mô hình tương tác thông minh.
+      </p>
+      <ul>
+        <li><b>Core:</b> Computer Vision · AI Conversational Agents</li>
+        <li><b>Tập trung:</b> Real-time facial attendance, language learning assistants.</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <h3>🌐 High-Scale Web &amp; Distributed Backend</h3>
+      <p>
+        Xây dựng web applications chuẩn hiện đại, giao diện trực quan và kiến trúc backend phân tán đáng tin cậy. Chú trọng tính toàn vẹn dữ liệu và clean architecture.
+      </p>
+      <ul>
+        <li><b>Core:</b> TypeScript · Next.js · Node.js · PostgreSQL · MongoDB</li>
+        <li><b>Tập trung:</b> RESTful APIs, reactive state, modular design.</li>
+      </ul>
+    </td>
+    <td width="50%" valign="top">
+      <h3>🧠 Algorithmic Craft &amp; Problem Solving</h3>
+      <p>
+        Lấy nền tảng cấu trúc dữ liệu và giải thuật làm gốc. Thích đọc kỹ đặc tả kỹ thuật (spec), phác thảo luồng dữ liệu trước khi triển khai mã nguồn.
+      </p>
+      <ul>
+        <li><b>Core:</b> Data Structures · Graph Algorithms · Procedural Gen</li>
+        <li><b>Tập trung:</b> Game loop, dungeon generation, pathfinding (A*).</li>
+      </ul>
+    </td>
+  </tr>
+</table>
+
+---
+
+### 🛠️ Tech Stack &amp; Tooling Matrix
 
 <div align="center">
 
-### `quan@neural-core:~$ ./intro --whoami`
+#### Programming Languages
+<a href="https://skillicons.dev">
+  <img src="https://skillicons.dev/icons?i=c,cpp,ts,js,python,html,css,bash&theme=dark" alt="Languages" />
+</a>
+
+<br/><br/>
+
+#### Frontend &amp; UI Architecture
+<a href="https://skillicons.dev">
+  <img src="https://skillicons.dev/icons?i=react,nextjs,tailwind,vite,redux&theme=dark" alt="Frontend" />
+</a>
+
+<br/><br/>
+
+#### Backend, Databases &amp; Cloud
+<a href="https://skillicons.dev">
+  <img src="https://skillicons.dev/icons?i=nodejs,express,postgres,mongodb,redis,prisma,vercel&theme=dark" alt="Backend & Databases" />
+</a>
+
+<br/><br/>
+
+#### Systems, DevOps &amp; Development Tools
+<a href="https://skillicons.dev">
+  <img src="https://skillicons.dev/icons?i=linux,git,github,githubactions,docker,postman,vscode,cursor&theme=dark" alt="Tools & Systems" />
+</a>
 
 </div>
 
-<br/>
+---
 
-<!-- 02 WHOAMI -->
-
-<img
-  src="./assets/scenes/02-whoami.svg"
-  width="100%"
-  alt="Identity terminal — Hồ Ngọc Quân, Software Engineering Student, @hoquan2007"
-/>
-
-<br/>
-
-<!-- QUICK NAVIGATION -->
+### 🚀 Featured Systems &amp; Flagship Projects
 
 <div align="center">
 
-| [▸ About](#about) | [▸ Engineering DNA](#dna) | [▸ Tech Universe](#stack) | [▸ Projects](#projects) | [▸ Workflow](#workflow) | [▸ Telemetry](#telemetry) | [▸ Skyline](#skyline) | [▸ Mission](#mission) | [▸ Roadmap](#roadmap) | [▸ Connect](#connect) |
-|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+| Project | Tech Stack | Highlights &amp; Architecture | Status |
+| :--- | :---: | :--- | :---: |
+| 🖥️ **[GPU-Server-Manager](https://github.com/hoquan2007/GPU-Server-Manager)** | `C` · `Systems` | Bộ điều phối và lập lịch tài nguyên GPU cấp thấp, phân bổ tiến trình tính toán tối ưu phần cứng. | `Active` |
+| 🤖 **[QEnglish](https://github.com/hoquan2007/QEnglish)** | `TypeScript` · `Next.js` · `AI` | Nền tảng hội thoại tiếng Anh ứng dụng AI tương tác thời gian thực, hỗ trợ phản xạ ngôn ngữ. | `Active` |
+| 📷 **[face-attendance](https://github.com/hoquan2007/face-attendance)** | `TypeScript` · `Computer Vision` | Hệ thống điểm danh thông minh qua nhận diện khuôn mặt trực tiếp với độ trễ thấp trên nền web. | `Active` |
+| ⚔️ **[Shadow-Collapse](https://github.com/hoquan2007/Shadow-Collapse)** | `TypeScript` · `Algorithms` | Tựa game procedural dungeon crawler vận hành thuật toán sinh bản đồ ngẫu nhiên & tìm đường A*. | `Active` |
+
+<br/>
+
+<sub>↳ Xem danh sách tất cả các dự án công khai khác: [QMusic](https://github.com/hoquan2007/QMusic) · [ResearchAI](https://github.com/hoquan2007/ResearchAI) · [SOLO-GAME](https://github.com/hoquan2007/SOLO-GAME) · [ProjectChess](https://github.com/hoquan2007/ProjectChess) · [Web-xem-phim](https://github.com/hoquan2007/Web-xem-phim) · [Xem toàn bộ 20+ Repositories →](https://github.com/hoquan2007?tab=repositories)</sub>
 
 </div>
 
-<br/>
+---
 
-<!-- 03 ABOUT -->
+### 📊 Real-Time GitHub Telemetry &amp; Analytics
 
-<a id="about"></a>
+<div align="center">
 
-### `about / engineering dna`
+<table>
+  <tr>
+    <td width="50%" align="center" valign="middle">
+      <img src="https://github-readme-stats.vercel.app/api?username=hoquan2007&show_icons=true&theme=tokyonight&hide_border=false&border_color=00e5ff&bg_color=060a18&title_color=00e5ff&icon_color=a855f7&text_color=94a3b8" alt="GitHub Profile Metrics" width="100%" />
+    </td>
+    <td width="50%" align="center" valign="middle">
+      <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=hoquan2007&layout=compact&theme=tokyonight&hide_border=false&border_color=a855f7&bg_color=060a18&title_color=a855f7&text_color=94a3b8" alt="Top Languages Breakdown" width="100%" />
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2" align="center">
+      <img src="https://github-readme-streak-stats.herokuapp.com/?user=hoquan2007&theme=tokyonight&border=00e5ff&background=060a18&stroke=00e5ff&ring=a855f7&fire=00e5ff&currStreakLabel=00e5ff" alt="Contribution Streak Analytics" width="100%" />
+    </td>
+  </tr>
+</table>
 
-<br/>
+</div>
 
-<img
-  src="./assets/scenes/03-engineering-dna.svg"
-  width="100%"
-  alt="Engineering DNA — central node HO QUAN connected to AI, Backend, Algorithms, Systems, Web, Data"
-/>
+---
 
-<br/>
+### 🐍 Contribution Activity Skyline
 
-I am **Hồ Ngọc Quân** — a software-engineering student who builds systems
-at the intersection of **algorithms, backend, AI and the modern web**.
-
-I like to read the spec, sketch the data flow, and then write the boring,
-careful, well-named code that ships it.
-
-**What I study.** Software engineering at the foundations — algorithms,
-data structures, computer systems, databases — with a strong applied
-focus on the modern web and AI tooling.
-
-**What I build.** Real products, not demos. Multi-language projects
-ranging from low-level C code (e.g. **GPU-Server-Manager**) to
-TypeScript apps with real users (e.g. **QEnglish**, **face-attendance**)
-to experimental games (**Shadow-Collapse**).
-
-**What I'm exploring.** How AI assistants actually fit into engineering
-workflows, how to design backend systems that don't fall over, and how
-to keep my fundamentals sharp while moving fast.
-
-<br/>
-
-<a id="dna"></a>
-
-<!-- 04 TECH UNIVERSE -->
-
-### `tech universe`
-
-<br/>
-
-<a id="stack"></a>
-
-<img
-  src="./assets/scenes/04-tech-universe.svg"
-  width="100%"
-  alt="Technology orbital system — Engineering Core surrounded by languages, web, backend, data, tools"
-/>
-
-<br/>
-
-**Verified languages and stacks (drawn from public repositories):**
-
-| Group | Stack |
-| --- | --- |
-| Languages | TypeScript · JavaScript · C · C++ · HTML |
-| Web | React · Next.js · HTML5 |
-| Backend | Node.js · MongoDB · PostgreSQL |
-| Data | SQL · JSON |
-| Tools | Git · GitHub · Linux · Vercel · Cursor |
-
-<br/>
-
-<a id="projects"></a>
-
-<!-- 05 PROJECTS -->
-
-### `featured systems`
-
-<br/>
-
-<img
-  src="./assets/generated/projects.svg"
-  width="100%"
-  alt="Featured projects gallery · holographic cards generated from GitHub API"
-/>
-
-<sub>↳ Regenerated by <code>scripts/generate_profile_metrics.py</code> in CI using only the GitHub REST API. No fake stars.</sub>
-
-<br/>
-
-**Featured projects with real links:**
-
-| Repository | Stack | Concept | Status |
-| --- | --- | --- | --- |
-| [GPU-Server-Manager](https://github.com/hoquan2007/GPU-Server-Manager) | C | GPU server resource scheduler, low-level systems | Active |
-| [QEnglish](https://github.com/hoquan2007/QEnglish) | TypeScript | AI conversation platform for English learners | Active |
-| [Shadow-Collapse](https://github.com/hoquan2007/Shadow-Collapse) | TypeScript | Procedural dungeon crawler · tilemap + pathfinding | Active |
-| [face-attendance](https://github.com/hoquan2007/face-attendance) | TypeScript | Web-based attendance tracking with face recognition | Active |
-
-Full list:
-[face-attendance](https://github.com/hoquan2007/face-attendance) ·
-[QITEnglish](https://github.com/hoquan2007/QITEnglish) ·
-[QMusic](https://github.com/hoquan2007/QMusic) ·
-[QEnglish](https://github.com/hoquan2007/QEnglish) ·
-[HQ-English](https://github.com/hoquan2007/HQ-English) ·
-[Web-xem-phim](https://github.com/hoquan2007/Web-xem-phim) ·
-[SOLO-GAME](https://github.com/hoquan2007/SOLO-GAME) ·
-[HQEnglish](https://github.com/hoquan2007/HQEnglish) ·
-[EnglishHNQ](https://github.com/hoquan2007/EnglishHNQ) ·
-[Shadow-Collapse](https://github.com/hoquan2007/Shadow-Collapse) ·
-[GPU-Server-Manager](https://github.com/hoquan2007/GPU-Server-Manager) ·
-[ProjectChess](https://github.com/hoquan2007/ProjectChess) ·
-[ResearchAI](https://github.com/hoquan2007/ResearchAI) ·
-[NEXTGPU-COPY](https://github.com/hoquan2007/NEXTGPU-COPY)
-
-<br/>
-
-<a id="workflow"></a>
-
-<!-- 06 WORKFLOW -->
-
-### `engineering workflow`
-
-<br/>
-
-<img
-  src="./assets/scenes/06-workflow.svg"
-  width="100%"
-  alt="Engineering workflow loop — read, sketch, build, test, ship, learn"
-/>
-
-<br/>
-
-<a id="telemetry"></a>
-
-<!-- 07 GITHUB TELEMETRY -->
-
-### `github telemetry · live`
-
-<br/>
-
-<img
-  src="./assets/generated/github-telemetry.svg"
-  width="100%"
-  alt="GitHub telemetry dashboard — repositories, stars, languages, 12-month activity spark"
-/>
-
-<br/>
-
-Recent activity:
-
-<img
-  src="./assets/generated/activity-stream.svg"
-  width="100%"
-  alt="Recent public activity timeline · generated from GitHub Events API"
-/>
-
-<br/>
-
-<sub>↳ Generated by <code>.github/workflows/profile-telemetry.yml</code> using only the GitHub REST API. No third-party stats services. No fake numbers. Refreshes daily + on every push to <code>scripts/</code>.</sub>
-
-<br/>
-
-<a id="skyline"></a>
-
-<!-- 08 CONTRIBUTION SKYLINE -->
-
-### `contribution skyline`
-
-<br/>
-
-<img
-  src="./assets/scenes/08-skyline-frame.svg"
-  width="100%"
-  alt="Contribution skyline frame"
-/>
-
-<img
-  src="./profile-3d-contrib/profile-night-rainbow.svg"
-  width="100%"
-  alt="3D contribution skyline generated by yoshi389111/github-profile-3d-contrib"
-/>
-
-<sub>↳ Generated nightly by <code>yoshi389111/github-profile-3d-contrib</code>. If the file above is missing, run the <em>Generate 3D Contribution Graph</em> workflow from the Actions tab.</sub>
-
-<br/>
-
-### `contribution network`
+<div align="center">
 
 <picture>
-  <source
-    media="(prefers-color-scheme: dark)"
-    srcset="https://raw.githubusercontent.com/hoquan2007/hoquan2007/output/github-snake-dark.svg"
-  />
-  <source
-    media="(prefers-color-scheme: light)"
-    srcset="https://raw.githubusercontent.com/hoquan2007/hoquan2007/output/github-snake.svg"
-  />
-  <img
-    alt="GitHub contribution snake · cyan/violet palette"
-    src="https://raw.githubusercontent.com/hoquan2007/hoquan2007/output/github-snake.svg"
-  />
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/hoquan2007/hoquan2007/output/github-snake-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/hoquan2007/hoquan2007/output/github-snake.svg" />
+  <img alt="GitHub contribution snake" src="https://raw.githubusercontent.com/hoquan2007/hoquan2007/output/github-snake.svg" width="100%" />
 </picture>
 
-<sub>↳ Generated by <code>Platane/snk@v3</code>. Snake lives on the <code>output</code> branch and is re-published daily by the <em>Generate Contribution Snake</em> workflow.</sub>
+<sub>↳ Snake graph được tạo tự động hàng ngày qua GitHub Actions (<code>Platane/snk@v3</code>) trên nhánh <code>output</code>.</sub>
 
-<br/>
+</div>
 
-<a id="mission"></a>
+---
 
-<!-- 09 CURRENT MISSION -->
+### 🎯 Current Mission &amp; Engineering Philosophy
 
-### `current mission`
-
-<br/>
-
-<img
-  src="./assets/scenes/09-mission.svg"
-  width="100%"
-  alt="Current mission queue — Learning, Building, Exploring, Next"
-/>
-
-<br/>
-
-<a id="roadmap"></a>
-
-<!-- 10 ROADMAP -->
-
-### `learning roadmap`
-
-<br/>
-
-<img
-  src="./assets/scenes/10-roadmap.svg"
-  width="100%"
-  alt="Skill tree roadmap — Software Engineering branching into Algorithms, Backend, Databases, Systems, AI"
-/>
-
-<br/>
-
-### `developer philosophy`
-
-<br/>
-
-> **LEARN. BUILD. BREAK. UNDERSTAND. IMPROVE.**
-
-A short set of rules that keeps the work honest: read first, build small,
-intentionally break it, understand what failed, and ship the fix.
-
-<br/>
-
-<a id="connect"></a>
-
-<!-- 11 CONTACT -->
-
-### `connect`
-
-<br/>
-
-| Channel | Handle |
-| --- | --- |
-| GitHub | [@hoquan2007](https://github.com/hoquan2007) |
-| Repositories | [/?tab=repositories](https://github.com/hoquan2007?tab=repositories) |
-| Languages | English · Vietnamese |
-
-<sub>↳ Only publicly verifiable contact channels are listed. Additional contact info (email / social) is intentionally omitted — verify via the GitHub profile.</sub>
-
-<br/>
-
-<img
-  src="./assets/scenes/11-contact.svg"
-  width="100%"
-  alt="Open transmission channel — github.com/hoquan2007"
-/>
-
-<br/>
-
-<!-- 12 FOOTER -->
-
-<img
-  src="./assets/scenes/12-footer.svg"
-  width="100%"
-  alt="System shutdown — session complete"
-/>
-
-<br/>
+<table>
+  <tr>
+    <td width="50%">
+      <h4>🎯 Trọng Tâm Hiện Tại</h4>
+      <ul>
+        <li><b>Đang học:</b> Cấu trúc dữ liệu &amp; Giải thuật chuyên sâu, Cơ chế Kernel Linux.</li>
+        <li><b>Đang xây dựng:</b> Các ứng dụng hệ thống C và tính năng nâng cao cho QEnglish.</li>
+        <li><b>Đang khám phá:</b> Tối ưu hóa mô hình AI biên (Edge AI) và kiến trúc GPU Compute.</li>
+      </ul>
+    </td>
+    <td width="50%">
+      <h4>💡 Triết Lý Kỹ Thuật</h4>
+      <blockquote>
+        <b>"LEARN. BUILD. BREAK. UNDERSTAND. IMPROVE."</b>
+        <br/><br/>
+        <i>Đọc kỹ đặc tả kỹ thuật, bắt đầu từ những module cốt lõi, chấp nhận thử thách để tìm ra gốc rễ vấn đề, và hoàn thiện giải pháp với tiêu chuẩn cao nhất.</i>
+      </blockquote>
+    </td>
+  </tr>
+</table>
 
 ---
 
 <div align="center">
 
-<sub>
+### 📬 Connect With Me
 
-This profile is fully self-hosted. Every SVG is committed in this repository.
-Telemetry is generated by GitHub Actions using only the official GitHub REST API.
-The 3D skyline and contribution snake are generated by trusted third-party
-actions (<code>yoshi389111/github-profile-3d-contrib</code>, <code>Platane/snk@v3</code>) and
-degrade gracefully if those services are temporarily unavailable.
+<p>
+  <a href="https://github.com/hoquan2007">
+    <img src="https://img.shields.io/badge/GitHub-Profile-030712?style=for-the-badge&logo=github&logoColor=white&borderColor=00E5FF" alt="GitHub" />
+  </a>
+  &nbsp;
+  <a href="https://github.com/hoquan2007?tab=repositories">
+    <img src="https://img.shields.io/badge/Repositories-Explore-030712?style=for-the-badge&logo=git&logoColor=38BDF8&borderColor=38BDF8" alt="Repositories" />
+  </a>
+  &nbsp;
+  <a href="mailto:hnquan2007@gmail.com">
+    <img src="https://img.shields.io/badge/Email-Contact_Me-030712?style=for-the-badge&logo=gmail&logoColor=EA4335&borderColor=EA4335" alt="Email" />
+  </a>
+</p>
 
-Built with the QUAN.OS design system · v2.0.0
-See <a href="./docs/DESIGN_SYSTEM.md">docs/DESIGN_SYSTEM.md</a> for the design tokens and
-<a href="./docs/UX_UI_AUDIT_AFTER.md">docs/UX_UI_AUDIT_AFTER.md</a> for the refactor audit.
+<br/>
 
-</sub>
+<sub>⚡ Thiết kế và xây dựng theo phong cách <b>Modern Bento Grid &amp; High-End Tech</b> · Tối ưu hiệu năng 100%</sub>
 
 </div>

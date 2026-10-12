@@ -42,7 +42,7 @@ CONFIG_DIR = REPO_ROOT / "config"
 ASSETS_GENERATED.mkdir(parents=True, exist_ok=True)
 
 GITHUB_API = "https://api.github.com"
-USER = os.environ.get("USERNAME", "hoquan2007") or "hoquan2007"
+USER = os.environ.get("GH_USER") or os.environ.get("GITHUB_REPOSITORY_OWNER") or "hoquan2007"
 TOKEN = os.environ.get("GITHUB_TOKEN", "")
 HEADERS = {
     "User-Agent": "quan-os-profile-bot/2.0",

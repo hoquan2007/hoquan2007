@@ -25,7 +25,7 @@
 <g class="mono">
   <text class="micro" x="40" y="34">SCENE 06 / FEATURED SYSTEMS ÃÂÃÂ LIVE</text>
   <line x1="40" y1="42" x2="320" y2="42" stroke="#22D3EE" stroke-opacity="0.6"/>
-  <text class="micro" x="1160" y="34" text-anchor="end">CURATED FROM 30 PUBLIC REPOS</text>
+  <text class="micro" x="1160" y="34" text-anchor="end">CURATED FROM 22 PUBLIC REPOS</text>
 </g>
 <g transform="translate(40 80)">
   <rect width="540" height="200" rx="10" fill="#0B1224" stroke="#22D3EE" stroke-opacity="0.65" stroke-width="1"/>
@@ -38,11 +38,11 @@
     <animate attributeName="opacity" values="0.3;1;0.3" dur="2s" begin="0.0s" repeatCount="indefinite"/>
   </circle>
   <text x="34" y="24" class="mono lang">C</text>
-  <text x="520" y="24" text-anchor="end" class="mono meta">? 0 ÃÂÃÂ 2026-05-18</text>
+  <text x="520" y="24" text-anchor="end" class="mono meta">? 0 ÃÂÃÂ 2025-12-10</text>
   <text x="20" y="62" class="mono name">GPU-Server-Manager</text>
-  <text x="20" y="86" class="mono desc">Bài tập lớn Kỹ thuật Lập trình C - Hệ thống quản lý tài nguyên máy chủ GPU.</text>
+  <text x="20" y="86" class="mono desc">C programming final project - GPU server resource management</text>
   <text x="20" y="128" class="mono meta">DOMAIN ÃÂÃÂ systems / backend</text>
-  <text x="20" y="148" class="mono meta">UPDATED ÃÂÃÂ 2026-05-18</text>
+  <text x="20" y="148" class="mono meta">UPDATED ÃÂÃÂ 2025-12-10</text>
   <text x="20" y="170" class="mono meta">github.com/hoquan2007/GPU-Server-Manager</text>
   <line x1="20" y1="180" x2="520" y2="180" stroke="#1E293B"/>
 </g>
@@ -57,11 +57,11 @@
     <animate attributeName="opacity" values="0.3;1;0.3" dur="2s" begin="0.3s" repeatCount="indefinite"/>
   </circle>
   <text x="34" y="24" class="mono lang-v">TYPESCRIPT</text>
-  <text x="520" y="24" text-anchor="end" class="mono meta">? 0 ÃÂÃÂ 2026-08-14</text>
+  <text x="520" y="24" text-anchor="end" class="mono meta">? 0 ÃÂÃÂ 2026-08-10</text>
   <text x="20" y="62" class="mono name">QEnglish</text>
-  <text x="20" y="86" class="mono desc">QEnglish - Nền tảng học tiếng Anh giao tiếp với AI</text>
+  <text x="20" y="86" class="mono desc">QEnglish - AI conversation platform for English learners</text>
   <text x="20" y="128" class="mono meta">DOMAIN ÃÂÃÂ web / ai</text>
-  <text x="20" y="148" class="mono meta">UPDATED ÃÂÃÂ 2026-08-14</text>
+  <text x="20" y="148" class="mono meta">UPDATED ÃÂÃÂ 2026-08-10</text>
   <text x="20" y="170" class="mono meta">github.com/hoquan2007/QEnglish</text>
   <line x1="20" y1="180" x2="520" y2="180" stroke="#1E293B"/>
 </g>
@@ -75,13 +75,13 @@
   <circle cx="20" cy="20" r="4" fill="#22D3EE">
     <animate attributeName="opacity" values="0.3;1;0.3" dur="2s" begin="0.6s" repeatCount="indefinite"/>
   </circle>
-  <text x="34" y="24" class="mono lang">ÃÂÃÂ?ÃÂÃÂ?ÃÂÃÂ?ÃÂÃÂ?</text>
-  <text x="520" y="24" text-anchor="end" class="mono meta">? 0 ÃÂÃÂ 2026-07-22</text>
-  <text x="20" y="62" class="mono name">Shadow-Collapse</text>
-  <text x="20" y="86" class="mono desc">Procedural Dungeon Crawler</text>
-  <text x="20" y="128" class="mono meta">DOMAIN ÃÂÃÂ algorithms / web</text>
-  <text x="20" y="148" class="mono meta">UPDATED ÃÂÃÂ 2026-07-22</text>
-  <text x="20" y="170" class="mono meta">github.com/hoquan2007/Shadow-Collapse</text>
+  <text x="34" y="24" class="mono lang">TYPESCRIPT</text>
+  <text x="520" y="24" text-anchor="end" class="mono meta">? 0 ÃÂÃÂ 2026-09-01</text>
+  <text x="20" y="62" class="mono name">face-attendance</text>
+  <text x="20" y="86" class="mono desc">Web-based attendance tracking with face recognition.</text>
+  <text x="20" y="128" class="mono meta">DOMAIN ÃÂÃÂ ai / web</text>
+  <text x="20" y="148" class="mono meta">UPDATED ÃÂÃÂ 2026-09-01</text>
+  <text x="20" y="170" class="mono meta">github.com/hoquan2007/face-attendance</text>
   <line x1="20" y1="180" x2="520" y2="180" stroke="#1E293B"/>
 </g>
 <g transform="translate(620 300)">
@@ -95,17 +95,17 @@
     <animate attributeName="opacity" values="0.3;1;0.3" dur="2s" begin="0.8999999999999999s" repeatCount="indefinite"/>
   </circle>
   <text x="34" y="24" class="mono lang-v">TYPESCRIPT</text>
-  <text x="520" y="24" text-anchor="end" class="mono meta">? 0 ÃÂÃÂ 2026-09-17</text>
-  <text x="20" y="62" class="mono name">face-attendance</text>
-  <text x="20" y="86" class="mono desc">(no description)</text>
-  <text x="20" y="128" class="mono meta">DOMAIN ÃÂÃÂ ai / web</text>
-  <text x="20" y="148" class="mono meta">UPDATED ÃÂÃÂ 2026-09-17</text>
-  <text x="20" y="170" class="mono meta">github.com/hoquan2007/face-attendance</text>
+  <text x="520" y="24" text-anchor="end" class="mono meta">? 0 ÃÂÃÂ 2026-08-20</text>
+  <text x="20" y="62" class="mono name">QITEnglish</text>
+  <text x="20" y="86" class="mono desc">Web learning English for IT people</text>
+  <text x="20" y="128" class="mono meta">DOMAIN ÃÂÃÂ web ÃÂÃÂ frontend ÃÂÃÂ fullstack</text>
+  <text x="20" y="148" class="mono meta">UPDATED ÃÂÃÂ 2026-08-20</text>
+  <text x="20" y="170" class="mono meta">github.com/hoquan2007/QITEnglish</text>
   <line x1="20" y1="180" x2="520" y2="180" stroke="#1E293B"/>
 </g>
 <g class="mono">
   <text class="micro" x="40" y="544">? PRIORITIZED BY REPRESENTATIVENESS ÃÂÃÂ NOT STAR COUNT ALONE</text>
-  <text class="micro" x="1160" y="544" text-anchor="end" fill="#22D3EE">UPDATED 2026-10-11</text>
+  <text class="micro" x="1160" y="544" text-anchor="end" fill="#22D3EE">UPDATED 2026-10-12</text>
   <text class="micro" x="40" y="562">FULL LIST ÃÂÃÂ?ÃÂÃÂ /?tab=repositories</text>
   <text class="micro" x="1160" y="562" text-anchor="end" fill="#A855F7">QUAN-OS ÃÂÃÂ GALLERY ENGINE</text>
 </g>

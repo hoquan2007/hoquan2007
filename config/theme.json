@@ -1,8 +1,8 @@
 {
-  "version": "2.0.0",
+  "version": "3.0.0",
   "brand": {
-    "codename": "QUAN.OS",
-    "tagline": "NEURAL ENGINEERING COMMAND CENTER"
+    "codename": "BENTO.TECH",
+    "tagline": "HIGH-END DEVELOPER BENTO GRID PROFILE"
   },
   "colors": {
     "bg_0": "#020617",
