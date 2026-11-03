@@ -25,7 +25,7 @@
 <g class="mono">
   <text class="micro" x="40" y="34">SCENE 06 / FEATURED SYSTEMS ÃÂÃÂ LIVE</text>
   <line x1="40" y1="42" x2="320" y2="42" stroke="#22D3EE" stroke-opacity="0.6"/>
-  <text class="micro" x="1160" y="34" text-anchor="end">CURATED FROM 37 PUBLIC REPOS</text>
+  <text class="micro" x="1160" y="34" text-anchor="end">CURATED FROM 38 PUBLIC REPOS</text>
 </g>
 <g transform="translate(40 80)">
   <rect width="540" height="200" rx="10" fill="#0B1224" stroke="#22D3EE" stroke-opacity="0.65" stroke-width="1"/>
