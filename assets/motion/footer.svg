@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 230" width="1200" height="230" role="img" aria-label="Footer — thanks for visiting" fill="none">
+<title>Footer — thanks for visiting</title>
+<defs>
+<linearGradient id="accent" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#22D3EE"/><stop offset="1" stop-color="#A78BFA"/></linearGradient>
+<linearGradient id="cardbg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#0E1526"/><stop offset="1" stop-color="#0C1222"/></linearGradient>
+
+</defs>
+<style><![CDATA[
+  .sans{font-family:'Segoe UI', -apple-system, 'Helvetica Neue', Arial, sans-serif}
+  .mono{font-family:'JetBrains Mono', 'Cascadia Code', 'SF Mono', Consolas, monospace}
+  .fu{animation:fu .9s cubic-bezier(.2,.7,.2,1) both}
+  @keyframes fu{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+  .pulse{animation:pulse 2.4s ease-in-out infinite;transform-box:fill-box;transform-origin:center}
+  @keyframes pulse{0%,100%{opacity:.35;transform:scale(1)}50%{opacity:1;transform:scale(1.15)}}
+  .blink{animation:blink 1.05s steps(1) infinite}
+  @keyframes blink{50%{opacity:0}}
+  @media (prefers-reduced-motion: reduce){
+    *{animation:none!important}
+    animate,animateTransform,animateMotion{display:none}
+  }
+
+  .w{fill:#5B6782;animation:w 6s ease-in-out infinite}
+  @keyframes w{0%,30%,100%{fill:#5B6782}10%,20%{fill:#22D3EE}}
+]]></style>
+
+<defs><clipPath id="fc"><rect x="1" y="1" width="1198" height="228" rx="24"/></clipPath></defs>
+<rect x="0.5" y="0.5" width="1199" height="229" rx="24" fill="url(#cardbg)" stroke="#1C2540"/><rect x="0.5" y="0.5" width="1199" height="229" rx="24" stroke="url(#accent)" stroke-width="1.4" pathLength="1000" stroke-dasharray="90 910" stroke-linecap="round" opacity=".85"><animate attributeName="stroke-dashoffset" values="1000;0" dur="14s" begin="0s" repeatCount="indefinite"/></rect><path d="M24 1H1176" stroke="#FFFFFF" stroke-opacity=".06"/>
+<g clip-path="url(#fc)"><path d="M0 196 C300 182 600 210 900 196 S1200 182 1200 196" stroke="#22D3EE" stroke-opacity="0.35" stroke-width="1.5"><animate attributeName="d" values="M0 196 C300 182 600 210 900 196 S1200 182 1200 196;M0 196 C300 210 600 182 900 196 S1200 210 1200 196;M0 196 C300 182 600 210 900 196 S1200 182 1200 196" dur="9s" repeatCount="indefinite" calcMode="spline" keySplines=".45 0 .55 1;.45 0 .55 1"/></path><path d="M0 202 C300 182 600 222 900 202 S1200 182 1200 202" stroke="#A78BFA" stroke-opacity="0.28" stroke-width="1.5"><animate attributeName="d" values="M0 202 C300 182 600 222 900 202 S1200 182 1200 202;M0 202 C300 222 600 182 900 202 S1200 222 1200 202;M0 202 C300 182 600 222 900 202 S1200 182 1200 202" dur="12s" repeatCount="indefinite" calcMode="spline" keySplines=".45 0 .55 1;.45 0 .55 1"/></path><path d="M0 208 C300 198 600 218 900 208 S1200 198 1200 208" stroke="#60A5FA" stroke-opacity="0.22" stroke-width="1.5"><animate attributeName="d" values="M0 208 C300 198 600 218 900 208 S1200 198 1200 208;M0 208 C300 218 600 198 900 208 S1200 218 1200 208;M0 208 C300 198 600 218 900 208 S1200 198 1200 208" dur="7s" repeatCount="indefinite" calcMode="spline" keySplines=".45 0 .55 1;.45 0 .55 1"/></path></g>
+<text x="600" y="78" text-anchor="middle" class="mono" font-size="20" letter-spacing="3" font-weight="700"><tspan class="w" style="animation-delay:0.0s">LEARN</tspan><tspan fill="#5B6782">  ·  </tspan><tspan class="w" style="animation-delay:1.2s">BUILD</tspan><tspan fill="#5B6782">  ·  </tspan><tspan class="w" style="animation-delay:2.4s">BREAK</tspan><tspan fill="#5B6782">  ·  </tspan><tspan class="w" style="animation-delay:3.6s">UNDERSTAND</tspan><tspan fill="#5B6782">  ·  </tspan><tspan class="w" style="animation-delay:4.8s">IMPROVE</tspan></text>
+<text x="600" y="122" text-anchor="middle" class="sans" font-size="24" font-weight="700" fill="#E6EDF7">Cảm ơn bạn đã ghé thăm</text>
+<text x="600" y="154" text-anchor="middle" class="sans" font-size="17" fill="#8D9AB3">Hẹn gặp ở commit tiếp theo <tspan fill="#F472B6" class="pulse">♥</tspan></text>
+
+</svg>

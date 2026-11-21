@@ -1,147 +1,170 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360" width="100%" height="100%" fill="none">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 370" width="100%" height="100%" fill="none" role="img" aria-label="Hồ Ngọc Quân - Hero Banner">
   <defs>
-    <!-- Background Gradients -->
+    <!-- Background Gradient -->
     <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#030712"/>
-      <stop offset="50%" stop-color="#080E21"/>
-      <stop offset="100%" stop-color="#0B132B"/>
+      <stop offset="0%" stop-color="#020617"/>
+      <stop offset="45%" stop-color="#060C20"/>
+      <stop offset="100%" stop-color="#0A122E"/>
     </linearGradient>
 
     <!-- Aurora Radial Glows -->
-    <radialGradient id="cyanAurora" cx="20%" cy="30%" r="65%">
+    <radialGradient id="cyanAurora" cx="15%" cy="25%" r="60%">
       <stop offset="0%" stop-color="#00E5FF" stop-opacity="0.22"/>
-      <stop offset="50%" stop-color="#00E5FF" stop-opacity="0.05"/>
+      <stop offset="50%" stop-color="#00E5FF" stop-opacity="0.04"/>
       <stop offset="100%" stop-color="#00E5FF" stop-opacity="0"/>
     </radialGradient>
 
-    <radialGradient id="purpleAurora" cx="80%" cy="40%" r="65%">
-      <stop offset="0%" stop-color="#8B5CF6" stop-opacity="0.25"/>
-      <stop offset="50%" stop-color="#7C3AED" stop-opacity="0.06"/>
+    <radialGradient id="purpleAurora" cx="85%" cy="35%" r="65%">
+      <stop offset="0%" stop-color="#8B5CF6" stop-opacity="0.24"/>
+      <stop offset="50%" stop-color="#7C3AED" stop-opacity="0.05"/>
       <stop offset="100%" stop-color="#7C3AED" stop-opacity="0"/>
     </radialGradient>
 
-    <radialGradient id="blueGlow" cx="50%" cy="100%" r="50%">
-      <stop offset="0%" stop-color="#3B82F6" stop-opacity="0.18"/>
+    <radialGradient id="blueGlow" cx="50%" cy="100%" r="55%">
+      <stop offset="0%" stop-color="#3B82F6" stop-opacity="0.16"/>
       <stop offset="100%" stop-color="#3B82F6" stop-opacity="0"/>
     </radialGradient>
 
     <!-- Border Gradients -->
     <linearGradient id="borderGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#00E5FF" stop-opacity="0.6"/>
-      <stop offset="35%" stop-color="#38BDF8" stop-opacity="0.2"/>
-      <stop offset="70%" stop-color="#8B5CF6" stop-opacity="0.6"/>
+      <stop offset="0%" stop-color="#00E5FF" stop-opacity="0.65"/>
+      <stop offset="35%" stop-color="#38BDF8" stop-opacity="0.25"/>
+      <stop offset="70%" stop-color="#8B5CF6" stop-opacity="0.65"/>
       <stop offset="100%" stop-color="#A855F7" stop-opacity="0.2"/>
     </linearGradient>
 
     <linearGradient id="cardBorder" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#38BDF8" stop-opacity="0.4"/>
-      <stop offset="100%" stop-color="#8B5CF6" stop-opacity="0.2"/>
+      <stop offset="0%" stop-color="#00E5FF" stop-opacity="0.55"/>
+      <stop offset="50%" stop-color="#38BDF8" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#8B5CF6" stop-opacity="0.45"/>
     </linearGradient>
 
     <!-- Text Gradients -->
     <linearGradient id="textGrad" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" stop-color="#FFFFFF"/>
-      <stop offset="40%" stop-color="#E0F2FE"/>
-      <stop offset="80%" stop-color="#38BDF8"/>
+      <stop offset="40%" stop-color="#F0F9FF"/>
+      <stop offset="75%" stop-color="#38BDF8"/>
       <stop offset="100%" stop-color="#818CF8"/>
     </linearGradient>
 
-    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#00E5FF"/>
-      <stop offset="100%" stop-color="#A855F7"/>
+    <linearGradient id="tagBorder" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0284C7" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#7C3AED" stop-opacity="0.4"/>
     </linearGradient>
 
-    <!-- Grid Pattern -->
+    <!-- Pattern Grid -->
     <pattern id="grid" width="30" height="30" patternUnits="userSpaceOnUse">
-      <path d="M 30 0 L 0 0 0 30" fill="none" stroke="#1E293B" stroke-width="0.75" stroke-opacity="0.4"/>
-      <circle cx="0" cy="0" r="1" fill="#38BDF8" fill-opacity="0.3"/>
+      <path d="M 30 0 L 0 0 0 30" fill="none" stroke="#1E293B" stroke-width="0.7" stroke-opacity="0.45"/>
+      <circle cx="0" cy="0" r="1" fill="#38BDF8" fill-opacity="0.25"/>
     </pattern>
 
     <style>
       @keyframes pulse {
         0%, 100% { opacity: 0.8; transform: scale(1); }
-        50% { opacity: 1; transform: scale(1.05); }
+        50% { opacity: 1; transform: scale(1.1); }
       }
       @keyframes floatSlow {
         0%, 100% { transform: translateY(0px); }
-        50% { transform: translateY(-4px); }
+        50% { transform: translateY(-5px); }
       }
       @keyframes blink {
         0%, 100% { opacity: 1; }
-        50% { opacity: 0.2; }
+        50% { opacity: 0.15; }
       }
-      .pulse-dot { animation: pulse 2.5s ease-in-out infinite; transform-origin: center; }
-      .float-card { animation: floatSlow 6s ease-in-out infinite; }
-      .blink-cursor { animation: blink 1.2s ease-in-out infinite; }
+      @keyframes scanSweep {
+        0% { transform: translateY(0px); opacity: 0; }
+        15% { opacity: 0.8; }
+        85% { opacity: 0.8; }
+        100% { transform: translateY(270px); opacity: 0; }
+      }
+      .pulse-dot { animation: pulse 2.4s ease-in-out infinite; transform-origin: center; }
+      .float-card { animation: floatSlow 6.5s ease-in-out infinite; }
+      .blink-cursor { animation: blink 1.1s ease-in-out infinite; }
+      .scan-line { animation: scanSweep 7s linear infinite; }
+      @media (prefers-reduced-motion: reduce) {
+        .pulse-dot, .float-card, .blink-cursor, .scan-line {
+          animation: none !important;
+        }
+      }
     </style>
   </defs>
 
   <!-- Base Canvas -->
-  <rect width="1200" height="360" rx="20" fill="url(#bgGrad)"/>
-  <rect width="1200" height="360" rx="20" fill="url(#grid)"/>
+  <rect width="1200" height="370" rx="20" fill="url(#bgGrad)"/>
+  <rect width="1200" height="370" rx="20" fill="url(#grid)"/>
 
   <!-- Aurora Lights -->
-  <rect width="1200" height="360" rx="20" fill="url(#cyanAurora)"/>
-  <rect width="1200" height="360" rx="20" fill="url(#purpleAurora)"/>
-  <rect width="1200" height="360" rx="20" fill="url(#blueGlow)"/>
+  <rect width="1200" height="370" rx="20" fill="url(#cyanAurora)"/>
+  <rect width="1200" height="370" rx="20" fill="url(#purpleAurora)"/>
+  <rect width="1200" height="370" rx="20" fill="url(#blueGlow)"/>
 
   <!-- Outer Glowing Stroke -->
-  <rect x="1" y="1" width="1198" height="358" rx="19" fill="none" stroke="url(#borderGrad)" stroke-width="1.5"/>
+  <rect x="1" y="1" width="1198" height="368" rx="19" fill="none" stroke="url(#borderGrad)" stroke-width="1.5"/>
 
-  <!-- Top Status Pill -->
-  <g transform="translate(60, 48)">
-    <rect width="260" height="30" rx="15" fill="#0B1329" fill-opacity="0.8" stroke="#0284C7" stroke-opacity="0.4" stroke-width="1"/>
-    <circle cx="16" cy="15" r="4.5" fill="#00E5FF" class="pulse-dot"/>
-    <text x="30" y="20" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Inter', Roboto, sans-serif" font-size="11.5" font-weight="700" fill="#38BDF8" letter-spacing="1.2">SYSTEM // ACTIVE PORTFOLIO</text>
+  <!-- Top Status Bar -->
+  <g transform="translate(60, 42)">
+    <!-- Status Pill -->
+    <rect width="250" height="28" rx="14" fill="#0B1329" fill-opacity="0.85" stroke="#0284C7" stroke-opacity="0.4" stroke-width="1"/>
+    <circle cx="15" cy="14" r="4.5" fill="#00E5FF" class="pulse-dot"/>
+    <text x="28" y="18" font-family="'JetBrains Mono', Consolas, monospace" font-size="11" font-weight="700" fill="#38BDF8" letter-spacing="1.2">SYSTEM // COMMAND CENTER</text>
+
+    <!-- Version Pill -->
+    <g transform="translate(262, 0)">
+      <rect width="125" height="28" rx="14" fill="#0E172E" fill-opacity="0.75" stroke="#1E293B" stroke-width="1"/>
+      <text x="62.5" y="18" text-anchor="middle" font-family="'JetBrains Mono', Consolas, monospace" font-size="11" font-weight="600" fill="#94A3B8">v3.5 · RELEASE</text>
+    </g>
   </g>
 
   <!-- Left Main Content -->
-  <g transform="translate(60, 115)">
-    <!-- Sub-badge -->
-    <text x="0" y="24" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Inter', Roboto, sans-serif" font-size="14" font-weight="600" fill="#94A3B8" letter-spacing="2">HỒ NGỌC QUÂN  <tspan fill="#38BDF8">[@hoquan2007]</tspan></text>
+  <g transform="translate(60, 108)">
+    <!-- Sub-badge / Operator -->
+    <text x="0" y="24" font-family="'JetBrains Mono', Consolas, monospace" font-size="13" font-weight="700" fill="#94A3B8" letter-spacing="2.5">
+      OPERATOR <tspan fill="#00E5FF">▸</tspan> HỒ NGỌC QUÂN <tspan fill="#38BDF8">[@hoquan2007]</tspan>
+    </text>
     
     <!-- Hero Title -->
-    <text x="0" y="76" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Inter', Roboto, sans-serif" font-size="38" font-weight="800" fill="url(#textGrad)" letter-spacing="-0.5">Software Engineer &amp; Systems Explorer</text>
+    <text x="0" y="76" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Inter', Roboto, sans-serif" font-size="37" font-weight="800" fill="url(#textGrad)" letter-spacing="-0.5">
+      Software Engineer &amp; Systems Builder
+    </text>
 
     <!-- Tagline description -->
-    <text x="0" y="112" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Inter', Roboto, sans-serif" font-size="16" font-weight="400" fill="#94A3B8">
-      Building at the intersection of <tspan fill="#38BDF8" font-weight="600">Low-level Systems</tspan>, <tspan fill="#A855F7" font-weight="600">Applied AI</tspan>, and <tspan fill="#F8FAFC" font-weight="600">Modern Web</tspan>.
+    <text x="0" y="112" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Inter', Roboto, sans-serif" font-size="15" font-weight="400" fill="#94A3B8">
+      Building robust foundations across <tspan fill="#38BDF8" font-weight="600">Low-level Systems</tspan>, <tspan fill="#C084FC" font-weight="600">Applied AI</tspan>, and <tspan fill="#F8FAFC" font-weight="600">Modern Web</tspan>.
     </text>
 
     <!-- Feature tags -->
     <g transform="translate(0, 142)">
       <!-- Tag 1 -->
       <g transform="translate(0, 0)">
-        <rect width="140" height="30" rx="8" fill="#0E172E" stroke="#1E293B" stroke-width="1"/>
-        <text x="70" y="19" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="600" fill="#38BDF8">⚡ C / C++ Systems</text>
+        <rect width="145" height="32" rx="8" fill="#0B1329" stroke="url(#tagBorder)" stroke-width="1"/>
+        <text x="72.5" y="20" text-anchor="middle" font-family="'JetBrains Mono', Consolas, monospace" font-size="11.5" font-weight="600" fill="#38BDF8">⚡ C / C++ Core</text>
       </g>
       <!-- Tag 2 -->
-      <g transform="translate(150, 0)">
-        <rect width="160" height="30" rx="8" fill="#0E172E" stroke="#1E293B" stroke-width="1"/>
-        <text x="80" y="19" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="600" fill="#C084FC">🤖 AI &amp; Computer Vision</text>
+      <g transform="translate(155, 0)">
+        <rect width="165" height="32" rx="8" fill="#0B1329" stroke="url(#tagBorder)" stroke-width="1"/>
+        <text x="82.5" y="20" text-anchor="middle" font-family="'JetBrains Mono', Consolas, monospace" font-size="11.5" font-weight="600" fill="#C084FC">🤖 AI &amp; Vision</text>
       </g>
       <!-- Tag 3 -->
-      <g transform="translate(320, 0)">
-        <rect width="155" height="30" rx="8" fill="#0E172E" stroke="#1E293B" stroke-width="1"/>
-        <text x="77.5" y="19" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="600" fill="#67E8F9">🌐 TypeScript &amp; Next.js</text>
+      <g transform="translate(330, 0)">
+        <rect width="165" height="32" rx="8" fill="#0B1329" stroke="url(#tagBorder)" stroke-width="1"/>
+        <text x="82.5" y="20" text-anchor="middle" font-family="'JetBrains Mono', Consolas, monospace" font-size="11.5" font-weight="600" fill="#67E8F9">🌐 TypeScript / Next</text>
       </g>
       <!-- Tag 4 -->
-      <g transform="translate(485, 0)">
-        <rect width="140" height="30" rx="8" fill="#0E172E" stroke="#1E293B" stroke-width="1"/>
-        <text x="70" y="19" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="600" fill="#CBD5E1">🧠 Algorithms &amp; Data</text>
+      <g transform="translate(505, 0)">
+        <rect width="145" height="32" rx="8" fill="#0B1329" stroke="url(#tagBorder)" stroke-width="1"/>
+        <text x="72.5" y="20" text-anchor="middle" font-family="'JetBrains Mono', Consolas, monospace" font-size="11.5" font-weight="600" fill="#CBD5E1">🧠 Algorithms A*</text>
       </g>
     </g>
   </g>
 
   <!-- Right Floating Bento Terminal HUD Card -->
-  <g transform="translate(775, 45)" class="float-card">
+  <g transform="translate(775, 42)" class="float-card">
     <!-- Card Container -->
-    <rect width="365" height="265" rx="14" fill="#060A18" fill-opacity="0.85" stroke="url(#cardBorder)" stroke-width="1.2"/>
+    <rect width="365" height="282" rx="14" fill="#060A18" fill-opacity="0.9" stroke="url(#cardBorder)" stroke-width="1.3"/>
     
     <!-- Card Header / Titlebar -->
-    <rect width="365" height="38" rx="14" fill="#0D152D" fill-opacity="0.9"/>
-    <!-- Corner clip fix -->
-    <rect y="25" width="365" height="13" fill="#0D152D" fill-opacity="0.9"/>
+    <rect width="365" height="38" rx="14" fill="#0D152D" fill-opacity="0.95"/>
+    <rect y="25" width="365" height="13" fill="#0D152D" fill-opacity="0.95"/>
     <line x1="0" y1="38" x2="365" y2="38" stroke="#1E293B" stroke-width="1"/>
 
     <!-- Mac-style dots -->
@@ -149,33 +172,33 @@
     <circle cx="36" cy="19" r="5" fill="#F59E0B" fill-opacity="0.85"/>
     <circle cx="52" cy="19" r="5" fill="#10B981" fill-opacity="0.85"/>
 
-    <text x="80" y="23" font-family="'JetBrains Mono', 'Fira Code', Consolas, monospace" font-size="11.5" font-weight="600" fill="#64748B">terminal@neural-core:~</text>
+    <text x="80" y="23" font-family="'JetBrains Mono', Consolas, monospace" font-size="11.5" font-weight="600" fill="#64748B">neural-node@workstation:~</text>
 
     <!-- Terminal Content Lines -->
-    <g transform="translate(20, 64)" font-family="'JetBrains Mono', 'Fira Code', Consolas, monospace" font-size="12">
+    <g transform="translate(20, 64)" font-family="'JetBrains Mono', Consolas, monospace" font-size="12">
       <!-- Line 1 -->
       <text y="0" fill="#38BDF8">$ <tspan fill="#F8FAFC">whoami</tspan></text>
       <text y="20" fill="#94A3B8">↳ Software Engineering Student</text>
 
       <!-- Line 2 -->
       <text y="48" fill="#38BDF8">$ <tspan fill="#F8FAFC">cat focus.json</tspan></text>
-      <text y="68" fill="#A855F7">↳ GPU Scheduler, AI, Web Apps</text>
+      <text y="68" fill="#A855F7">↳ GPU Scheduler · AI Vision · Web</text>
 
       <!-- Line 3 -->
       <text y="96" fill="#38BDF8">$ <tspan fill="#F8FAFC">git status</tspan></text>
-      <text y="116" fill="#34D399">↳ Clean tree · Ready to build</text>
+      <text y="116" fill="#34D399">↳ 22 Repos · Clean tree · Ready</text>
 
       <!-- Line 4 Prompt -->
       <text y="146" fill="#38BDF8">quan@workstation<tspan fill="#94A3B8">:</tspan><tspan fill="#38BDF8">~</tspan><tspan fill="#F8FAFC">$</tspan> <tspan fill="#00E5FF" class="blink-cursor">█</tspan></text>
     </g>
 
     <!-- Mini KPI status in card bottom -->
-    <g transform="translate(20, 238)">
-      <rect width="325" height="2" fill="#1E293B"/>
+    <g transform="translate(20, 248)">
+      <line x1="0" y1="0" x2="325" y2="0" stroke="#1E293B"/>
       <!-- Status chips -->
-      <circle cx="6" cy="14" r="3.5" fill="#10B981"/>
-      <text x="16" y="17" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10.5" font-weight="600" fill="#94A3B8">OPEN FOR INTERNSHIPS &amp; COLLABS</text>
-      <text x="325" y="17" text-anchor="end" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="10.5" font-weight="600" fill="#38BDF8">VN / GMT+7</text>
+      <circle cx="6" cy="17" r="3.5" fill="#10B981"/>
+      <text x="16" y="20" font-family="'JetBrains Mono', Consolas, monospace" font-size="10" font-weight="600" fill="#94A3B8">OPEN FOR INTERNSHIPS &amp; COLLABS</text>
+      <text x="325" y="20" text-anchor="end" font-family="'JetBrains Mono', Consolas, monospace" font-size="10" font-weight="600" fill="#38BDF8">VN 🇻🇳</text>
     </g>
   </g>
 </svg>

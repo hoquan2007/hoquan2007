@@ -245,7 +245,7 @@ def build_telemetry_svg(profile: dict, repos: list[dict]) -> str:
 
     def spark_path() -> str:
         pts = []
-        w = 220
+        w = 500
         h = 60
         for i, m in enumerate(months):
             x = (i / (len(months) - 1)) * w if len(months) > 1 else 0
@@ -277,7 +277,7 @@ def build_telemetry_svg(profile: dict, repos: list[dict]) -> str:
     cards = [
         ("REPOSITORIES", total_repos, "public", f"verified via github api", accent_palette[0], "cyan", 270),
         ("STARS", total_stars, "received", f"+ {total_forks} forks", accent_palette[1], "violet", 270),
-        ("NETWORK", followers, "followers", f"following ÃÂÃÂ {following}", accent_palette[2], "violet", 270),
+        ("NETWORK", followers, "followers", f"following · {following}", accent_palette[2], "violet", 270),
         ("FOOTPRINT", total_size // 1024, "MB tracked", f"{lang_count} languages", accent_palette[3], "cyan", 250),
     ]
     cards_svg_parts = []
@@ -287,18 +287,18 @@ def build_telemetry_svg(profile: dict, repos: list[dict]) -> str:
         cards_svg_parts.append(
             f"""<g transform="translate({x} 80)">
   <rect width="{cw}" height="160" rx="10" fill="url(#{_grad_id('card')})" stroke="{edge}" stroke-opacity="0.5"/>
-  <text x="20" y="34" class="card-title" fill="{edge}">ÃÂÃÂ· {title}</text>
+  <text x="20" y="34" class="card-title" fill="{edge}">· {title}</text>
   <text x="20" y="100" class="{big_cls}">{value}</text>
   <text x="170" y="100" class="unit">{unit}</text>
   <text x="20" y="130" class="lbl">{_esc(sub)}</text>
   <line x1="20" y1="140" x2="{cw - 20}" y2="140" stroke="#1E293B"/>
-  <text x="20" y="156" class="micro">scope ÃÂÃÂ @{_esc(USER)}</text>
+  <text x="20" y="156" class="micro">scope · @{_esc(USER)}</text>
 </g>"""
         )
     cards_svg = "\n".join(cards_svg_parts)
 
     svg = f"""<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {w} {h}" role="img" aria-label="GitHub telemetry dashboard" font-family="JetBrains Mono, ui-monospace, monospace">
-<title>QUAN.OS ÃÂÃÂ GitHub Telemetry</title>
+<title>QUAN.OS · GitHub Telemetry</title>
 <desc>Self-generated telemetry dashboard for {USER}. KPI cards, language distribution, 12-month activity sparkline.</desc>
 <defs>
   <linearGradient id="{_grad_id('bg')}" x1="0" y1="0" x2="0" y2="1">
@@ -329,39 +329,39 @@ def build_telemetry_svg(profile: dict, repos: list[dict]) -> str:
 <rect width="{w}" height="{h}" fill="url(#{_grad_id('bg')})"/>
 <rect width="{w}" height="{h}" fill="url(#{_grad_id('grid')})" opacity="0.45"/>
 <g class="mono">
-  <text class="micro" x="40" y="34">SCENE 08 / GITHUB TELEMETRY ÃÂÃÂ SELF-GENERATED</text>
+  <text class="micro" x="40" y="34">SCENE 08 / GITHUB TELEMETRY · SELF-GENERATED</text>
   <line x1="40" y1="42" x2="380" y2="42" stroke="{CYAN}" stroke-opacity="0.6"/>
-  <text class="micro" x="1160" y="34" text-anchor="end">SOURCE ÃÂÃÂ api.github.com ÃÂÃÂ LIVE</text>
+  <text class="micro" x="1160" y="34" text-anchor="end">SOURCE · api.github.com · LIVE</text>
 </g>
 {cards_svg}
 <g transform="translate(40 270)">
   <rect width="540" height="280" rx="10" fill="url(#{_grad_id('card')})" stroke="{CYAN}" stroke-opacity="0.45"/>
-  <text x="20" y="34" class="card-title" fill="{CYAN}">ÃÂÃÂ LANGUAGE DISTRIBUTION</text>
-  <text x="520" y="34" text-anchor="end" class="micro">top {min(6, lang_count)} ÃÂÃÂ live</text>
+  <text x="20" y="34" class="card-title" fill="{CYAN}">· LANGUAGE DISTRIBUTION</text>
+  <text x="520" y="34" text-anchor="end" class="micro">top {min(6, lang_count)} · live</text>
   <g transform="translate(20 60)">
     {lang_bars()}
   </g>
 </g>
 <g transform="translate(620 270)">
   <rect width="540" height="280" rx="10" fill="url(#{_grad_id('card')})" stroke="{VIOLET}" stroke-opacity="0.45"/>
-  <text x="20" y="34" class="card-title" fill="{VIOLET}">ÃÂÃÂ ACTIVITY ÃÂÃÂ LAST 12 MONTHS</text>
+  <text x="20" y="34" class="card-title" fill="{VIOLET}">· ACTIVITY · LAST 12 MONTHS</text>
   <text x="520" y="34" text-anchor="end" class="micro">repo updates / month</text>
   <g transform="translate(20 70)">
     <line x1="0" y1="60" x2="500" y2="60" stroke="#1E293B"/>
     <path d="{spark_path()}" fill="none" stroke="{CYAN}" stroke-width="1.6">
       <animate attributeName="stroke-dasharray" values="0,1000;1000,0" dur="2s" fill="freeze"/>
     </path>
-    <path d="{spark_path()} L 220 60 L 0 60 Z" fill="{CYAN}" opacity="0.12">
+    <path d="{spark_path()} L 500 60 L 0 60 Z" fill="{CYAN}" opacity="0.12">
       <animate attributeName="opacity" values="0;0.12" dur="2s" fill="freeze"/>
     </path>
   </g>
   <g transform="translate(20 160)">
     <text class="micro" y="0">JAN</text>
     <text class="micro" x="500" y="0" text-anchor="end">NOW</text>
-    <text class="micro" y="40">PEAK ÃÂÃÂ?ÃÂÃÂ {spark_max} UPDATES/MO</text>
-    <text class="micro" y="56">SAMPLE ÃÂÃÂ {sum(month_counts.values())} UPDATES ÃÂÃÂ?ÃÂÃÂ 12 MO</text>
+    <text class="micro" y="40">PEAK · {spark_max} UPDATES/MO</text>
+    <text class="micro" y="56">SAMPLE · {sum(month_counts.values())} UPDATES · 12 MO</text>
     <text class="micro" y="72">SYNTHESIZED FROM updated_at</text>
-    <text class="micro" y="88">SOURCE ÃÂÃÂ?ÃÂÃÂ github rest api</text>
+    <text class="micro" y="88">SOURCE · github rest api</text>
   </g>
   <line x1="0" y1="0" x2="540" y2="0" stroke="{CYAN}" stroke-width="1" opacity="0.4">
     <animate attributeName="y1" values="0;280;0" dur="6s" repeatCount="indefinite"/>
@@ -371,7 +371,7 @@ def build_telemetry_svg(profile: dict, repos: list[dict]) -> str:
 <g class="mono">
   <line x1="40" y1="568" x2="1160" y2="568" stroke="#1E293B"/>
   <text class="micro" x="40" y="586">REFRESH · DAILY 18:00 UTC · NO FAKE NUMBERS</text>
-  <text class="micro" x="1160" y="586" text-anchor="end" fill="{CYAN}">QUAN-OS ÃÂÃÂ TELEMETRY ENGINE</text>
+  <text class="micro" x="1160" y="586" text-anchor="end" fill="{CYAN}">QUAN-OS · TELEMETRY ENGINE</text>
 </g>
 </svg>"""
     return svg
@@ -391,13 +391,13 @@ def build_activity_stream_svg(events: list[dict], repos: list[dict]) -> str:
             payload = ev.get("payload") or {}
             desc = t.replace("Event", "").upper()
             if t == "PushEvent":
-                desc = f"PUSH ÃÂÃÂ {len(payload.get('commits', []))} commits"
+                desc = f"PUSH · {len(payload.get('commits', []))} commits"
             elif t == "CreateEvent":
-                desc = f"CREATE ÃÂÃÂ {payload.get('ref_type', '')}".strip()
+                desc = f"CREATE · {payload.get('ref_type', '')}".strip()
             elif t == "ReleaseEvent":
-                desc = f"RELEASE ÃÂÃÂ {payload.get('release', {}).get('tag_name', '')}"
+                desc = f"RELEASE · {payload.get('release', {}).get('tag_name', '')}"
             elif t == "PullRequestEvent":
-                desc = "PR ÃÂÃÂ opened"
+                desc = "PR · opened"
             ts = ev.get("created_at", "")
             items.append({"time": ts, "desc": desc, "repo": repo})
     else:
@@ -443,7 +443,7 @@ def build_activity_stream_svg(events: list[dict], repos: list[dict]) -> str:
     rows_svg = "\n".join(rows)
 
     svg = f"""<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {w} {h}" role="img" aria-label="Recent public activity timeline" font-family="JetBrains Mono, ui-monospace, monospace">
-<title>QUAN.OS ÃÂÃÂ Activity Stream</title>
+<title>QUAN.OS · Activity Stream</title>
 <desc>Recent public activity events from GitHub for {USER}.</desc>
 <defs>
   <linearGradient id="{_grad_id('bg2')}" x1="0" y1="0" x2="0" y2="1">
@@ -465,17 +465,17 @@ def build_activity_stream_svg(events: list[dict], repos: list[dict]) -> str:
 <rect width="{w}" height="{h}" fill="url(#{_grad_id('bg2')})"/>
 <rect width="{w}" height="{h}" fill="url(#{_grad_id('grid2')})" opacity="0.45"/>
 <g class="mono">
-  <text class="micro" x="40" y="34">SCENE 09 / ACTIVITY STREAM ÃÂÃÂ CI LIVE</text>
+  <text class="micro" x="40" y="34">SCENE 09 / ACTIVITY STREAM · CI LIVE</text>
   <line x1="40" y1="42" x2="340" y2="42" stroke="{CYAN}" stroke-opacity="0.6"/>
-  <text class="micro" x="1160" y="34" text-anchor="end">{len(items)} EVENTS ÃÂÃÂ EVENTS API</text>
+  <text class="micro" x="1160" y="34" text-anchor="end">{len(items)} EVENTS · EVENTS API</text>
 </g>
 {rows_svg}
 <g class="mono">
   <line x1="40" y1="478" x2="1160" y2="478" stroke="#1E293B"/>
-  <text class="micro" x="40" y="500">FALLBACK ÃÂÃÂ updated_at WHEN EVENTS API UNAVAILABLE</text>
+  <text class="micro" x="40" y="500">FALLBACK · updated_at WHEN EVENTS API UNAVAILABLE</text>
   <text class="micro" x="1160" y="500" text-anchor="end" fill="{CYAN}">{_dt.datetime.now(_dt.timezone.utc).strftime("%Y-%m-%d %H:%M UTC")}</text>
-  <text class="micro" x="40" y="520">PUBLIC DATA ONLY ÃÂÃÂ NEVER LEAK PRIVATE INFO</text>
-  <text class="micro" x="1160" y="520" text-anchor="end" fill="{VIOLET}">QUAN-OS ÃÂÃÂ STREAM ENGINE</text>
+  <text class="micro" x="40" y="520">PUBLIC DATA ONLY · NEVER LEAK PRIVATE INFO</text>
+  <text class="micro" x="1160" y="520" text-anchor="end" fill="{VIOLET}">QUAN-OS · STREAM ENGINE</text>
 </g>
 </svg>"""
     return svg
@@ -504,7 +504,7 @@ def build_projects_svg(profile: dict, repos: list[dict]) -> str:
         x, y = positions[i]
         name = r.get("name", "project")
         desc = _short(r.get("description") or "(no description)", 90)
-        lang = r.get("language") or "ÃÂÃÂ?ÃÂÃÂ?ÃÂÃÂ?ÃÂÃÂ?"
+        lang = r.get("language") or "·"
         updated = (r.get("updated_at") or "")[:10]
         stars = int(r.get("stargazers_count") or 0)
         meta = _project_meta(name)
@@ -526,18 +526,18 @@ def build_projects_svg(profile: dict, repos: list[dict]) -> str:
     <animate attributeName="opacity" values="0.3;1;0.3" dur="2s" begin="{i*0.3}s" repeatCount="indefinite"/>
   </circle>
   <text x="34" y="24" class="mono {lang_class}">{_esc((lang or '...').upper())}</text>
-  <text x="520" y="24" text-anchor="end" class="mono meta">? {stars} ÃÂÃÂ {updated}</text>
+  <text x="520" y="24" text-anchor="end" class="mono meta">★ {stars} · {updated}</text>
   <text x="20" y="62" class="mono name">{_esc(name)}</text>
   <text x="20" y="86" class="mono desc">{_esc(desc)}</text>
-  <text x="20" y="128" class="mono meta">DOMAIN ÃÂÃÂ {_esc(domain)}</text>
-  <text x="20" y="148" class="mono meta">UPDATED ÃÂÃÂ {updated}</text>
+  <text x="20" y="128" class="mono meta">DOMAIN · {_esc(domain)}</text>
+  <text x="20" y="148" class="mono meta">UPDATED · {updated}</text>
   <text x="20" y="170" class="mono meta">github.com/{_esc(USER)}/{_esc(name)}</text>
   <line x1="20" y1="180" x2="520" y2="180" stroke="#1E293B"/>
 </g>"""
         )
     cards_svg = "\n".join(cards)
-    svg = f"""<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {w} {h}" role="img" aria-label="Featured projects gallery ÃÂÃÂ live" font-family="JetBrains Mono, ui-monospace, monospace">
-<title>QUAN.OS ÃÂÃÂ Featured Systems ÃÂÃÂ Live</title>
+    svg = f"""<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {w} {h}" role="img" aria-label="Featured projects gallery · live" font-family="JetBrains Mono, ui-monospace, monospace">
+<title>QUAN.OS · Featured Systems · Live</title>
 <desc>Holographic gallery of featured projects for {USER}.</desc>
 <defs>
   <linearGradient id="{_grad_id('bg3')}" x1="0" y1="0" x2="0" y2="1">
@@ -561,16 +561,16 @@ def build_projects_svg(profile: dict, repos: list[dict]) -> str:
 <rect width="{w}" height="{h}" fill="url(#{_grad_id('bg3')})"/>
 <rect width="{w}" height="{h}" fill="url(#{_grad_id('grid3')})" opacity="0.4"/>
 <g class="mono">
-  <text class="micro" x="40" y="34">SCENE 06 / FEATURED SYSTEMS ÃÂÃÂ LIVE</text>
+  <text class="micro" x="40" y="34">SCENE 06 / FEATURED SYSTEMS · LIVE</text>
   <line x1="40" y1="42" x2="320" y2="42" stroke="{CYAN}" stroke-opacity="0.6"/>
   <text class="micro" x="1160" y="34" text-anchor="end">CURATED FROM {int(profile.get('public_repos') or len(repos))} PUBLIC REPOS</text>
 </g>
 {cards_svg}
 <g class="mono">
-  <text class="micro" x="40" y="544">? PRIORITIZED BY REPRESENTATIVENESS ÃÂÃÂ NOT STAR COUNT ALONE</text>
+  <text class="micro" x="40" y="544">▸ PRIORITIZED BY REPRESENTATIVENESS · NOT STAR COUNT ALONE</text>
   <text class="micro" x="1160" y="544" text-anchor="end" fill="{CYAN}">UPDATED {_dt.datetime.now(_dt.timezone.utc).strftime("%Y-%m-%d")}</text>
-  <text class="micro" x="40" y="562">FULL LIST ÃÂÃÂ?ÃÂÃÂ /?tab=repositories</text>
-  <text class="micro" x="1160" y="562" text-anchor="end" fill="{VIOLET}">QUAN-OS ÃÂÃÂ GALLERY ENGINE</text>
+  <text class="micro" x="40" y="562">FULL LIST · /?tab=repositories</text>
+  <text class="micro" x="1160" y="562" text-anchor="end" fill="{VIOLET}">QUAN-OS · GALLERY ENGINE</text>
 </g>
 </svg>"""
     return svg
@@ -578,14 +578,14 @@ def build_projects_svg(profile: dict, repos: list[dict]) -> str:
 
 def _domain_for(lang: str | None) -> str:
     table = {
-        "TypeScript": "web ÃÂÃÂ frontend ÃÂÃÂ fullstack",
-        "JavaScript": "web ÃÂÃÂ fullstack",
-        "C": "systems ÃÂÃÂ backend",
-        "C++": "systems ÃÂÃÂ performance",
-        "HTML": "web ÃÂÃÂ ui",
-        "Python": "ai ÃÂÃÂ scripting",
-        "Go": "backend ÃÂÃÂ infra",
-        "Rust": "systems ÃÂÃÂ performance",
+        "TypeScript": "web · frontend · fullstack",
+        "JavaScript": "web · fullstack",
+        "C": "systems · backend",
+        "C++": "systems · performance",
+        "HTML": "web · ui",
+        "Python": "ai · scripting",
+        "Go": "backend · infra",
+        "Rust": "systems · performance",
     }
     return table.get(lang or "", "engineering")
 
@@ -649,8 +649,8 @@ def build_constellation_svg(repos: list[dict]) -> str:
 </g>"""
         )
     w, h = 1200, 600
-    svg = f"""<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {w} {h}" role="img" aria-label="Language constellation ÃÂÃÂ live" font-family="JetBrains Mono, ui-monospace, monospace">
-<title>QUAN.OS ÃÂÃÂ Language Constellation ÃÂÃÂ Live</title>
+    svg = f"""<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {w} {h}" role="img" aria-label="Language constellation · live" font-family="JetBrains Mono, ui-monospace, monospace">
+<title>QUAN.OS · Language Constellation · Live</title>
 <desc>Radial constellation of programming languages used across {USER}'s repositories.</desc>
 <defs>
   <radialGradient id="{_grad_id('bg4')}" cx="50%" cy="50%" r="60%">
@@ -688,7 +688,7 @@ def build_constellation_svg(repos: list[dict]) -> str:
 <rect width="{w}" height="{h}" fill="url(#{_grad_id('bg4')})"/>
 <rect width="{w}" height="{h}" fill="url(#{_grad_id('grid4')})" opacity="0.45"/>
 <g class="mono">
-  <text class="micro" x="40" y="34">SCENE 09 / LANGUAGE CONSTELLATION ÃÂÃÂ LIVE</text>
+  <text class="micro" x="40" y="34">SCENE 09 / LANGUAGE CONSTELLATION · LIVE</text>
   <line x1="40" y1="42" x2="380" y2="42" stroke="{CYAN}" stroke-opacity="0.6"/>
   <text class="micro" x="1160" y="34" text-anchor="end">NODE SIZE = REPO COUNT</text>
 </g>
@@ -705,10 +705,10 @@ def build_constellation_svg(repos: list[dict]) -> str:
 {''.join(nodes_svg)}
 <g class="mono">
   <line x1="40" y1="528" x2="1160" y2="528" stroke="#1E293B"/>
-  <text class="micro" x="40" y="552">TOTAL ÃÂÃÂ {total} LANGUAGE-DECLARED REPOS ÃÂ· 4 SHOWN</text>
+  <text class="micro" x="40" y="552">TOTAL · {total} LANGUAGE-DECLARED REPOS · 4 SHOWN</text>
   <text class="micro" x="1160" y="552" text-anchor="end" fill="{CYAN}">UPDATED {_dt.datetime.now(_dt.timezone.utc).strftime("%Y-%m-%d")}</text>
-  <text class="micro" x="40" y="572">SELF-GENERATED BY GITHUB ACTIONS ÃÂÃÂ NO THIRD-PARTY</text>
-  <text class="micro" x="1160" y="572" text-anchor="end" fill="{VIOLET}">QUAN-OS ÃÂÃÂ CONSTELLATION ENGINE</text>
+  <text class="micro" x="40" y="572">SELF-GENERATED BY GITHUB ACTIONS · NO THIRD-PARTY</text>
+  <text class="micro" x="1160" y="572" text-anchor="end" fill="{VIOLET}">QUAN-OS · CONSTELLATION ENGINE</text>
 </g>
 </svg>"""
     return svg

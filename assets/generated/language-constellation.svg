@@ -1,5 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600" role="img" aria-label="Language constellation ÃÂÃÂ live" font-family="JetBrains Mono, ui-monospace, monospace">
-<title>QUAN.OS ÃÂÃÂ Language Constellation ÃÂÃÂ Live</title>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600" role="img" aria-label="Language constellation · live" font-family="JetBrains Mono, ui-monospace, monospace">
+<title>QUAN.OS · Language Constellation · Live</title>
 <desc>Radial constellation of programming languages used across hoquan2007's repositories.</desc>
 <defs>
   <radialGradient id="gen-bg4" cx="50%" cy="50%" r="60%">
@@ -37,7 +37,7 @@
 <rect width="1200" height="600" fill="url(#gen-bg4)"/>
 <rect width="1200" height="600" fill="url(#gen-grid4)" opacity="0.45"/>
 <g class="mono">
-  <text class="micro" x="40" y="34">SCENE 09 / LANGUAGE CONSTELLATION ÃÂÃÂ LIVE</text>
+  <text class="micro" x="40" y="34">SCENE 09 / LANGUAGE CONSTELLATION · LIVE</text>
   <line x1="40" y1="42" x2="380" y2="42" stroke="#22D3EE" stroke-opacity="0.6"/>
   <text class="micro" x="1160" y="34" text-anchor="end">NODE SIZE = REPO COUNT</text>
 </g>

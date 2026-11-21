@@ -1,5 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600" role="img" aria-label="Featured projects gallery ÃÂÃÂ live" font-family="JetBrains Mono, ui-monospace, monospace">
-<title>QUAN.OS ÃÂÃÂ Featured Systems ÃÂÃÂ Live</title>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600" role="img" aria-label="Featured projects gallery · live" font-family="JetBrains Mono, ui-monospace, monospace">
+<title>QUAN.OS · Featured Systems · Live</title>
 <desc>Holographic gallery of featured projects for hoquan2007.</desc>
 <defs>
   <linearGradient id="gen-bg3" x1="0" y1="0" x2="0" y2="1">
@@ -23,7 +23,7 @@
 <rect width="1200" height="600" fill="url(#gen-bg3)"/>
 <rect width="1200" height="600" fill="url(#gen-grid3)" opacity="0.4"/>
 <g class="mono">
-  <text class="micro" x="40" y="34">SCENE 06 / FEATURED SYSTEMS ÃÂÃÂ LIVE</text>
+  <text class="micro" x="40" y="34">SCENE 06 / FEATURED SYSTEMS · LIVE</text>
   <line x1="40" y1="42" x2="320" y2="42" stroke="#22D3EE" stroke-opacity="0.6"/>
   <text class="micro" x="1160" y="34" text-anchor="end">CURATED FROM 41 PUBLIC REPOS</text>
 </g>

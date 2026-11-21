@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 540" role="img" aria-label="Recent public activity timeline" font-family="JetBrains Mono, ui-monospace, monospace">
-<title>QUAN.OS ÃÂÃÂ Activity Stream</title>
+<title>QUAN.OS · Activity Stream</title>
 <desc>Recent public activity events from GitHub for hoquan2007.</desc>
 <defs>
   <linearGradient id="gen-bg2" x1="0" y1="0" x2="0" y2="1">
@@ -21,7 +21,7 @@
 <rect width="1200" height="540" fill="url(#gen-bg2)"/>
 <rect width="1200" height="540" fill="url(#gen-grid2)" opacity="0.45"/>
 <g class="mono">
-  <text class="micro" x="40" y="34">SCENE 09 / ACTIVITY STREAM ÃÂÃÂ CI LIVE</text>
+  <text class="micro" x="40" y="34">SCENE 09 / ACTIVITY STREAM · CI LIVE</text>
   <line x1="40" y1="42" x2="340" y2="42" stroke="#22D3EE" stroke-opacity="0.6"/>
   <text class="micro" x="1160" y="34" text-anchor="end">8 EVENTS ÃÂÃÂ EVENTS API</text>
 </g>
