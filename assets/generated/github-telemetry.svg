@@ -37,7 +37,7 @@
 <g transform="translate(40 80)">
   <rect width="270" height="160" rx="10" fill="url(#gen-card)" stroke="#22D3EE" stroke-opacity="0.5"/>
   <text x="20" y="34" class="card-title" fill="#22D3EE">· REPOSITORIES</text>
-  <text x="20" y="100" class="big-cyan">43</text>
+  <text x="20" y="100" class="big-cyan">44</text>
   <text x="170" y="100" class="unit">public</text>
   <text x="20" y="130" class="lbl">verified via github api</text>
   <line x1="20" y1="140" x2="250" y2="140" stroke="#1E293B"/>
@@ -89,18 +89,18 @@
   <text x="520" y="34" text-anchor="end" class="micro">repo updates / month</text>
   <g transform="translate(20 70)">
     <line x1="0" y1="60" x2="500" y2="60" stroke="#1E293B"/>
-    <path d="M0.0,60.0 L45.5,60.0 L90.9,60.0 L136.4,45.0 L181.8,60.0 L227.3,55.0 L272.7,60.0 L318.2,25.0 L363.6,35.0 L409.1,30.0 L454.5,15.0 L500.0,0.0" fill="none" stroke="#22D3EE" stroke-width="1.6">
+    <path d="M0.0,60.0 L45.5,60.0 L90.9,60.0 L136.4,46.2 L181.8,60.0 L227.3,55.4 L272.7,60.0 L318.2,27.7 L363.6,36.9 L409.1,32.3 L454.5,18.5 L500.0,0.0" fill="none" stroke="#22D3EE" stroke-width="1.6">
       <animate attributeName="stroke-dasharray" values="0,1000;1000,0" dur="2s" fill="freeze"/>
     </path>
-    <path d="M0.0,60.0 L45.5,60.0 L90.9,60.0 L136.4,45.0 L181.8,60.0 L227.3,55.0 L272.7,60.0 L318.2,25.0 L363.6,35.0 L409.1,30.0 L454.5,15.0 L500.0,0.0 L 500 60 L 0 60 Z" fill="#22D3EE" opacity="0.12">
+    <path d="M0.0,60.0 L45.5,60.0 L90.9,60.0 L136.4,46.2 L181.8,60.0 L227.3,55.4 L272.7,60.0 L318.2,27.7 L363.6,36.9 L409.1,32.3 L454.5,18.5 L500.0,0.0 L 500 60 L 0 60 Z" fill="#22D3EE" opacity="0.12">
       <animate attributeName="opacity" values="0;0.12" dur="2s" fill="freeze"/>
     </path>
   </g>
   <g transform="translate(20 160)">
     <text class="micro" y="0">JAN</text>
     <text class="micro" x="500" y="0" text-anchor="end">NOW</text>
-    <text class="micro" y="40">PEAK · 12 UPDATES/MO</text>
-    <text class="micro" y="56">SAMPLE · 43 UPDATES · 12 MO</text>
+    <text class="micro" y="40">PEAK · 13 UPDATES/MO</text>
+    <text class="micro" y="56">SAMPLE · 44 UPDATES · 12 MO</text>
     <text class="micro" y="72">SYNTHESIZED FROM updated_at</text>
     <text class="micro" y="88">SOURCE · github rest api</text>
   </g>
